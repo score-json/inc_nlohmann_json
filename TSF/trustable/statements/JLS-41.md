@@ -7,4 +7,4 @@ references:
     description: "Contribution guidelines describing the test policy and requirement to maintain 100% coverage"
 ---
 
-Contributors manually extend and execute the regression test suite when proposing fixes or non-trivial changes to the nlohmann/json library.
+The manual process for extending the nlohmann/json library’s test suite so that coverage remains at 100% when fixes or other non-trivial changes are proposed is well-defined and documented.
