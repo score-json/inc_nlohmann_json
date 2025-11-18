@@ -23,10 +23,15 @@ Appropriate storage strategies safeguard availability across the product lifecyc
 **Evidence**
 
 - Time-stamped and traceable result records for each test execution, linked to associated system under test version and specification references.
+    - **Answer**: 
 - List of monitored indicators, linked to associated specification version references.
+    - **Answer**: 
 - Time-stamped and traceable test-derived data for each indicator, linked to associated system under test version and indicator specifications references.
+    - **Answer**: 
 - List of monitored deployments, linked to associated version and configuration references.
+    - **Answer**: 
 - Time-stamped and traceable production data for each indicator, linked to associated deployment metadata and specification references.
+    - **Answer**: 
 
 **Confidence scoring**
 
@@ -37,12 +42,23 @@ monitored deployments.
 **Checklist**
 
 - Is all test data stored with long-term accessibility?
+    - **Answer**: 
 - Is all monitoring data stored with long-term accessibility?
+    - **Answer**: 
 - Are extensible data models implemented?
+    - **Answer**: 
 - Is sensitive data handled correctly (broadcasted, stored, discarded, or anonymised) with appropriate encryption and redundancy?
+    - **Answer**: 
 - Are proper backup mechanisms in place?
+    - **Answer**: 
 - Are storage and backup limits tested?
+    - **Answer**: 
 - Are all data changes traceable?
+    - **Answer**: 
 - Are concurrent changes correctly managed and resolved?
+    - **Answer**: 
 - Is data accessible only to intended parties?
+    - **Answer**: 
 - Are any subsets of our data being published?
+    - **Answer**: 
+

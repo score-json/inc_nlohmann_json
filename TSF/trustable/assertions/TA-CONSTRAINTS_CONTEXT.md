@@ -49,12 +49,17 @@ reporting bugs, issues, and requests.
 **Suggested evidence**
 
 - Installation manuals with worked examples
+    - **Answer**: 
 - Configuration manuals with worked examples
+    - **Answer**: 
 - Specification documentation with a clearly defined scope
+    - **Answer**: 
 - User guides detailing limitations in interfaces designed for expandability or
   modularity
+    - **Answer**: 
 - Documented strategies used by external users to address constraints and
   work with existing Statements
+    - **Answer**: 
 
 **Confidence scoring**
 
@@ -65,14 +70,21 @@ contradictions and obvious pitfalls within the defined Statements.
 
 - Are the constraints grounded in realistic expectations, backed by real-world
   examples?
+    - **Answer**: 
 - Do they effectively guide downstream consumers in expanding upon existing
   Statements?
+    - **Answer**: 
 - Do they provide clear guidance for upstreams on reusing components with
   well-defined claims?
+    - **Answer**: 
 - Are any Statements explicitly designated as not reusable or adaptable?
+    - **Answer**: 
 - Are there worked examples from downstream or upstream users demonstrating
   these constraints in practice?
+    - **Answer**: 
 - Have there been any documented misunderstandings from users, and are these
   visibly resolved?
+    - **Answer**: 
 - Do external users actively keep up with updates, and are they properly
   notified of any changes?
+    - **Answer**: 

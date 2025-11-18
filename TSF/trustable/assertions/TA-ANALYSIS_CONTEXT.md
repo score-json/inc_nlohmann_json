@@ -41,9 +41,13 @@ by confirming that test results remain unchanged when no changes are intended.
 **Evidence**
 
 - Analysis of test data, including thresholds in relation to appropriate statistical properties.
+    - **Answer**: 
 - Analysis of failures
+    - **Answer**: 
 - Analysis of spikes and trends
+    - **Answer**: 
 - Validation of analysis methods used
+    - **Answer**: 
 
 **Confidence scoring**
 
@@ -53,18 +57,35 @@ that may indicate problems in development, test, or production.
 **CHECKLIST**
 
 - What fraction of Expectations are covered by the test data?
+    - **Answer**: 
 - What fraction of Misbehaviours are covered by the monitored indicator data?
+    - **Answer**: 
 - How confident are we that the indicator data are accurate and timely?
+    - **Answer**: 
 - How reliable is the monitoring process?
+    - **Answer**: 
 - How well does the production data correlate with our test data?
+    - **Answer**: 
 - Are we publishing our data analysis?
+    - **Answer**: 
 - Are we comparing and analysing production data vs test?
+    - **Answer**: 
 - Are our results getting better, or worse?
+    - **Answer**: 
 - Are we addressing spikes/regressions?
+    - **Answer**: 
 - Do we have sensible/appropriate target failure rates?
+    - **Answer**: 
 - Do we need to check the targets?
+    - **Answer**: 
 - Are we achieving the targets?
+    - **Answer**: 
 - Are all underlying assumptions and target conditions for the analysis specified?
+    - **Answer**: 
 - Have the underlying assumptions been verified using known good data?
+    - **Answer**: 
 - Has the Misbehaviour identification process been verified using known bad data?
+    - **Answer**: 
 - Are results shown to be reproducible?
+    - **Answer**: 
+

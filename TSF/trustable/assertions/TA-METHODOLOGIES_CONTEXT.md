@@ -31,10 +31,15 @@ Any resulting changes from reviews must follow change control, regardless of who
 **Evidence**
 
 - Manual process documentation
+    - **Answer**: 
 - References to methodologies applied as part of these processes
+    - **Answer**: 
 - Results of applying the processes
+    - **Answer**: 
 - Criteria used to confirm that the processes were applied correctly
+    - **Answer**: 
 - Review records for results
+    - **Answer**: 
 
 **Confidence scoring**
 
@@ -46,12 +51,22 @@ in comparison to the analysed results
 **Checklist**
 
 - Are the identified gaps documented clearly to justify using a manual process?
+    - **Answer**: 
 - Are the goals for each process clearly defined?
+    - **Answer**: 
 - Is the sequence of procedures documented in an unambiguous manner?
+    - **Answer**: 
 - Can improvements to the processes be suggested and implemented?
+    - **Answer**: 
 - How frequently are processes changed?
+    - **Answer**: 
 - How are changes to manual processes communicated?
+    - **Answer**: 
 - Are there any exceptions to the processes?
+    - **Answer**: 
 - How is evidence of process adherence recorded?
+    - **Answer**: 
 - How is the effectiveness of the process evaluated?
+    - **Answer**: 
 - Is ongoing training required to follow these processes?
+    - **Answer**: 

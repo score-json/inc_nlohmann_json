@@ -37,9 +37,12 @@ For releases, additional documentation should summarise all changes across the i
   - test code
   - test results summary
   - attestations
+    - **Answer**: 
+
 - list of components where source code is not available
   - risk analysis
   - attestations
+    - **Answer**: 
 
 **Confidence scoring**
 
@@ -53,10 +56,16 @@ Confidence scoring for TA-ITERATIONS based on
 
 - How much of the software is provided as binary only, expressed as a
   fraction of the BoM list?
+    - **Answer**: 
 - How much is binary, expressed as a fraction of the total storage footprint?
+    - **Answer**: 
 - For binaries, what claims are being made and how confident are we in the
   people/organisations making the claims?
+    - **Answer**: 
 - For third-party source code, what claims are we making, and how confident
   are we about these claims?
+    - **Answer**: 
 - For software developed by us, what claims are we making, and how confident
   are we about these claims?
+    - **Answer**:
+

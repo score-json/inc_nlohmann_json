@@ -31,12 +31,17 @@ binaries present within the repositories of the components and tools used.
 - list of all XYZ components including
   - URL of mirrored projects in controlled environment
   - URL of upstream projects
+    - **Answer**: 
 - successful build of XYZ from source
   - without access to external source projects
   - without access to cached data
+    - **Answer**: 
 - update logs for mirrored projects
+    - **Answer**: 
 - mirrors reject history rewrites
+    - **Answer**: 
 - mirroring is configured via infrastructure under direct control
+    - **Answer**: 
 
 **Confidence scoring**
 
@@ -47,8 +52,14 @@ compromised.
 **Checklist**
 
 - Could there be other components, missed from the list?
+    - **Answer**: 
 - Does the list include all toolchain components?
+    - **Answer**: 
 - Does the toolchain include a bootstrap?
+    - **Answer**: 
 - Could the content of a mirrored project be compromised by an upstream change?
+    - **Answer**: 
 - Are mirrored projects up to date with the upstream project?
+    - **Answer**: 
 - Are mirrored projects based on the correct upstream?
+    - **Answer**: 
