@@ -87,6 +87,8 @@ references:
 
 The content of a `WebReference` is its url. This reference is intended to be utilised in case that the content of the web-site is constantly changing (e.g. due to a clock being implemented somewhere on the site), but the reviewer is certain that the type of the content and it being supportive of the statement is fulfilled as long a the website is reachable. An example is `https://introspector.oss-fuzz.com/project-profile?project=json`, where the most recent fuzz-testing report for nlohmann/json is published.
 
+Whenever using the WebReference for a statement, it is recommended to create a corresponding http_response_time validator to automatically verify that the website is indeed available.
+
 For the `WebReference`, an example is:
 ```
 ---
@@ -142,6 +144,9 @@ in case of a custom description.
 
 This reference type is intended for websites whose content evolves constantly, making a static WebContentReference unsuitable, while still letting the state of the project at the time of an update influence trustability. For example, https://github.com/nlohmann/json/pulse/monthly can be used to demonstrate that nlohmann/json is up to the most recent version under active development. The content of a TimeVaryingWebReference is determined by a changelog file in this repository. By default, this is ChangeLog.md, which mirrors the upstream changelog of nlohmann/json. 
 
+Whenever using the WebReference for a statement, it is recommended to create a corresponding http_response_time validator to automatically verify that the website is indeed available.
+
+
 Important clarifications:
 
 The system checks the ChangeLog.md within our own repository. It does not read or rely on external changelogs or any files in external repositories.
@@ -158,6 +163,7 @@ references:
   description: "Wiki article on the smooth Serre-Swan theorem"
   changelog: "ideas/graded/graded_Serre_Swan.tex"
 ---
+
 In the common case (using the default ChangeLog.md in this repository), you can omit the changelog argument:
 
 
