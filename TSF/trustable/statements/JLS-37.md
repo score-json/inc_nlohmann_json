@@ -17,4 +17,4 @@ evidence:
       - "https://eclipse-score.github.io/inc_nlohmann_json/main/generated/trustable_graph.html"
 ---
 
-High-level statements are decomposed into smaller, well-defined sub-statements that can recursively be shown to be either true or false.
+High-level statements are decomposed into smaller, well-defined supporting statements that can recursively be shown to be either true or false.
