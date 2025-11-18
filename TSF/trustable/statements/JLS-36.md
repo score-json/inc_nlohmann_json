@@ -3,8 +3,8 @@ level: 1.1
 normative: true
 references:
     - type: verbose_file
-      path: "./README.md"
+      path: "./TSF/README.md"
       description: "release management and update process description"    
 ---
 
-Releases and updates of the score-json repository are carried out in accordance with defined and documented release and update process.
+Updates of the eclipse-score/inc_nlohmann_json repository are carried out in accordance with the defined and documented update process in TSF/README.md
