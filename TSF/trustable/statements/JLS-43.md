@@ -17,4 +17,4 @@ evidence:
       - "https://github.com/nlohmann/json/blob/develop/.github/CODEOWNERS"
 ---
 
-Feature requests for the nlohmann/json repository are raised in the project’s GitHub discussions and are actively reviewed and answered by the maintainer.
+Feature requests for the nlohmann/json repository are raised in the project's GitHub discussions and are actively reviewed and answered by the maintainer.
