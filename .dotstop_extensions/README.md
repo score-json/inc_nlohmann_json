@@ -10,7 +10,7 @@ For each item of the trustable graph, the hash is calculated by trudag using:
 * for every of its references, the *content* of that reference
 * for every of its fallacies, the description and content of the corresponding reference
 
-Custom references are defined and implemented in `references.py`. A (custom) reference is used by adding a corresponding entry into the list references in the header of an item file. The type of this entry corresponds to the `classmethod` type of a reference class in `references.py`, and the remaining fields correspond to the arguments of the constructor of the reference.
+Custom references are defined and implemented in `references.py`. A (custom) reference is used by adding a corresponding entry into the references list in the header of an item file. The type of this entry corresponds to the `classmethod` type of a reference class in `references.py`, and the remaining fields must map to the constructor arguments of the reference class.
 
 ## CPPTestReference
 
