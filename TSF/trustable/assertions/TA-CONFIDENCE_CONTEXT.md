@@ -26,7 +26,7 @@ The process itself should be analysed to determine score maturity, with meta-ana
 **Evidence**
 
 - Confidence scores from other TA items
-    - **Answer**: 
+  - **Answer**: 
 
 **Confidence scoring**
 
@@ -36,10 +36,10 @@ scores given to Statements
 **Checklist**
 
 - What is the algorithm for combining/comparing the scores?
-    - **Answer**: 
+  - **Answer**: 
 - How confident are we that this algorithm is fit for purpose?
-    - **Answer**: 
+  - **Answer**: 
 - What are the trends for each score?
-    - **Answer**: 
+  - **Answer**: 
 - How well do our scores correlate with external feedback signals?
-    - **Answer**: 
+  - **Answer**: 

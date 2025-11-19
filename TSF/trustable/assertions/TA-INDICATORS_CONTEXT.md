@@ -55,19 +55,19 @@ set of AWIs is incorrect, or the tolerance is too lax.
 **Evidence**
 
 - Risk analyses
-    - **Answer**: 
+  - **Answer**: 
 - List of advance warning indicators
-    - **Answer**: 
+  - **Answer**: 
 - List of Expectations for monitoring mechanisms
-    - **Answer**: 
+  - **Answer**: 
 - List of implemented monitoring mechanisms
-    - **Answer**: 
+  - **Answer**: 
 - List of identified misbehaviours without advance warning indicators
-    - **Answer**: 
+  - **Answer**: 
 - List of advance warning indicators without implemented monitoring mechanisms
-    - **Answer**: 
+  - **Answer**: 
 - Advance warning signal data as time series (see TA-DATA)
-    - **Answer**: 
+  - **Answer**: 
 
 **Confidence scoring**
 
@@ -78,27 +78,27 @@ monitoring mechanisms have been implemented to collect the required data.
 **Checklist**
 
 - How appropriate/thorough are the analyses that led to the indicators?
-    - **Answer**: 
+  - **Answer**: 
 - How confident can we be that the list of indicators is comprehensive?
-    - **Answer**: 
+  - **Answer**: 
 - Could there be whole categories of warning indicators still missing?
-    - **Answer**: 
+  - **Answer**: 
 - How has the list of advance warning indicators varied over time?
-    - **Answer**: 
+  - **Answer**: 
 - How confident are we that the indicators are leading/predictive?
-    - **Answer**: 
+  - **Answer**: 
 - Are there misbehaviours that have no advance warning indicators?
-    - **Answer**: 
+  - **Answer**: 
 - Can we collect data for all indicators?
-    - **Answer**: 
+  - **Answer**: 
 - Are the monitoring mechanisms used included in our Trustable scope?
-    - **Answer**: 
+  - **Answer**: 
 - Are there gaps or trends in the data?
-    - **Answer**: 
+  - **Answer**: 
 - If there are gaps or trends, are they analysed and addressed?
-    - **Answer**: 
+  - **Answer**: 
 - Is the data actually predictive/useful?
-    - **Answer**: 
+  - **Answer**: 
 - Are indicators from code, component, tool, or data inspections taken into
 consideration? 
-    - **Answer**: 
+  - **Answer**: 

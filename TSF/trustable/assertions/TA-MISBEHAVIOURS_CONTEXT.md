@@ -87,15 +87,18 @@ established and reusable solutions.
 **Suggested evidence**
 
 - List of identified Misbehaviours
-    - **Answer**: 
+  - **Answer**: 
 - List of Expectations for mitigations addressing identified Misbehaviours
-    - **Answer**: 
+  - **Answer**: 
 - Risk analysis
-    - **Answer**: 
+  - **Answer**: 
 - Test analysis, including:
   - False negative tests
+    - **Answer**: 
   - Exception handling tests
+    - **Answer**: 
   - Stress tests
+    - **Answer**: 
   - Soak tests
     - **Answer**: 
 
@@ -108,28 +111,28 @@ considered against the list of Expectations.
 **Checklist**
 
 - How has the list of misbehaviours varied over time?
-    - **Answer**: 
+  - **Answer**: 
 - How confident can we be that this list is comprehensive?
-    - **Answer**: 
+  - **Answer**: 
 - How well do the misbehaviours map to the expectations?
-    - **Answer**: 
+  - **Answer**: 
 - Could some participants have incentives to manipulate information?
-    - **Answer**: 
+  - **Answer**: 
 - Could there be whole categories of misbehaviours still undiscovered?
-    - **Answer**: 
+  - **Answer**: 
 - Can we identify misbehaviours that have been understood but not specified?
-    - **Answer**: 
+  - **Answer**: 
 - Can we identify some new misbehaviours, right now?
-    - **Answer**: 
+  - **Answer**: 
 - Is every misbehaviour represented by at least one fault induction test?
-    - **Answer**: 
+  - **Answer**: 
 - Are fault inductions used to demonstrate that tests which usually pass can
   and do fail appropriately?
-    - **Answer**: 
+  - **Answer**: 
 - Are all the fault induction results actually collected?
-    - **Answer**: 
+  - **Answer**: 
 - Are the results evaluated?
-    - **Answer**: 
+  - **Answer**: 
 - Do input analysis findings on verifiable tool or component claims and features
 identify additional misbehaviours or support existing mitigations?
-    - **Answer**: 
+  - **Answer**: 

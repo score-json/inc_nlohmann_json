@@ -47,26 +47,33 @@ As a result, for example, any binary inputs without reproducible build steps or 
 
 - List of components used to build XYZ, including:
   - Whether content is provided as source or binary
-      - **Answer**: 
+    - **Answer**: 
 - Record of component assessments:
   - Originating project and version
+    - **Answer**: 
   - Date of assessments and identity of assessors
+    - **Answer**: 
   - Role of component in XYZ
+    - **Answer**: 
   - Sources of bug and risk data
+    - **Answer**: 
   - Potential misbehaviours and risks identified and assessed
     - **Answer**: 
-
 - List of tools used to build and verify XYZ
-    - **Answer**: 
+  - **Answer**: 
 - Record of tool assessments:
   - Originating project and tool version
+    - **Answer**: 
   - Date of assessments and identity of assessors
+    - **Answer**: 
   - Role of the tool in XYZ releases
+    - **Answer**: 
   - Potential misbehaviours and impacts
+    - **Answer**: 
   - Detectability and severity of impacts
     - **Answer**: 
 - Tests or measures to address identified impacts
-    - **Answer**: 
+  - **Answer**: 
 
 **Confidence scoring**
 
@@ -77,34 +84,34 @@ and impact for XYZ, and the sources of risk and issue data identified.
 **Checklist**
 
 - Are there components that are not on the list?
-    - **Answer**: 
+  - **Answer**: 
 - Are there assessments for all components?
-    - **Answer**: 
+  - **Answer**: 
 - Has an assessment been done for the current version of the component?
-    - **Answer**: 
+  - **Answer**: 
 - Have sources of bug and/or vulnerability data been identified?
-    - **Answer**: 
+  - **Answer**: 
 - Have additional tests and/or Expectations been documented and linked to
   component assessment?
-    - **Answer**: 
+  - **Answer**: 
 - Are component tests run when integrating new versions of components?
-    - **Answer**: 
+  - **Answer**: 
 - Are there tools that are not on the list?
-    - **Answer**: 
+  - **Answer**: 
 - Are there impact assessments for all tools?
-    - **Answer**: 
+  - **Answer**: 
 - Have tools with high impact been qualified?
-    - **Answer**: 
+  - **Answer**: 
 - Were assessments or reviews done for the current tool versions?
-    - **Answer**: 
+  - **Answer**: 
 - Have additional tests and/or Expectations been documented and linked to
   tool assessments?
-    - **Answer**: 
+  - **Answer**: 
 - Are tool tests run when integrating new versions of tools?
-    - **Answer**: 
+  - **Answer**: 
 - Are tool and component tests included in release preparation?
-    - **Answer**: 
+  - **Answer**: 
 - Can patches be applied, and then upstreamed for long-term maintenance?
-    - **Answer**: 
+  - **Answer**: 
 - Do all dependencies comply with acceptable licensing terms?
-    - **Answer**: 
+  - **Answer**: 

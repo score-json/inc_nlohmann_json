@@ -41,13 +41,13 @@ by confirming that test results remain unchanged when no changes are intended.
 **Evidence**
 
 - Analysis of test data, including thresholds in relation to appropriate statistical properties.
-    - **Answer**: 
+  - **Answer**: 
 - Analysis of failures
-    - **Answer**: 
+  - **Answer**: 
 - Analysis of spikes and trends
-    - **Answer**: 
+  - **Answer**: 
 - Validation of analysis methods used
-    - **Answer**: 
+  - **Answer**: 
 
 **Confidence scoring**
 
@@ -57,35 +57,35 @@ that may indicate problems in development, test, or production.
 **CHECKLIST**
 
 - What fraction of Expectations are covered by the test data?
-    - **Answer**: 
+  - **Answer**: 
 - What fraction of Misbehaviours are covered by the monitored indicator data?
-    - **Answer**: 
+  - **Answer**: 
 - How confident are we that the indicator data are accurate and timely?
-    - **Answer**: 
+  - **Answer**: 
 - How reliable is the monitoring process?
-    - **Answer**: 
+  - **Answer**: 
 - How well does the production data correlate with our test data?
-    - **Answer**: 
+  - **Answer**: 
 - Are we publishing our data analysis?
-    - **Answer**: 
+  - **Answer**: 
 - Are we comparing and analysing production data vs test?
-    - **Answer**: 
+  - **Answer**: 
 - Are our results getting better, or worse?
-    - **Answer**: 
+  - **Answer**: 
 - Are we addressing spikes/regressions?
-    - **Answer**: 
+  - **Answer**: 
 - Do we have sensible/appropriate target failure rates?
-    - **Answer**: 
+  - **Answer**: 
 - Do we need to check the targets?
-    - **Answer**: 
+  - **Answer**: 
 - Are we achieving the targets?
-    - **Answer**: 
+  - **Answer**: 
 - Are all underlying assumptions and target conditions for the analysis specified?
-    - **Answer**: 
+  - **Answer**: 
 - Have the underlying assumptions been verified using known good data?
-    - **Answer**: 
+  - **Answer**: 
 - Has the Misbehaviour identification process been verified using known bad data?
-    - **Answer**: 
+  - **Answer**: 
 - Are results shown to be reproducible?
-    - **Answer**: 
+  - **Answer**: 
 

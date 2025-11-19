@@ -30,9 +30,9 @@ A strategy to generate appropriate data addresses quantity, quality, and selecti
 **Evidence**
 
 - Test results from per-change tests
-    - **Answer**: 
+  - **Answer**: 
 - Test results from scheduled tests as time series
-    - **Answer**: 
+  - **Answer**: 
 
 **Confidence scoring**
 
@@ -42,28 +42,28 @@ results for all expected tests (both pass / fail and performance).
 **Checklist**
 
 - Is the selection of tests correct?
-    - **Answer**: 
+  - **Answer**: 
 - Are the tests executed enough times?
-    - **Answer**: 
+  - **Answer**: 
 - How confident are we that all test results are being captured?
-    - **Answer**: 
+  - **Answer**: 
 - Can we look at any individual test result, and establish what it relates to?
-    - **Answer**: 
+  - **Answer**: 
 - Can we trace from any test result to the expectation it relates to?
-    - **Answer**: 
+  - **Answer**: 
 - Can we identify precisely which environment (software and hardware) were used?
-    - **Answer**: 
+  - **Answer**: 
 - How many pass/fail results would be expected, based on the scheduled tests?
-    - **Answer**: 
+  - **Answer**: 
 - Do we have all of the expected results?
-    - **Answer**: 
+  - **Answer**: 
 - Do we have time-series data for all of those results?
-    - **Answer**: 
+  - **Answer**: 
 - If there are any gaps, do we understand why?
-    - **Answer**: 
+  - **Answer**: 
 - Are the test validation strategies credible and appropriate?
-    - **Answer**: 
+  - **Answer**: 
 - What proportion of the implemented tests are validated?
-    - **Answer**: 
+  - **Answer**: 
 - Have the tests been verified using known good and bad data?
-    - **Answer**: 
+  - **Answer**: 

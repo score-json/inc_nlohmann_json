@@ -24,13 +24,13 @@ TA-ITERATIONS.
 **Evidence**
 
 - Test build environment reproducibility
-    - **Answer**: 
+  - **Answer**: 
 - Test build configuration
-    - **Answer**: 
+  - **Answer**: 
 - Test build reproducibility
-    - **Answer**: 
+  - **Answer**: 
 - Test environment configuration
-    - **Answer**: 
+  - **Answer**: 
 
 **Confidence scoring**
 
@@ -43,10 +43,10 @@ tooling and their build environments are repeatable and reproducible.
   - Are any exceptions identified, documented and justified?
     - **Answer**: 
 - How confident are we that all test components are taken from within our controlled environment?
-    - **Answer**: 
+  - **Answer**: 
 - How confident are we that all of the test environments we are using are also under our control?
-    - **Answer**: 
+  - **Answer**: 
 - Do we record all test environment components, including hardware and infrastructure used for exercising tests and processing input/output data?
-    - **Answer**: 
+  - **Answer**: 
 - How confident are we that all tests scenarios are repeatable?
-    - **Answer**: 
+  - **Answer**: 

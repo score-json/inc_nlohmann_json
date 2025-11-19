@@ -41,7 +41,7 @@ Ultimately, the trustable controlled process is the only path to production for 
 **Evidence**
 
 - change management process and configuration artifacts
-    - **Answer**: 
+  - **Answer**: 
 
 **Confidence scoring**
 
@@ -52,14 +52,14 @@ dependencies.
 **Checklist**
 
 - Where are the change and configuration management controls specified?
-    - **Answer**: 
+  - **Answer**: 
 - Are these controls enforced for all of components, tools, data, documentation and configurations?
-    - **Answer**: 
+  - **Answer**: 
 - Are there any ways in which these controls can be subverted, and have we mitigated them?
-    - **Answer**: 
+  - **Answer**: 
 - Does change control capture all potential regressions?
-    - **Answer**: 
+  - **Answer**: 
 - Is change control timely enough?
-    - **Answer**: 
+  - **Answer**: 
 - Are all guidance and checks understandable and consistently followed?
-    - **Answer**: 
+  - **Answer**: 

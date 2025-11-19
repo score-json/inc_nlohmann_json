@@ -29,29 +29,29 @@ As part of ongoing monitoring, the rate of incoming, resolved, and rejected issu
 **Evidence**
 
 - List of known bugs fixed since last release
-    - **Answer**: Provided in JLS-29
+  - **Answer**: Provided in JLS-29
 - List of outstanding bugs still not fixed, with triage/prioritisation based
   on severity/relevance/impact
-    - **Answer**: Provided in JLS-28 and JLS-11
+  - **Answer**: Provided in JLS-28 and JLS-11
 - List of known vulnerabilities fixed since last release
-    - **Answer**: Provided in JLS-29
+  - **Answer**: Provided in JLS-29
 - List of outstanding known vulnerabilities still not fixed, with triage/prioritisation based
   on severity/relevance/impact
-    - **Answer**: Provided in JLS-30, JLS-33 and AOU-29
+  - **Answer**: Provided in JLS-30, JLS-33 and AOU-29
 - List of XYZ component versions, showing where a newer version exists upstream
-    - **Answer**: Not relevant since nlohmann/json has no external components, as stated in JLS-34
+  - **Answer**: Not relevant since nlohmann/json has no external components, as stated in JLS-34
 - List of component version updates since last release
-    - **Answer**: Not relevant as nlohmann/json has no external components, as stated in JLS-34
+  - **Answer**: Not relevant as nlohmann/json has no external components, as stated in JLS-34
 - List of fixes applied to developed code since last release
-    - **Answer**: Provided in JLS-29
+  - **Answer**: Provided in JLS-29
 - List of fixes for developed code that are outstanding, not applied yet
-    - **Answer**: Provided in JLS-11
+  - **Answer**: Provided in JLS-11
 - List of XYZ faults outstanding (O)
-    - **Answer**: Provided in JLS-11 and JLS-28
+  - **Answer**: Provided in JLS-11
 - List of XYZ faults fixed since last release (F)
-    - **Answer**: Provided in JLS-29
+  - **Answer**: Provided in JLS-29
 - List of XYZ faults mitigated since last release (M)
-    - **Answer**: Provided in JLS-29
+  - **Answer**: Provided in JLS-29
 
 **Confidence scoring**
 
@@ -71,34 +71,34 @@ Each iteration, we should improve the algorithm based on measurements
 **Checklist**
 
 - How many faults have we identified in XYZ?
-    - **Answer**: 
+  - **Answer**: 
 - How many unknown faults remain to be found, based on the number that have
   been processed so far?
-    - **Answer**: 
+  - **Answer**: 
 - Is there any possibility that people could be motivated to manipulate the
   lists (e.g. bug bonus or pressure to close).
-    - **Answer**: 
+  - **Answer**: 
 - How many faults may be unrecorded (or incorrectly closed, or downplayed)?
-    - **Answer**: 
+  - **Answer**: 
 - How do we collect lists of bugs and known vulnerabilities from components?
-    - **Answer**: 
+  - **Answer**: 
 - How (and how often) do we check these lists for relevant bugs and known vulnerabilities?
-    - **Answer**: 
+  - **Answer**: 
 - How confident can we be that the lists are honestly maintained?
-    - **Answer**: 
+  - **Answer**: 
 - Could some participants have incentives to manipulate information?
-    - **Answer**: 
+  - **Answer**: 
 - How confident are we that the lists are comprehensive?
-    - **Answer**: 
+  - **Answer**: 
 - Could there be whole categories of bugs/vulnerabilities still undiscovered?
-    - **Answer**: 
+  - **Answer**: 
 - How effective is our triage/prioritisation?
-    - **Answer**: 
+  - **Answer**: 
 - How many components have never been updated?
-    - **Answer**: 
+  - **Answer**: 
 - How confident are we that we could update them?
-    - **Answer**: 
+  - **Answer**: 
 - How confident are we that outstanding fixes do not impact our Expectations?
-    - **Answer**: 
+  - **Answer**: 
 - How confident are we that outstanding fixes do not address Misbehaviours?
-    - **Answer**: 
+  - **Answer**: 

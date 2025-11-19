@@ -46,12 +46,12 @@ sufficient.
 **Evidence**
 
 - List of Expectations
-    - **Answer**: 
+  - **Answer**: 
 - Argument of sufficiency for break-down of expected behaviour for all 
   Expectations
-    - **Answer**: 
+  - **Answer**: 
 - Validation and verification of expected behaviour
-    - **Answer**: 
+  - **Answer**: 
 
 
 **Confidence scoring**
@@ -63,26 +63,26 @@ and that the resulting system and tests are validated by appropriate strategies.
 **Checklist**
 
 - How has the list of Expectations varied over time?
-    - **Answer**: 
+  - **Answer**: 
 - How confident can we be that this list is comprehensive?
-    - **Answer**: 
+  - **Answer**: 
 - Could some participants have incentives to manipulate information?
-    - **Answer**: 
+  - **Answer**: 
 - Could there be whole categories of Expectations still undiscovered?
-    - **Answer**: 
+  - **Answer**: 
 - Can we identify Expectations that have been understood but not specified?
-    - **Answer**: 
+  - **Answer**: 
 - Can we identify some new Expectations, right now?
-    - **Answer**: 
+  - **Answer**: 
 - How confident can we be that this list covers all critical requirements?
-    - **Answer**: 
+  - **Answer**: 
 - How comprehensive is the list of tests?
-    - **Answer**: 
+  - **Answer**: 
 - Is every Expectation covered by at least one implemented test?
-    - **Answer**: 
+  - **Answer**: 
 - Are there any Expectations where we believe more coverage would help?
-    - **Answer**: 
+  - **Answer**: 
 - How do dependencies affect Expectations, and are their properties verifiable?
-    - **Answer**: 
+  - **Answer**: 
 - Are input analysis findings from components, tools, and data considered in relation to Expectations?
-    - **Answer**: 
+  - **Answer**: 

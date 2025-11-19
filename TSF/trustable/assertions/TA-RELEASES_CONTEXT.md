@@ -37,15 +37,16 @@ to TT-RESULTS analysis.
 **Evidence**
 
 - list of reproducible SHAs
-    - **Answer**: 
+  - **Answer**: 
 - list of non-reproducible elements with:
   - explanation and justification
+    - **Answer**: 
   - details of what is not reproducible
     - **Answer**: 
 - evidence of configuration management for build instructions and infrastructure
-    - **Answer**: 
+  - **Answer**: 
 - evidence of repeatable builds
-    - **Answer**: 
+  - **Answer**: 
 
 **Confidence scoring**
 
@@ -64,15 +65,15 @@ R / (R + N + B + M / (M + X))
 
 - How confident are we that all components are taken from within our
   controlled environment?
-    - **Answer**: 
+  - **Answer**: 
 - How confident are we that all of the tools we are using are also under our
   control?
-    - **Answer**: 
+  - **Answer**: 
 - Are our builds repeatable on a different server, or in a different context?
-    - **Answer**: 
+  - **Answer**: 
 - How sure are we that our builds don't access the internet?
-    - **Answer**: 
+  - **Answer**: 
 - How many of our components are non-reproducible?
-    - **Answer**: 
+  - **Answer**: 
 - How confident are we that our reproducibility check is correct?
-    - **Answer**: 
+  - **Answer**: 
