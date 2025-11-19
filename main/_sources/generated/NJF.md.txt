@@ -3209,6 +3209,11 @@ _No Historic Data Found_
 
 ---
 
+An improper value is either an empty value within a non-empty array or an inadmissible token according to RFC8259.
+
+
+---
+
 ### NJF-05.6 
 
 The service provided by the nlohmann/json library accepts nested arrays.
@@ -5588,6 +5593,13 @@ _None_
 **Graph:**
 
 _No Historic Data Found_
+
+
+---
+
+An improper name is either not a string (i.e. any other token, or empty), or a string-candidate which does not fulfil the requirements of RFC8259.
+
+An improper value is either empty or an inadmissible token according to RFC8259.
 
 
 ---

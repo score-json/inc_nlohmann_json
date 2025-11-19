@@ -112,9 +112,9 @@ The distribution of scores for all nodes across the graph.
 
 | Category | Count |
 |----------|-------|
-|statements|235|
+|statements|251|
 |reviewed statements|0|
-|unreviewed statements|235|
+|unreviewed statements|251|
 |orphaned statements|1|
 |statements with evidence|44|
 |evidence|174|

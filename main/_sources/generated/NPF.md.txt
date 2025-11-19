@@ -1204,6 +1204,11 @@ _No Historic Data Found_
 
 ---
 
+Although numbers are parsed without throwing an exception, they are not parsed accurately.
+
+
+---
+
 ### NPF-02.12 
 
 The service provided by the nlohmann/json library ignores capitalisation of the exponent.
