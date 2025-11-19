@@ -34,7 +34,7 @@ references:
 
 A `JSONTestsuiteReference` bundles a selected C++ test section together with one or more external JSON test files and uses both as the reference content. It is designed for tests that read JSON samples from files, allowing the documentation to present the JSON data alongside the test code. The external JSON files are fetched from a known test-data branch and must be referenced by the selected C++ section.
 
-The reference extends `CPPTestReference` by supplementing the identified C++ section with the content of the listed JSON files. It combines the test code and JSON data into a single payload for hashing, ensuring that the evidence reflects both the test harness and its inputs. In the documentation, each JSON file is shown either in full or replaced by a link if the file is very large, and the relevant C++ section is rendered below; an optional description appears above the content. If enabled, the reference filters lines in the displayed C++ section that mention other JSON files not included in the selection, while the underlying content still includes the full section text used for hashing.les.
+The reference extends `CPPTestReference` by supplementing the identified C++ section with the content of the listed JSON files. It combines the test code and JSON data into a single payload for hashing, ensuring that the evidence reflects both the test harness and its inputs. In the documentation, each JSON file is shown either in full or replaced by a link if the file is very large, and the relevant C++ section is rendered below; an optional description appears above the content. If enabled, the reference filters lines in the displayed C++ section that mention other JSON files not included in the selection, while the underlying content still includes the full section text used for hashing.
 
 For the `JSONTestsuiteReference` the expected configuration is:
 ```
@@ -71,7 +71,7 @@ references:
 ---
 ```
 
-Additionally, it is possible, but not mandatory, to give a `description` and an `overload` parameter. The full example including all parameters is:
+Additionally, it is possible, but not mandatory, to provide a `description` and an `overload` parameter. The full example including all parameters is:
 ```
 ---
 ...
@@ -87,9 +87,9 @@ references:
 
 ## WebReference
 
-The content of a `WebReference` is its url string. This is suitable when the page is expected to change continuously (e.g., dashboards or status pages), but the type of content and its supportive role are considered sufficient if the URL is reachable. An example is `https://introspector.oss-fuzz.com/project-profile?project=json`, where the most recent fuzz-testing report for nlohmann/json is published. Additionally, an optional description can be provided.
+The content of a `WebReference` is its `url` string. This is suitable when the page is expected to change continuously (e.g., dashboards or status pages), but the type of content and its supportive role are considered sufficient if the URL is reachable. An example is `https://introspector.oss-fuzz.com/project-profile?project=json`, where the most recent fuzz-testing report for nlohmann/json is published. Additionally, an optional `description` can be provided.
 
-The reference stores the URL string as its content and presents it directly in the report. If a description is provided, it appears beneath the URL to clarify the relevance of the link. This reference pairs well with availability validators (like `http_response_time`), which can confirm that the page is reachable without relying on the page’s changing text.
+The reference stores the `url` string as its content and presents it directly in the report. If a description is provided, it appears beneath the URL to clarify the relevance of the link. This reference pairs well with availability validators (like `https_response_time`), which can confirm that the page is reachable without relying on the page’s changing text.
 
 For the `WebReference`, an example is:
 ```
@@ -185,7 +185,7 @@ Both `description` and `changelog` are optional arguments.
 
 A `ListOfTestCases` reference produces a markdown overview of all unit tests and nested sections found in the provided directories and files and augments this structure with recent execution environments from a test-results database. This provides a concise map of the test suite together with information on where it has been executed successfully or with skips.
 
-The reference scans files matching the pattern unit-*.cpp to extract TEST_CASE and SECTION names and their nesting, and it formats the results as nested lists to mirror the test structure. It then queries the database of recent test runs to list the compiler and standard combinations that executed all tests without skipping, as well as those where some tests were skipped, and it incorporates these details into the same markdown report. The content returned for hashing is the complete markdown report, which the documentation also renders directly.
+The reference scans files matching the pattern `unit-*.cpp` to extract `TEST_CASE` and `SECTION` names and their nesting, and it formats the results as nested lists to mirror the test structure. It then queries the database of recent test runs to list the compiler and standard combinations that executed all tests without skipping, as well as those where some tests were skipped, and it incorporates these details into the same markdown report. The content returned for hashing is the complete markdown report, which the documentation also renders directly.
 
 
 Further, it is assumed that a unit-test-file is structured as
