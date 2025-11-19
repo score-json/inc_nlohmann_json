@@ -359,7 +359,7 @@ Otherwise, the score 1.0 is assigned.
 
 ## did_workflows_fail
 
-The `did_workflows_fail` validator checks the results of GitHub Actions runs for a repository, optionally filtered by event and branch, and produces a binary score indicating whether any runs failed. It constructs a query that lists workflow results matching failure status and then reads the number displayed at the top of the results table. If the number is zero, it returns a score of 1.0 to indicate no failures; otherwise, it returns 0.0. The configuration requires the repository owner and name and may include the branch and event, with “push” as the default event. It is important to enclose all configuration values in quotation marks to ensure the update helper processes them correctly.
+The `did_workflows_fail` validator checks the results of GitHub Actions runs for a repository, optionally filtered by event and branch, and produces a binary score indicating whether any runs failed. It constructs a query that lists workflow results matching failure status and then reads the number displayed at the top of the results table. If the number is zero, it returns a score of 1.0 to indicate no failures; otherwise, it returns 0.0 with a warning. If the GitHub page cannot be reached or the number of failed runs cannot be parsed, the validator returns 0.0 with an error. The configuration requires the repository owner and name and may include the branch and event, with “push” as the default event. It is important to enclose all configuration values in quotation marks to ensure the update helper processes them correctly.
 
 The expected configuration is:
 
