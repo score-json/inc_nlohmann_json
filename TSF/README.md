@@ -221,7 +221,7 @@ The following unusual circumstances can, after careful consideration, justify th
 Some important remarks regarding the process of performing an SME review include:
 
 * Assumptions-of-Use (AoU) items are not to be scored by an SME. These should at some point in time be converted to a regular statement by the integrator, but shall until then remain without SME scores, evidence or references. These automatically contribute with a score of 0 for the time being.
-* Any statement that has supporting statements (child nodes) shall not be scored by an SME. The scores for these shall only comprise of the automatic calculation of the mean of all linked child nodes.
+* Any statement that has supporting statements (child nodes) shall not be scored by an SME. The scores for these shall only comprise of the automatic calculation of the mean of the scores of all linked child nodes.
 * The TSF report is only published for the default branch of a repository. In order to to see TSF documentation for a non-default branch, the reviewer can checkout the branch in a clone and locally generate the report by running the ``TSF/scripts/generate_documentation.sh`` script.
 * Any TSF item that has the ``normative`` parameter set to false shall not be scored by the SME. These are just informational and do not make a statement about the library. Note that the parameter itself shall not be set or changed by the SME, but is defined by the contributor who created the TSF item.
 
