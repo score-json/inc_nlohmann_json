@@ -225,7 +225,7 @@ Some important remarks regarding the process of performing an SME review include
 * The TSF report is only published for the default branch of a repository. In order to to see TSF documentation for a non-default branch, the reviewer can checkout the branch in a clone and locally generate the report by running the ``TSF/scripts/generate_documentation.sh`` script.
 * Any TSF item that has the ``normative`` parameter set to false shall not be scored by the SME. These are just informational and do not make a statement about the project. Note that the parameter itself shall not be set or changed by the SME, but is defined by the contributor who created the TSF item.
 
-For documentation on how to actually perform and SME review, please refer to the following:
+For documentation on how to actually perform a SME review, please refer to the following:
 * https://codethinklabs.gitlab.io/trustable/trustable/trudag/usage.html#reviewing-items 
 * https://codethinklabs.gitlab.io/trustable/trustable/trudag/usage.html#sme-review
 
