@@ -3,9 +3,11 @@ level: 1.1
 normative: false
 ---
 
+(Note: The guidance, evidence, confidence scoring and checklist sections below are copied from [CodeThink's documentation of TSF](https://codethinklabs.gitlab.io/trustable/trustable/trustable/TA.html). However, the answers to each point in the evidence list and checklist are specific to this project.)
+
 **Guidance**
 
-This assertion requires control over all changes to XYZ, including configurations, components, tools, data, documentation, and dependency versions used to build, verify, and validate it.
+This assertion requires control over all changes to nlohmann/json, including configurations, components, tools, data, documentation, and dependency versions used to build, verify, and validate it.
 
 As part of change control, all automated checks must run and pass (e.g., tests, static analysis, lint checks) before accepting proposed changes.
 These checks must be configured against appropriate claims and coding guidelines.
@@ -46,7 +48,7 @@ Ultimately, the trustable controlled process is the only path to production for 
 **Confidence scoring**
 
 Confidence scoring for TA-UPDATES is based on confidence that we have
-control over the changes that we make to XYZ, including its configuration and
+control over the changes that we make to nlohmann/json, including its configuration and
 dependencies.
 
 **Checklist**

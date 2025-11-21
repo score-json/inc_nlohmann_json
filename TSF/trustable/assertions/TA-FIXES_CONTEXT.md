@@ -3,14 +3,16 @@ level: 1.1
 normative: false
 ---
 
+(Note: The guidance, evidence, confidence scoring and checklist sections below are copied from [CodeThink's documentation of TSF](https://codethinklabs.gitlab.io/trustable/trustable/trustable/TA.html). However, the answers to each point in the evidence list and checklist are specific to this project.)
+
 **Guidance**
 
-This assertion is satisfied to the extent that we have identified, triaged, and applied fixes or mitigations to faults in XYZ, as well as to bugs and publicly disclosed vulnerabilities identified in upstream dependencies.
+This assertion is satisfied to the extent that we have identified, triaged, and applied fixes or mitigations to faults in nlohmann/json, as well as to bugs and publicly disclosed vulnerabilities identified in upstream dependencies.
 
-Confidence can be improved by assessing known faults, bugs, and vulnerabilities to establish their relevance and impact for XYZ.
+Confidence can be improved by assessing known faults, bugs, and vulnerabilities to establish their relevance and impact for nlohmann/json.
 An important aspect is documenting how issues are discovered and tracked, including identifying additional Misbehaviours (TA-MISBEHAVIOURS) that may require immediate mitigation measures (including recalls), and how such issues are communicated to users.
 
-In principle, this analysis should include not only the code in XYZ but also its dependencies (all the way down) and the tools and data used to construct the release.
+In principle, this analysis should include not only the code in nlohmann/json but also its dependencies (all the way down) and the tools and data used to construct the release.
 In practice, however, the cost/benefit of this work must be weighed against:
 
 - the volume and quality of available bug and vulnerability reports
@@ -38,7 +40,7 @@ As part of ongoing monitoring, the rate of incoming, resolved, and rejected issu
 - List of outstanding known vulnerabilities still not fixed, with triage/prioritisation based
   on severity/relevance/impact
   - **Answer**: Provided in JLS-30, JLS-33 and AOU-29
-- List of XYZ component versions, showing where a newer version exists upstream
+- List of nlohmann/json component versions, showing where a newer version exists upstream
   - **Answer**: Not relevant since nlohmann/json has no external components, as stated in JLS-34
 - List of component version updates since last release
   - **Answer**: Not relevant as nlohmann/json has no external components, as stated in JLS-34
@@ -46,18 +48,18 @@ As part of ongoing monitoring, the rate of incoming, resolved, and rejected issu
   - **Answer**: Provided in JLS-29
 - List of fixes for developed code that are outstanding, not applied yet
   - **Answer**: Provided in JLS-11
-- List of XYZ faults outstanding (O)
+- List of nlohmann/json faults outstanding (O)
   - **Answer**: Provided in JLS-11
-- List of XYZ faults fixed since last release (F)
+- List of nlohmann/json faults fixed since last release (F)
   - **Answer**: Provided in JLS-29
-- List of XYZ faults mitigated since last release (M)
+- List of nlohmann/json faults mitigated since last release (M)
   - **Answer**: Provided in JLS-29
 
 **Confidence scoring**
 
 Confidence scoring for TA-FIXES can be based on
 
-- some function of [O, F, M] for XYZ
+- some function of [O, F, M] for nlohmann/json
 - number of outstanding relevant bugs from components
 - bug triage results, accounting for undiscovered bugs
 - number of outstanding known vulnerabilities
@@ -70,7 +72,7 @@ Each iteration, we should improve the algorithm based on measurements
 
 **Checklist**
 
-- How many faults have we identified in XYZ?
+- How many faults have we identified in nlohmann/json?
   - **Answer**: None that are relevant for S-CORE's use case of the library.
 - How many unknown faults remain to be found, based on the number that have
   been processed so far?
