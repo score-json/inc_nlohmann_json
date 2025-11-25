@@ -86,7 +86,7 @@ and impact for nlohmann/json, and the sources of risk and issue data identified.
 **Checklist**
 
 - Are there components that are not on the list?
-  - **Answer**: 
+  - **Answer**: No, since nlohmann/json does not use any external components.
 - Are there assessments for all components?
   - **Answer**: 
 - Has an assessment been done for the current version of the component?
@@ -114,6 +114,6 @@ and impact for nlohmann/json, and the sources of risk and issue data identified.
 - Are tool and component tests included in release preparation?
   - **Answer**: 
 - Can patches be applied, and then upstreamed for long-term maintenance?
-  - **Answer**: 
+  - **Answer**: Yes, if ever a misbehaviour is found and patched, then a pull-request to the original nlohmann/json repository can be opened to upstream the changes.
 - Do all dependencies comply with acceptable licensing terms?
-  - **Answer**: 
+  - **Answer**: Yes, the library is licensed under MIT License.
