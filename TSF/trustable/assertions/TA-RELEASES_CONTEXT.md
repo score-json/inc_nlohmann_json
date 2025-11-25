@@ -42,9 +42,9 @@ to TT-RESULTS analysis.
   - **Answer**: JLS-14 ensures that the SHA value of the nlohmann/json library used within eclipse-score/inc_nlohmann_json coincides with the SHA value provided by Niels Lohmann (for the same version).
 - list of non-reproducible elements with:
   - explanation and justification
-    - **Answer**: There are no non-repoducable elements.
+    - **Answer**: There are no non-reproducible elements within this project.
   - details of what is not reproducible
-    - **Answer**: There are no non-repoducable elements.
+    - **Answer**: There are no non-reproducible elements within this project.
 - evidence of configuration management for build instructions and infrastructure
   - **Answer**: Provided by JLS-10 and JLS-19.
 - evidence of repeatable builds

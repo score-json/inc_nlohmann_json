@@ -47,9 +47,9 @@ For releases, additional documentation should summarise all changes across the i
 
 - list of components where source code is not available
   - risk analysis
-    - **Answer**: There are no components without source-code within this project.
+    - **Answer**: There are no components without source code within this project.
   - attestations
-    - **Answer**: There are no components without source-code within this project.
+    - **Answer**: There are no components without source code within this project.
 
 **Confidence scoring**
 
