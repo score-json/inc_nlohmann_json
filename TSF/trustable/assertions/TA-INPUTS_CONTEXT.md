@@ -54,13 +54,13 @@ As a result, for example, any binary inputs without reproducible build steps or 
   - Originating project and version
     - **Answer**: The nlohmann/json library has no external components (see JLS-34)
   - Date of assessments and identity of assessors
-    - **Answer**: 
+    - **Answer**: The nlohmann/json library has no external components (see JLS-34)
   - Role of component in nlohmann/json
-    - **Answer**: 
+    - **Answer**: The nlohmann/json library has no external components (see JLS-34)
   - Sources of bug and risk data
-    - **Answer**: 
+    - **Answer**: The nlohmann/json library has no external components (see JLS-34)
   - Potential misbehaviours and risks identified and assessed
-    - **Answer**: 
+    - **Answer**: The nlohmann/json library has no external components (see JLS-34)
 - List of tools used to build and verify nlohmann/json
   - **Answer**: 
 - Record of tool assessments:
