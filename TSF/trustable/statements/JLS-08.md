@@ -11,6 +11,12 @@ references:
     - type: web_content
       url: "https://codethinklabs.gitlab.io/trustable/trustable/methodology.html#documenting-assumptions"
       description: "Definition of Assumptions as part of the methodology"
+evidence:
+    type: https_response_time
+    configuration:
+        target: 2.0
+        urls: "https://eclipse-score.github.io/inc_nlohmann_json/main/generated/trustable_report_for_Software.html"
+            - 
 ---
 
 Each leaf node in the Trustable Graph that is not an Assumption-of-Use (AoU) is scored either based on SME review(s) alone or on a combination of SME review(s) and an automatic validator.
