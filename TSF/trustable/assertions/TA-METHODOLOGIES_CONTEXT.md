@@ -63,7 +63,7 @@ in comparison to the analysed results
 - How are changes to manual processes communicated?
   - **Answer**: Mostly, changes are communicated through updated documentation in the repository and release notes.
 - Are there any exceptions to the processes?
-  - **Answer**: Nothing that is known. 
+  - **Answer**: Known exceptions include automatic dependency updates from Dependabot as well as smaller trivial changes (such as fixing typos in documentation). These are exempted from having to manually create issues and explain the rationale behind the change. 
 - How is evidence of process adherence recorded?
   - **Answer**: Evidence in GitHub; PR histories with reviews and passing checks, issue and advisory discussions, audit trails for documentation and test updates
 - How is the effectiveness of the process evaluated?
