@@ -5,7 +5,7 @@ references:
     - type: web_content
       url: "https://eclipse-score.github.io/inc_nlohmann_json/main/generated/dashboard.html#summary"
       description: "Dashboard showing distributions of evidence scores and SME (subject-matter expert) scores."
-    - type: web_content 
+    - type: project_website
       url: "https://score-json.github.io/json/main/generated/trustable_report_for_Software.html"
       description: "Trustable Compliance Report showing scores for statements."
     - type: web_content
