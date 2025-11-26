@@ -14,7 +14,7 @@ evidence:
             - "./TSF/tests"
     type: https_response_time
     configuration:
-        target: 2.0
+        target_seconds: 2.0
         urls:
             - https://github.com/score-json/json/actions
 level: 1.1
