@@ -76,6 +76,6 @@ R / (R + N + B + M / (M + X))
 - How sure are we that our builds don't access the internet?
   - **Answer**: We are confident that our builds don't access the internet, since there is no "build" of the header-only library.
 - How many of our components are non-reproducible?
-  - **Answer**:  All of our components are reproducable, since we only use a single component, the nlohmann/json library.
+  - **Answer**:  All of our components are reproducible, since we only use a single component, the nlohmann/json library.
 - How confident are we that our reproducibility check is correct?
   - **Answer**: We are very confident that our reproducibility check is correct.
