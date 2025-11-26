@@ -14,4 +14,4 @@ references:
 
 ---
 
-Every release of the nlohmann/json library contains a comprehensive set of attestations, including GitHub pull request approvals, commit sign‑offs, and continuous‑integration test reports (such as coverage reports).
+Every release of the nlohmann/json library contains a comprehensive set of attestations, including GitHub pull request approvals, commit sign‑offs, and continuous‑integration test reports (such as coverage reports, fuzzing report, OpenSSF scorecard report, etc).
