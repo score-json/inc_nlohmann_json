@@ -1,4 +1,6 @@
 ---
+level: 1.1
+normative: true
 references:
     - type: verbose_file
       path: "./TSF/docs/list_of_test_environments.md"
@@ -16,9 +18,7 @@ evidence:
     configuration:
         target_seconds: 2.0
         urls:
-            - https://github.com/score-json/json/actions
-level: 1.1
-normative: true
+            - https://github.com/eclipse-score/inc_nlohmann_json/actions
 ---
 
 A list of tests, which is extracted from the test execution, is provided, along with a list of test environments, a list of fault induction tests and test construction configurations and results.
