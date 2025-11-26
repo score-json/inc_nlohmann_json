@@ -13,4 +13,4 @@ references:
           description: "Single include of the nlohmann/json library"
 ---
 
-All source files of the nlohmann/json library as well as test data are mirrored within eclipse-score/inc_nlohmann_json.
+All source code of the nlohmann/json library is mirrored within eclipse-score/inc_nlohmann_json.
