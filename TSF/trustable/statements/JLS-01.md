@@ -10,4 +10,4 @@ score:
     Erikhu1: 1.0
 ---
 
-The CI pipeline in nlohmann/json executes the unit and integration test suites on each pull request (opened, reopened, synchronized).
+The CI pipeline in the upstream nlohmann/json repository executes the unit and integration test suites on each pull request (opened, reopened, synchronized).

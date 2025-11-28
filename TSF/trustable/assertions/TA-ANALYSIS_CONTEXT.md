@@ -47,7 +47,7 @@ by confirming that test results remain unchanged when no changes are intended.
 - Analysis of failures
   - **Answer**: 
 - Analysis of spikes and trends
-  - **Answer**: 
+  - **Answer**: There is currently no time-series or trend analysis over test or monitoring data; failures and misbehaviours are handled case-by-case.
 - Validation of analysis methods used
   - **Answer**: 
 
@@ -59,35 +59,35 @@ that may indicate problems in development, test, or production.
 **CHECKLIST**
 
 - What fraction of Expectations are covered by the test data?
-  - **Answer**: 
+  - **Answer**: The two expectations are JLEX-01 and JLEX-02. Every statement supporting both of the expectations is ultimately supported by a test, except for WFJ-06. For WFJ-06 it is impossible to provide a direct tests, since this is a statement on infinitely many cases. Indirect tests are provided by the rejection of ill-formed json data.
 - What fraction of Misbehaviours are covered by the monitored indicator data?
-  - **Answer**: 
+  - **Answer**: Currently none, because there is no implemented monitoring of deployed instances yet. This is a future integrator responsibility (see AoU-09, AoU-18 and AoU-19).
 - How confident are we that the indicator data are accurate and timely?
-  - **Answer**: 
+  - **Answer**: No indicator data are collected (see the previous question).
 - How reliable is the monitoring process?
-  - **Answer**: 
+  - **Answer**: See the previous question.
 - How well does the production data correlate with our test data?
-  - **Answer**: 
+  - **Answer**: Due to the general nature of the library, there are no production data.
 - Are we publishing our data analysis?
-  - **Answer**: 
+  - **Answer**: Analyses of test environments and reported misbehaviours are published in the TSF documentation (via list_of_test_environments.md and nlohmann_misbehaviors_comments.md), but there is currently no published analysis of production monitoring data.
 - Are we comparing and analysing production data vs test?
-  - **Answer**: 
+  - **Answer**: There are no production data.
 - Are our results getting better, or worse?
-  - **Answer**: 
+  - **Answer**: There are no explicit quantitative trends that indicate whether results are improving or degrading over time.
 - Are we addressing spikes/regressions?
-  - **Answer**: 
+  - **Answer**: . There is currently no monitored indicator data, so spikes in indicator trends are not tracked. However, any failing tests in CI are investigated and fixed, and fuzz-testing results in the original nlohmann/json repository are analysed and addressed.
 - Do we have sensible/appropriate target failure rates?
-  - **Answer**: 
+  - **Answer**: No explicit numeric failure-rate targets are defined. The implicit target is that the CI test suite passes and known misbehaviours remain within an acceptable, manually monitored range.
 - Do we need to check the targets?
-  - **Answer**: 
+  - **Answer**: For the unit and integration tests, no dedicated target exist. Since the fuzz testing runs and is investigated in the original nlohmann/json, there is no need to check the target.
 - Are we achieving the targets?
-  - **Answer**: 
+  - **Answer**: For the unit and integration tests, yes. The achieving of the targets for the fuzz-testing is evaluated within the original nlohmann/json.
 - Are all underlying assumptions and target conditions for the analysis specified?
   - **Answer**: 
 - Have the underlying assumptions been verified using known good data?
-  - **Answer**: 
+  - **Answer**:  Key assumptions and conditions for analysing test data and misbehaviours are documented in the TSF scripts and documentation (e.g. capture_test_data_memory_sensitive.py, generate_list_of_tests.py, generate_list_of_misbehaviours.py, and the supporting statements such as JLS-17 and JLS-26). However, a complete, consolidated specification of all analysis assumptions, in particular for monitoring-based indicators and explicit target failure rates, is not yet available.
 - Has the Misbehaviour identification process been verified using known bad data?
-  - **Answer**: 
+  - **Answer**: Misbehaviours discovered via fuzzing and user-reported issues in nlohmann/json are captured and summarised in JLS-26, which implicitly validates parts of the identification process. There is, however, no automatic process for the identification of misbehaviours. 
 - Are results shown to be reproducible?
-  - **Answer**: 
+  - **Answer**: CI workflows use pinned containers and GitHub Actions to stabilise the environment, and a dedicated ci_reproducible_tests target exists to run a reproducible subset of tests, but not all tests are fully reproducible. See 
 

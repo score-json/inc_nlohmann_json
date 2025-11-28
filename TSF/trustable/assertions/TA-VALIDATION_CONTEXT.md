@@ -32,9 +32,9 @@ A strategy to generate appropriate data addresses quantity, quality, and selecti
 **Evidence**
 
 - Test results from per-change tests
-  - **Answer**: 
+  - **Answer**: Provided in JLS-01.
 - Test results from scheduled tests as time series
-  - **Answer**: 
+  - **Answer**: Provided in JLS-22.
 
 **Confidence scoring**
 
@@ -44,9 +44,9 @@ results for all expected tests (both pass / fail and performance).
 **Checklist**
 
 - Is the selection of tests correct?
-  - **Answer**: 
+  - **Answer**: The upstream nlohmann/json test suite plus the additional TSF-related tests cover the behaviours captured in the Expectations (JLEX-01, JLEX-02). However, they cannot cover all conceivable misbehaviours.
 - Are the tests executed enough times?
-  - **Answer**: 
+  - **Answer**: Yes, tests run on each pull request and push via the CI workflows (JLS-01) and additionally on a daily schedule in inc_nlohmann_json (JLS-22).
 - How confident are we that all test results are being captured?
   - **Answer**: 
 - Can we look at any individual test result, and establish what it relates to?
