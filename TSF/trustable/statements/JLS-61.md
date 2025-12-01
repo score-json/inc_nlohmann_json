@@ -10,7 +10,7 @@ evidence:
         configuration:
                 target_seconds: 2
                 urls:
-                    - "https://github.com/nlohmann/json/blob/develop/.github/workflows/ubuntu.yml"
+                    - "https://github.com/nlohmann/json/blob/55f93686c01528224f448c19128836e7df245f72/.github/workflows/ubuntu.yml"
 ---
 
 Any Github Actions used in the testing process are pinned to specific commit SHAs to ensure consistent action behavior across runs.
