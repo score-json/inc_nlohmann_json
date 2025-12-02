@@ -39,7 +39,8 @@ _None_
 |2025-11-24 08:25:25|0.00 |0.00 |0.00 |
 |2025-11-24 15:01:45|0.00 |0.00 |0.00 |
 |2025-11-25 14:22:48|0.00 |0.00 |0.00 |
-|2025-11-25 15:11:39.187586|0.00 |0.00 |0.00 |
+|2025-11-26 12:04:09|0.00 |0.00 |0.00 |
+|2025-12-02 14:59:02.372129|0.00 |0.00 |0.00 |
 
 
 
@@ -178,7 +179,8 @@ _None_
 |2025-11-24 08:25:25|0.00 |0.00 |0.00 |0.00 |0.00 |
 |2025-11-24 15:01:45|0.00 |0.00 |0.00 |0.00 |0.00 |
 |2025-11-25 14:22:48|0.00 |0.00 |0.00 |0.00 |0.00 |
-|2025-11-25 15:11:39.187586|0.00 |0.00 |0.00 |0.00 |0.00 |
+|2025-11-26 12:04:09|0.00 |0.00 |0.00 |0.00 |0.00 |
+|2025-12-02 14:59:02.372129|0.00 |0.00 |0.00 |0.00 |0.00 |
 
 
 
@@ -287,10 +289,9 @@ Confidence in the nlohmann/json library is measured based on results of analysis
 
 | Item  | Summary  | Score  | Status  |
 | --- | --- | --- | --- |
-| [JLS-08](JLS.md#jls-08)  | Each leaf node in the Trustable Graph that is not an Assumption-of-Use (AoU) is scored either based on SME review(s) alone or on a combination of SME review(s) and an automatic validator. | 0.00 | ⨯ Item Reviewed<br>⨯ Link Reviewed |
-| [JLS-09](JLS.md#jls-09)  | Scores within the TSF documentation are reasonably, systematically and repeatably accumulated. | 0.00 | ⨯ Item Reviewed<br>⨯ Link Reviewed |
+| [JLS-08](JLS.md#jls-08)  | Each statement within the TSF documentation is scored based on SME reviews or automatic validation functions. (TODO) | 0.00 | ⨯ Item Reviewed<br>⨯ Link Reviewed |
+| [JLS-09](JLS.md#jls-09)  | Scores within the TSF documentation are reasonably, systematically and repeatably accumulated. (TODO) | 0.00 | ⨯ Item Reviewed<br>⨯ Link Reviewed |
 | [JLS-20](JLS.md#jls-20)  | A github workflow of eclipse-score/inc_nlohmann_json saves the history of scores in the trustable graph to derive trends. | 0.00 | ⨯ Item Reviewed<br>⨯ Link Reviewed |
-| [JLS-37](JLS.md#jls-37)  | High-level statements are decomposed into smaller, recursive statements. | 0.00 | ⨯ Item Reviewed<br>⨯ Link Reviewed |
 
 
 
@@ -308,14 +309,15 @@ _None_
 
 ![No Image](figs/TA-CONFIDENCE.svg)
 
-|date-time|TA-CONFIDENCE|JLS-08|JLS-09|JLS-20|JLS-37|
-|-|-|-|-|-|-|
-|2025-11-19 13:45:36|0.00 |0.00 |0.00 |0.00 |N/A|
-|2025-11-20 10:55:40|0.00 |0.00 |0.00 |0.00 |N/A|
-|2025-11-24 08:25:25|0.00 |0.00 |0.00 |0.00 |N/A|
-|2025-11-24 15:01:45|0.00 |0.00 |0.00 |0.00 |N/A|
-|2025-11-25 14:22:48|0.00 |0.00 |0.00 |0.00 |0.00 |
-|2025-11-25 15:11:39.187586|0.00 |0.00 |0.00 |0.00 |0.00 |
+|date-time|TA-CONFIDENCE|JLS-08|JLS-09|JLS-20|
+|-|-|-|-|-|
+|2025-11-19 13:45:36|0.00 |0.00 |0.00 |0.00 |
+|2025-11-20 10:55:40|0.00 |0.00 |0.00 |0.00 |
+|2025-11-24 08:25:25|0.00 |0.00 |0.00 |0.00 |
+|2025-11-24 15:01:45|0.00 |0.00 |0.00 |0.00 |
+|2025-11-25 14:22:48|0.00 |0.00 |0.00 |0.00 |
+|2025-11-26 12:04:09|0.00 |0.00 |0.00 |0.00 |
+|2025-12-02 14:59:02.372129|0.00 |0.00 |0.00 |0.00 |
 
 
 
@@ -346,7 +348,7 @@ The process itself should be analysed to determine score maturity, with meta-ana
 **Evidence**
 
 - Confidence scores from other TA items
-  - **Answer**: Provided in JLS-08, JLS-09 and JLS-37
+  - **Answer**: 
 
 **Confidence scoring**
 
@@ -356,13 +358,13 @@ scores given to Statements
 **Checklist**
 
 - What is the algorithm for combining/comparing the scores?
-  - **Answer**: The algorithm behind the scoring in given in JLS-09
+  - **Answer**: 
 - How confident are we that this algorithm is fit for purpose?
-  - **Answer**: We are confident that the scoring algorithm is fit for purpose and is aligned with the TSF methodology described (see also JLS-09). However, at the moment, the statements require a larger number of SME reviewers to profit from the law-of-large-numbers and arrive at statistically significant scores.
+  - **Answer**: 
 - What are the trends for each score?
-  - **Answer**: At the moment, there are no trends as all statements have the review-status 'unreviewed'. However, the infrastructure for saving history of scores is already in place (see JLS-20).
+  - **Answer**: 
 - How well do our scores correlate with external feedback signals?
-  - **Answer**: Such correlation can not be measured yet due to missing data.
+  - **Answer**:
 
 
 ---
@@ -433,7 +435,8 @@ _None_
 |2025-11-24 08:25:25|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
 |2025-11-24 15:01:45|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
 |2025-11-25 14:22:48|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
-|2025-11-25 15:11:39.187586|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
+|2025-11-26 12:04:09|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
+|2025-12-02 14:59:02.372129|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
 
 
 
@@ -569,7 +572,8 @@ _None_
 |2025-11-24 08:25:25|0.00 |0.00 |
 |2025-11-24 15:01:45|0.00 |0.00 |
 |2025-11-25 14:22:48|0.00 |0.00 |
-|2025-11-25 15:11:39.187586|0.00 |0.00 |
+|2025-11-26 12:04:09|0.00 |0.00 |
+|2025-12-02 14:59:02.372129|0.00 |0.00 |
 
 
 
@@ -684,7 +688,8 @@ _None_
 |2025-11-24 08:25:25|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
 |2025-11-24 15:01:45|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
 |2025-11-25 14:22:48|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
-|2025-11-25 15:11:39.187586|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
+|2025-11-26 12:04:09|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
+|2025-12-02 14:59:02.372129|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
 
 
 
@@ -832,7 +837,8 @@ _None_
 |2025-11-24 08:25:25|0.00 |
 |2025-11-24 15:01:45|0.00 |
 |2025-11-25 14:22:48|0.00 |
-|2025-11-25 15:11:39.187586|0.00 |
+|2025-11-26 12:04:09|0.00 |
+|2025-12-02 14:59:02.372129|0.00 |
 
 
 
@@ -982,7 +988,8 @@ _None_
 |2025-11-24 08:25:25|0.00 |0.00 |
 |2025-11-24 15:01:45|0.00 |0.00 |
 |2025-11-25 14:22:48|0.00 |0.00 |
-|2025-11-25 15:11:39.187586|0.00 |0.00 |
+|2025-11-26 12:04:09|0.00 |0.00 |
+|2025-12-02 14:59:02.372129|0.00 |0.00 |
 
 
 
@@ -1146,7 +1153,8 @@ _None_
 |2025-11-24 08:25:25|0.00 |0.00 |0.00 |
 |2025-11-24 15:01:45|0.00 |0.00 |0.00 |
 |2025-11-25 14:22:48|0.00 |0.00 |0.00 |
-|2025-11-25 15:11:39.187586|0.00 |0.00 |0.00 |
+|2025-11-26 12:04:09|0.00 |0.00 |0.00 |
+|2025-12-02 14:59:02.372129|0.00 |0.00 |0.00 |
 
 
 
@@ -1242,13 +1250,7 @@ Manual methodologies applied for the nlohmann/json library by contributors, and 
 
 | Item  | Summary  | Score  | Status  |
 | --- | --- | --- | --- |
-| [JLS-13](JLS.md#jls-13)  | For changes that affect the behaviour or public API of the nlohmann/json library, contributors manually update the library documentation and locally rebuild it for verification. | 0.00 | ⨯ Item Reviewed<br>⨯ Link Reviewed |
-| [JLS-36](JLS.md#jls-36)  | Updates of the eclipse-score/inc_nlohmann_json repository are carried out in accordance with the defined and documented update process in TSF/README.md. | 0.00 | ⨯ Item Reviewed<br>⨯ Link Reviewed |
-| [JLS-40](JLS.md#jls-40)  | The manual process for reporting vulnerabilities in the nlohmann/json library is well defined and documented in the project's security policy and vulnerability reporting template. | 0.00 | ⨯ Item Reviewed<br>⨯ Link Reviewed |
-| [JLS-41](JLS.md#jls-41)  | The manual process for extending the nlohmann/json library's test suite is well-defined and documented, such that code coverage remains at (or close to) 100% when fixes or other non-trivial changes are proposed. | 0.00 | ⨯ Item Reviewed<br>⨯ Link Reviewed |
-| [JLS-42](JLS.md#jls-42)  | All manual pull requests to the nlohmann/json repository that introduce non-trivial changes are expected to explain the rationale for the proposed change and to link to an existing issue, in accordance with the project's contribution guidelines. | 0.00 | ⨯ Item Reviewed<br>⨯ Link Reviewed |
-| [JLS-43](JLS.md#jls-43)  | Feature requests for the nlohmann/json repository are raised in the project's GitHub discussions and are actively reviewed and answered by the maintainer. | 0.00 | ⨯ Item Reviewed<br>⨯ Link Reviewed |
-| [JLS-44](JLS.md#jls-44)  | The manual process for reporting bugs in the nlohmann/json library is well defined and documented in the project's contribution guidelines and bug report template. | 0.00 | ⨯ Item Reviewed<br>⨯ Link Reviewed |
+| [JLS-13](JLS.md#jls-13)  | The S-Core methodologies are followed in eclipse-score/inc_nlohmann_json. | 0.00 | ⨯ Item Reviewed<br>⨯ Link Reviewed |
 
 
 
@@ -1266,14 +1268,15 @@ _None_
 
 ![No Image](figs/TA-METHODOLOGIES.svg)
 
-|date-time|TA-METHODOLOGIES|JLS-13|JLS-36|JLS-40|JLS-41|JLS-42|JLS-43|JLS-44|
-|-|-|-|-|-|-|-|-|-|
-|2025-11-19 13:45:36|0.00 |0.00 |N/A|N/A|N/A|N/A|N/A|N/A|
-|2025-11-20 10:55:40|0.00 |0.00 |N/A|N/A|N/A|N/A|N/A|N/A|
-|2025-11-24 08:25:25|0.00 |0.00 |N/A|N/A|N/A|N/A|N/A|N/A|
-|2025-11-24 15:01:45|0.00 |0.00 |N/A|N/A|N/A|N/A|N/A|N/A|
-|2025-11-25 14:22:48|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
-|2025-11-25 15:11:39.187586|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
+|date-time|TA-METHODOLOGIES|JLS-13|
+|-|-|-|
+|2025-11-19 13:45:36|0.00 |0.00 |
+|2025-11-20 10:55:40|0.00 |0.00 |
+|2025-11-24 08:25:25|0.00 |0.00 |
+|2025-11-24 15:01:45|0.00 |0.00 |
+|2025-11-25 14:22:48|0.00 |0.00 |
+|2025-11-26 12:04:09|0.00 |0.00 |
+|2025-12-02 14:59:02.372129|0.00 |0.00 |
 
 
 
@@ -1309,15 +1312,15 @@ Any resulting changes from reviews must follow change control, regardless of who
 **Evidence**
 
 - Manual process documentation
-  - **Answer**: Manual processes relevant for nlohmann/json have been identified and documented (see JLS-36, 40, 41, 42, 43 and 44).
+  - **Answer**: 
 - References to methodologies applied as part of these processes
-  - **Answer**: The corresponding references are given for each statement (see JLS-36, 40, 41, 42, 43 and 44).
+  - **Answer**: 
 - Results of applying the processes
-  - **Answer**: Results include reviewed and merged pull requests, maintained high test coverage, published security advisories and resolved issues, updated documentation on json.nlohmann.me (see JLS-36, 40, 41, 42, 43 and 44).
+  - **Answer**: 
 - Criteria used to confirm that the processes were applied correctly
-  - **Answer**: The criteria are given in the documentation (see JLS-36, 40, 41, 42, 43 and 44).
+  - **Answer**: 
 - Review records for results
-  - **Answer**: Review records are provided by GitHub pull-request reviews and comments, issue and advisory discussions, as well as release notes describing behavioural and documentation changes (see JLS-36, 40, 41, 42, 43 and 44).
+  - **Answer**: 
 
 **Confidence scoring**
 
@@ -1329,25 +1332,25 @@ in comparison to the analysed results
 **Checklist**
 
 - Are the identified gaps documented clearly to justify using a manual process?
-  - **Answer**: Manual processes are introduced where automation is not feasible and are clearly documented. While no explicit justification for each manual step is provided, the rationale is generally clear from the surrounding context.
+  - **Answer**: 
 - Are the goals for each process clearly defined?
-  - **Answer**: Yes. For the manual processes that were found the goals are clearly defined in the corresponding documentation. The goals include ensuring that user-facing documentation accurately reflect behavioural and API changes, correctly handling bug and vulnerability reports, and keeping the test suite at (or close to) 100% coverage for non-trivial changes.
+  - **Answer**: 
 - Is the sequence of procedures documented in an unambiguous manner?
-  - **Answer**: Largely yes. Where necessary, examples and templates make the expected sequence explicit.
+  - **Answer**: 
 - Can improvements to the processes be suggested and implemented?
-  - **Answer**: Improvements are proposed via GitHub issues or pull request.
+  - **Answer**: 
 - How frequently are processes changed?
-  - **Answer**: Process changes are infrequent and usually happen with a new nlohmann/json release, when a need for improvement is identified. 
+  - **Answer**: 
 - How are changes to manual processes communicated?
-  - **Answer**: Mostly, changes are communicated through updated documentation in the repository and release notes.
+  - **Answer**: 
 - Are there any exceptions to the processes?
-  - **Answer**: Known exceptions include automatic dependency updates from Dependabot as well as smaller trivial changes (such as fixing typos in documentation). These are exempted from having to manually create issues and explain the rationale behind the change. 
+  - **Answer**: 
 - How is evidence of process adherence recorded?
-  - **Answer**: Evidence in GitHub; PR histories with reviews and passing checks, issue and advisory discussions, audit trails for documentation and test updates
+  - **Answer**: 
 - How is the effectiveness of the process evaluated?
-  - **Answer**: Effectiveness is evaluated indirectly via stable releases, test coverage, and documentation quality.
+  - **Answer**: 
 - Is ongoing training required to follow these processes?
-  - **Answer**: No formal training is required, but contributors are expected to be familiar with the contribution guidelines and security policy.
+  - **Answer**:
 
 
 ---
@@ -1394,7 +1397,8 @@ _None_
 |2025-11-24 08:25:25|0.00 |0.00 |0.00 |0.00 |0.00 |
 |2025-11-24 15:01:45|0.00 |0.00 |0.00 |0.00 |0.00 |
 |2025-11-25 14:22:48|0.00 |0.00 |0.00 |0.00 |0.00 |
-|2025-11-25 15:11:39.187586|0.00 |0.00 |0.00 |0.00 |0.00 |
+|2025-11-26 12:04:09|0.00 |0.00 |0.00 |0.00 |0.00 |
+|2025-12-02 14:59:02.372129|0.00 |0.00 |0.00 |0.00 |0.00 |
 
 
 
@@ -1579,7 +1583,8 @@ _None_
 |2025-11-24 08:25:25|0.00 |0.00 |0.00 |
 |2025-11-24 15:01:45|0.00 |0.00 |0.00 |
 |2025-11-25 14:22:48|0.00 |0.00 |0.00 |
-|2025-11-25 15:11:39.187586|0.00 |0.00 |0.00 |
+|2025-11-26 12:04:09|0.00 |0.00 |0.00 |
+|2025-12-02 14:59:02.372129|0.00 |0.00 |0.00 |
 
 
 
@@ -1704,7 +1709,8 @@ _None_
 |2025-11-24 08:25:25|0.00 |0.00 |
 |2025-11-24 15:01:45|0.00 |0.00 |
 |2025-11-25 14:22:48|0.00 |0.00 |
-|2025-11-25 15:11:39.187586|0.00 |0.00 |
+|2025-11-26 12:04:09|0.00 |0.00 |
+|2025-12-02 14:59:02.372129|0.00 |0.00 |
 
 
 
@@ -1817,7 +1823,8 @@ _None_
 |2025-11-24 08:25:25|0.00 |0.00 |
 |2025-11-24 15:01:45|0.00 |0.00 |
 |2025-11-25 14:22:48|0.00 |0.00 |
-|2025-11-25 15:11:39.187586|0.00 |0.00 |
+|2025-11-26 12:04:09|0.00 |0.00 |
+|2025-12-02 14:59:02.372129|0.00 |0.00 |
 
 
 
@@ -1920,7 +1927,8 @@ _None_
 |2025-11-24 08:25:25|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
 |2025-11-24 15:01:45|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
 |2025-11-25 14:22:48|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
-|2025-11-25 15:11:39.187586|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
+|2025-11-26 12:04:09|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
+|2025-12-02 14:59:02.372129|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
 
 
 
@@ -2032,7 +2040,8 @@ _None_
 |2025-11-24 08:25:25|0.00 |0.00 |0.00 |
 |2025-11-24 15:01:45|0.00 |0.00 |0.00 |
 |2025-11-25 14:22:48|0.00 |0.00 |0.00 |
-|2025-11-25 15:11:39.187586|0.00 |0.00 |0.00 |
+|2025-11-26 12:04:09|0.00 |0.00 |0.00 |
+|2025-12-02 14:59:02.372129|0.00 |0.00 |0.00 |
 
 
 

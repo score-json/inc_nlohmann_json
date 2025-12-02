@@ -75,12 +75,12 @@ This presents the compliance for the _JSON-Library Statements_ (JLS) in tabular 
 | [JLS-05](JLS.md#jls-05)  | The nlohmann/json library is widely used and actively maintained; bugs and misbehaviours are tracked publicly and transparently. | 0.00 | ⨯ Item Reviewed<br>✔ All Children Linked |
 | [JLS-06](JLS.md#jls-06)  | Pull requests in the nlohmann/json repository are merged only after code review. | 0.00 | ⨯ Item Reviewed<br>✔ All Children Linked |
 | [JLS-07](JLS.md#jls-07)  | The develop branch of nlohmann/json is protected, i.e. no direct commits are possible. | 0.00 | ⨯ Item Reviewed<br>✔ All Children Linked |
-| [JLS-08](JLS.md#jls-08)  | Each leaf node in the Trustable Graph that is not an Assumption-of-Use (AoU) is scored either based on SME review(s) alone or on a combination of SME review(s) and an automatic validator. | 0.00 | ⨯ Item Reviewed<br>✔ All Children Linked |
-| [JLS-09](JLS.md#jls-09)  | Scores within the TSF documentation are reasonably, systematically and repeatably accumulated. | 0.00 | ⨯ Item Reviewed<br>✔ All Children Linked |
+| [JLS-08](JLS.md#jls-08)  | Each statement within the TSF documentation is scored based on SME reviews or automatic validation functions. (TODO) | 0.00 | ⨯ Item Reviewed<br>✔ All Children Linked |
+| [JLS-09](JLS.md#jls-09)  | Scores within the TSF documentation are reasonably, systematically and repeatably accumulated. (TODO) | 0.00 | ⨯ Item Reviewed<br>✔ All Children Linked |
 | [JLS-10](JLS.md#jls-10)  | Every release of nlohmann/json includes source code, build instructions, tests and attestations. (TODO: Test result summary) | 0.00 | ⨯ Item Reviewed<br>✔ All Children Linked |
 | [JLS-11](JLS.md#jls-11)  | Outstanding bugs or misbehaviours are analyzed within eclipse-score/inc_nlohmann_json to determine whether they are relevant for S-CORE's use cases of the nlohmann/json library. | 0.00 | ⨯ Item Reviewed<br>✔ All Children Linked |
 | [JLS-12](JLS.md#jls-12)  | The nlohmann/json repository has well-defined community standards, including a contribution guideline and a security policy. | 0.00 | ⨯ Item Reviewed<br>✔ All Children Linked |
-| [JLS-13](JLS.md#jls-13)  | For changes that affect the behaviour or public API of the nlohmann/json library, contributors manually update the library documentation and locally rebuild it for verification. | 0.00 | ⨯ Item Reviewed<br>✔ All Children Linked |
+| [JLS-13](JLS.md#jls-13)  | The S-Core methodologies are followed in eclipse-score/inc_nlohmann_json. | 0.00 | ⨯ Item Reviewed<br>✔ All Children Linked |
 | [JLS-14](JLS.md#jls-14)  | The SHA value of the nlohmann/json library in use within eclipse-score/inc_nlohmann_json coincides with the SHA value provided by Niels Lohmann for that version. | 0.00 | ⨯ Item Reviewed<br>✔ All Children Linked |
 | [JLS-16](JLS.md#jls-16)  | A list of tests, which is extracted from the test execution, is provided, along with a list of test environments. | 0.00 | ⨯ Item Reviewed<br>✔ All Children Linked |
 | [JLS-17](JLS.md#jls-17)  | A github workflow calculates the fraction of expectations covered by tests in eclipse-score/inc_nlohmann_json (TODO). | 0.00 | ⨯ Item Reviewed<br>✔ All Children Linked |
@@ -102,13 +102,6 @@ This presents the compliance for the _JSON-Library Statements_ (JLS) in tabular 
 | [JLS-33](JLS.md#jls-33)  | Outstanding CVEs are triaged in the nlohmann/json repository. | 0.00 | ⨯ Item Reviewed<br>✔ All Children Linked |
 | [JLS-34](JLS.md#jls-34)  | The nlohmann/json library has no external components or dependencies besides the C++ standard components. | 0.00 | ⨯ Item Reviewed<br>✔ All Children Linked |
 | [JLS-35](JLS.md#jls-35)  | Pull requests in the nlohmann/json repository are merged only after running CI-tests and successfully passing the pipeline. | 0.00 | ⨯ Item Reviewed<br>✔ All Children Linked |
-| [JLS-36](JLS.md#jls-36)  | Updates of the eclipse-score/inc_nlohmann_json repository are carried out in accordance with the defined and documented update process in TSF/README.md. | 0.00 | ⨯ Item Reviewed<br>✔ All Children Linked |
-| [JLS-37](JLS.md#jls-37)  | High-level statements are decomposed into smaller, recursive statements. | 0.00 | ⨯ Item Reviewed<br>✔ All Children Linked |
-| [JLS-40](JLS.md#jls-40)  | The manual process for reporting vulnerabilities in the nlohmann/json library is well defined and documented in the project's security policy and vulnerability reporting template. | 0.00 | ⨯ Item Reviewed<br>✔ All Children Linked |
-| [JLS-41](JLS.md#jls-41)  | The manual process for extending the nlohmann/json library's test suite is well-defined and documented, such that code coverage remains at (or close to) 100% when fixes or other non-trivial changes are proposed. | 0.00 | ⨯ Item Reviewed<br>✔ All Children Linked |
-| [JLS-42](JLS.md#jls-42)  | All manual pull requests to the nlohmann/json repository that introduce non-trivial changes are expected to explain the rationale for the proposed change and to link to an existing issue, in accordance with the project's contribution guidelines. | 0.00 | ⨯ Item Reviewed<br>✔ All Children Linked |
-| [JLS-43](JLS.md#jls-43)  | Feature requests for the nlohmann/json repository are raised in the project's GitHub discussions and are actively reviewed and answered by the maintainer. | 0.00 | ⨯ Item Reviewed<br>✔ All Children Linked |
-| [JLS-44](JLS.md#jls-44)  | The manual process for reporting bugs in the nlohmann/json library is well defined and documented in the project's contribution guidelines and bug report template. | 0.00 | ⨯ Item Reviewed<br>✔ All Children Linked |
 
 ## Compliance for NJF 
 This presents the compliance for the _No JSON Faults_ (NJF) in tabular form.
@@ -332,6 +325,6 @@ This presents the compliance for _Well Formed JSON_ (WFJ) in tabular form.
 _Generated for: Software_
 
 * _Repository root: /home/runner/work/inc_nlohmann_json/inc_nlohmann_json_
-* _Commit SHA: 6fbfaf38321307bb160ba255c4493c447a61f5ef_
-* _Commit date/time: 2025-11-25 14:22:48 UTC_
-* _Commit tag: 6fbfaf3_
+* _Commit SHA: f61e53be2bba6d0e091a9bbe4252190e5e5f8019_
+* _Commit date/time: 2025-11-26 12:04:09 UTC_
+* _Commit tag: f61e53b_
