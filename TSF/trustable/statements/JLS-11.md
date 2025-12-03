@@ -4,7 +4,7 @@ normative: true
 references:
         - type: web_content
           url: "https://github.com/eclipse-score/inc_nlohmann_json/blob/save_historical_data/TSF/misbehaviours.md"
-          description: "List of outstanding bugs as well as fixes for developed code that are outstanding, not yet applied."
+          description: "List of outstanding bugs as well as fixes for developed code that are not yet applied."
 evidence:
     type: check_issues
     configuration:

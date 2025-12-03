@@ -4,7 +4,7 @@ normative: true
 references:
         - type: web_content
           url: "https://github.com/nlohmann/json/community"
-          description: "List of defined community standards in nlohmann/json"
+          description: "List of defined community standards for the nlohmann/json repository."
 score:
     Jonas-Kirchhoff: 1.0
     Erikhu1: 1.0

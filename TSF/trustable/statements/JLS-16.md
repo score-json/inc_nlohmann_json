@@ -4,7 +4,7 @@ normative: true
 references:
     - type: verbose_file
       path: "./TSF/docs/list_of_test_environments.md"
-      comment: "The list of all test-cases together with their execution environments"
+      comment: "The list of all test cases together with their execution environments."
 evidence:
     type: check_list_of_tests
     configuration: 
