@@ -112,7 +112,7 @@ This file provides an assessment of all third-party tools used in the developmen
 - **Role**: Coverity Scan is a hosted static analysis service that regularly analyzes the nlohmann/json code base for potential defects. The nlohmann/json repo has a dedicated Coverity Scan entry (linked via the “Coverity Scan Build Status” badge in `README.md`), where findings are listed and tracked in a web dashboard.
 - **Potential Misbehaviours**: Could miss bugs (false negatives) or report non-issues (false positives)
 - **Severity**: Medium - Missed bugs or misinterpreted reports can affect the quality of the library.
-- **Detectability**: High – Coverity Scan findings are d compared with results from other static analyzers (such as cppcheck and Codacy), compiler warnings, and the behaviour observed in tests and fuzzing. 
+- **Detectability**: High - Coverity Scan findings are compared with results from other static analyzers (such as cppcheck and Codacy), compiler warnings, and the behaviour observed in tests and fuzzing. 
 - **Mitigation**: Multiple static analyzers (cppcheck, clang-tidy, Codacy), extensive testing.
 
 ### cppcheck
