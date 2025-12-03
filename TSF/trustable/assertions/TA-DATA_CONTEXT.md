@@ -27,13 +27,13 @@ Appropriate storage strategies safeguard availability across the product lifecyc
 - Time-stamped and traceable result records for each test execution, linked to associated system under test version and specification references.
   - **Answer**: Provided by JLS-18 and JLS-45.
 - List of monitored indicators, linked to associated specification version references.
-  - **Answer**: Runtime monitoring indicators for deployed instances are not yet implemented and are expected to be defined by the integrator (see AoU-09, AoU-18 and AoU-19).
+  - **Answer**: Runtime monitoring indicators for deployed instances are not yet implemented and are expected to be defined by the integrator (see AOU-09, AOU-18 and AOU-19).
 - Time-stamped and traceable test-derived data for each indicator, linked to associated system under test version and indicator specifications references.
-  - **Answer**: Indicator-level data is not yet collected and should be done by the integrator (see AoU-09)
+  - **Answer**: Indicator-level data is not yet collected and should be done by the integrator (see AOU-09)
 - List of monitored deployments, linked to associated version and configuration references.
-  - **Answer**: Not available. Monitoring of deployed instances should be specified by the integrator (see AoU-09, AoU-18 and AoU-19)
+  - **Answer**: Not available. Monitoring of deployed instances should be specified by the integrator (see AOU-09, AOU-18 and AOU-19)
 - Time-stamped and traceable production data for each indicator, linked to associated deployment metadata and specification references.
-  - **Answer**: Not available. Should be done by the integrator. (see AoU-09, AoU-18 and AoU-19)
+  - **Answer**: Not available. Should be done by the integrator. (see AOU-09, AOU-18 and AOU-19)
 
 **Confidence scoring**
 

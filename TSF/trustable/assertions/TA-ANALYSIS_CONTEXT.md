@@ -61,7 +61,7 @@ that may indicate problems in development, test, or production.
 - What fraction of Expectations are covered by the test data?
   - **Answer**: The two expectations are JLEX-01 and JLEX-02. Every statement supporting both of the expectations is ultimately supported by a test, except for WFJ-06. For WFJ-06 it is impossible to provide a direct tests, since this is a statement on infinitely many cases. Indirect tests are provided by the rejection of ill-formed json data.
 - What fraction of Misbehaviours are covered by the monitored indicator data?
-  - **Answer**: Currently none, because there is no implemented monitoring of deployed instances yet. This is a future integrator responsibility (see AoU-09, AoU-18 and AoU-19).
+  - **Answer**: Currently none, because there is no implemented monitoring of deployed instances yet. This is a future integrator responsibility (see AOU-09, AOU-18 and AOU-19).
 - How confident are we that the indicator data are accurate and timely?
   - **Answer**: No indicator data is collected (see the previous question).
 - How reliable is the monitoring process?
