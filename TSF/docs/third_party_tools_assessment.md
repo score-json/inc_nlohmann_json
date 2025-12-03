@@ -311,7 +311,7 @@ The nlohmann/json project employs a multi validation strategy with multiple redu
 
 ### Tool-specific external documentation
 
-- [doctest – C++ testing framework](https://github.com/doctest/doctest)
+- [doctest documentation](https://github.com/doctest/doctest)
 - [Google Benchmark documentation](https://github.com/google/benchmark)
 - [Hedley – feature detection header](https://github.com/nemequ/hedley)
 - [libFuzzer documentation](https://llvm.org/docs/LibFuzzer.html)
