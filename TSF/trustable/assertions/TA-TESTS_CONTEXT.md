@@ -26,11 +26,11 @@ TA-ITERATIONS.
 **Evidence**
 
 - Test build environment reproducibility
-  - **Answer**: Provided by JLS-46.
+  - **Answer**: Provided by JLS-62.
 - Test build configuration
   - **Answer**: Provided by JLS-16.
 - Test build reproducibility
-  - **Answer**: Provided by JLS-46.
+  - **Answer**: Provided by JLS-62.
 - Test environment configuration
   - **Answer**: Provided by JLS-16.
 
