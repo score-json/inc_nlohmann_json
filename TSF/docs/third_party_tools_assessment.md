@@ -313,7 +313,7 @@ The nlohmann/json project employs a multi validation strategy with multiple redu
 
 - [doctest documentation](https://github.com/doctest/doctest)
 - [Google Benchmark documentation](https://github.com/google/benchmark)
-- [Hedley – feature detection header](https://github.com/nemequ/hedley)
+- [Hedley documentation](https://github.com/nemequ/hedley)
 - [libFuzzer documentation](https://llvm.org/docs/LibFuzzer.html)
 - [Valgrind documentation](https://valgrind.org/docs/manual/manual.html)
 - [MkDocs documentation](https://www.mkdocs.org/)
