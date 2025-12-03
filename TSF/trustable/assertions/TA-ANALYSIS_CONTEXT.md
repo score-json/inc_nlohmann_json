@@ -63,7 +63,7 @@ that may indicate problems in development, test, or production.
 - What fraction of Misbehaviours are covered by the monitored indicator data?
   - **Answer**: Currently none, because there is no implemented monitoring of deployed instances yet. This is a future integrator responsibility (see AoU-09, AoU-18 and AoU-19).
 - How confident are we that the indicator data are accurate and timely?
-  - **Answer**: No indicator data are collected (see the previous question).
+  - **Answer**: No indicator data is collected (see the previous question).
 - How reliable is the monitoring process?
   - **Answer**: See the previous question.
 - How well does the production data correlate with our test data?
@@ -71,17 +71,17 @@ that may indicate problems in development, test, or production.
 - Are we publishing our data analysis?
   - **Answer**: Analyses of test environments and reported misbehaviours are published in the TSF documentation (via list_of_test_environments.md and nlohmann_misbehaviors_comments.md), but there is currently no published analysis of production monitoring data.
 - Are we comparing and analysing production data vs test?
-  - **Answer**: There are no production data.
+  - **Answer**: There is no production data.
 - Are our results getting better, or worse?
   - **Answer**: There are no explicit quantitative trends that indicate whether results are improving or degrading over time.
 - Are we addressing spikes/regressions?
-  - **Answer**: . There is currently no monitored indicator data, so spikes in indicator trends are not tracked. However, any failing tests in CI are investigated and fixed, and fuzz-testing results in the original nlohmann/json repository are analysed and addressed.
+  - **Answer**: There is currently no monitored indicator data, so spikes in indicator trends are not tracked. However, any failing tests in CI are investigated and fixed, and fuzz-testing results in the original nlohmann/json repository are analysed and addressed.
 - Do we have sensible/appropriate target failure rates?
   - **Answer**: No explicit numeric failure-rate targets are defined. The implicit target is that the CI test suite passes and known misbehaviours remain within an acceptable, manually monitored range.
 - Do we need to check the targets?
-  - **Answer**: For the unit and integration tests, no dedicated target exist. Since the fuzz testing runs and is investigated in the original nlohmann/json, there is no need to check the target.
+  - **Answer**: For the unit and integration tests, no dedicated target exist. Since the fuzz testing runs and is investigated in the original nlohmann/json repository, there is no need to check the target.
 - Are we achieving the targets?
-  - **Answer**: For the unit and integration tests, yes. The achieving of the targets for the fuzz-testing is evaluated within the original nlohmann/json.
+  - **Answer**: For the unit and integration tests, yes. The degree of target achievement for the fuzz-testing is evaluated within the original nlohmann/json repository.
 - Are all underlying assumptions and target conditions for the analysis specified?
   - **Answer**: 
 - Have the underlying assumptions been verified using known good data?

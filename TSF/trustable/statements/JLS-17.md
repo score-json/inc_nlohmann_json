@@ -12,7 +12,7 @@ references:
       path: "./TSF/docs/list_of_test_environments.md"
       description: "Documented list of test environments generated from the persistent test-results database."
     - type: verbose_file
-      path: "./TSF/docs/nlohman_misbehaviors_comments.md"
+      path: "./TSF/docs/nlohamann_misbehaviors_comments.md"
       description: "Collected comments and classifications for known misbehaviours of the nlohmann/json library."
 ---
 
