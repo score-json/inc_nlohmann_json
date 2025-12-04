@@ -4,10 +4,10 @@ normative: true
 references:
     - type: project_website
       url: "https://github.com/nlohmann/json/blob/55f93686c01528224f448c19128836e7df245f72/README.md#used-third-party-tools"
-      description: "List of third party tools used to build, test and document nlohmann/json v3.12.0"
+      description: "List of third party tools used to build, test and document nlohmann/json v3.12.0."
     - type: verbose_file
       path: "./TSF/docs/third_party_tools_assessment.md"
-      description: "Safety assessment of third party tools used in nlohmann/json v3.12.0"
+      description: "Safety assessment of third party tools used in nlohmann/json v3.12.0."
 evidence:
     type: https_response_time
     configuration:

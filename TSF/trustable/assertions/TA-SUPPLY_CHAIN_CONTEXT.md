@@ -34,10 +34,10 @@ binaries present within the repositories of the components and tools used.
   - URL of mirrored projects in controlled environment
     - **Answer**: Provided in JLS-23, JLS-49, and complemented by JLS-34. 
   - URL of upstream projects
-    - **Answer**: Provided in JLS-23, JLS-49.
+    - **Answer**: Provided in JLS-23 and JLS-49.
 - successful build of nlohmann/json from source
   - without access to external source projects
-    - **Answer**: As a header-only library, the nlohmann/json library requires no compilation. For build of test suite, see JLS-49.
+    - **Answer**: As a header-only library, the nlohmann/json library requires no compilation. For the build of the test suite, see JLS-49.
   - without access to cached data
     - **Answer**: The library and test suite build require no cached data. CMake configuration runs from scratch, generating all artifacts deterministically as shown in ubuntu.yml workflow clean builds.
 - update logs for mirrored projects
