@@ -5,6 +5,13 @@ The misbehaviours are compiled from github issues of the nlohmann/json repositor
 
 ## Open issues
 
+### [#5023](https://github.com/nlohmann/json/issues/5023)
+- **Title:** std::map and std::unordered_map serialization broken for keys of type std::u16string
+- **State:** OPEN
+- **Created At:** 2025-12-03T12:02:24Z
+
+
+
 ### [#5012](https://github.com/nlohmann/json/issues/5012)
 - **Title:** error_handler_t::ignore documentation is incorrect
 - **State:** OPEN
