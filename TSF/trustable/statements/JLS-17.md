@@ -4,7 +4,7 @@ normative: true
 references:
     - type: file
       path: "./TSF/scripts/generate_list_of_tests.py"
-      description: "Script that derives the list of test environments from the persistent test-results database and compares it with the documented expectations."
+      description: "Script that derives the list of test environments from the persistent test-results database and compares it to the documented expectations."
     - type: file
       path: "./TSF/scripts/generate_list_of_misbehaviours.py"
       description: "Script that analyses GitHub issues labelled as bugs for nlohmann/json and produces a misbehaviours summary."
