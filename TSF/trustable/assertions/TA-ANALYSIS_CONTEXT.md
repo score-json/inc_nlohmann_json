@@ -43,7 +43,7 @@ by confirming that test results remain unchanged when no changes are intended.
 **Evidence**
 
 - Analysis of test data, including thresholds in relation to appropriate statistical properties.
-  - **Answer**: The analysis of test data is captured with JLS-17, but there is no explicit quantitative thresholds defined.
+  - **Answer**: The analysis of test data is captured by JLS-17, but no explicit quantitative thresholds are defined.
 - Analysis of failures
   - **Answer**: Provided by JLS-17 and JLS-26.
 - Analysis of spikes and trends
