@@ -41,7 +41,7 @@ binaries present within the repositories of the components and tools used.
   - without access to cached data
     - **Answer**: The library and test suite build require no cached data. CMake configuration runs from scratch, generating all artifacts deterministically as shown in ubuntu.yml workflow clean builds.
 - update logs for mirrored projects
-  - **Answer**: Updates of nlohmann/json are documented in release notes (see JLS-13). The update process of eclipse-score/inc_nlohmann_json is detailed in TSF/README.md "Update Concept" section.
+  - **Answer**: Updates of nlohmann/json are documented in release notes (see JLS-13). The update process of eclipse-score/inc_nlohmann_json is detailed in the "Update Concept" section of TSF/README.md.
 - mirrors reject history rewrites
   - **Answer**: Protected by GitHub branch protection rules. Force pushes are disabled on main branch. All changes require PR reviews. This prevents history rewrites (see JLS-66).
 - mirroring is configured via infrastructure under direct control
