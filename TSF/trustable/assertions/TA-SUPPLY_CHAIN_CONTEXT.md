@@ -32,9 +32,9 @@ binaries present within the repositories of the components and tools used.
 
 - list of all nlohmann/json components including
   - URL of mirrored projects in controlled environment
-    - **Answer**: 
+    - **Answer**: Provided in JLS-23, JLS-49, and complemented by JLS-34. 
   - URL of upstream projects
-    - **Answer**: 
+    - **Answer**: Provided in JLS-23, JLS-49.
 - successful build of nlohmann/json from source
   - without access to external source projects
     - **Answer**: 
@@ -56,14 +56,14 @@ compromised.
 **Checklist**
 
 - Could there be other components, missed from the list?
-  - **Answer**: 
+  - **Answer**: Yes. The build toolchain is not mirrored (e.g., compilers like GCC and Clang, build tools like Bazel, and CMake, etc). The potential risk of these being deleted or unavailable is however negligible and accepted.
 - Does the list include all toolchain components?
-  - **Answer**: 
+  - **Answer**: See answer above.
 - Does the toolchain include a bootstrap?
-  - **Answer**: 
+  - **Answer**: See answer above.
 - Could the content of a mirrored project be compromised by an upstream change?
-  - **Answer**: 
+  - **Answer**: No. Upstream changes are only introduced into the mirror through manually reviewed merge requests, and not automatically.
 - Are mirrored projects up to date with the upstream project?
-  - **Answer**: 
+  - **Answer**: Yes. As of 4/12/2025 both the nlohmann/json mirror and nlohmann/json_test_data mirror are up to date with the upstream projects.
 - Are mirrored projects based on the correct upstream?
-  - **Answer**: 
+  - **Answer**: Yes.
