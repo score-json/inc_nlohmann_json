@@ -7,7 +7,7 @@ references:
       comment: "The list of all test-cases together with their execution environments"
     - type: website
       url: "https://github.com/eclipse-score/inc_nlohmann_json/actions"
-      description: "Github actions page showing that score-json is using Github host environment."
+      description: "Github actions page showing that eclipse-score/inc_nlohmann_json is using Github host environment."
 evidence:
     type: check_list_of_tests
     configuration: 
