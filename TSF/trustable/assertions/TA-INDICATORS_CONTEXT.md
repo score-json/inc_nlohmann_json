@@ -80,11 +80,11 @@ monitoring mechanisms have been implemented to collect the required data.
 **Checklist**
 
 - How appropriate/thorough are the analyses that led to the indicators?
-  - **Answer**: 
+  - **Answer**: Since no misbehaviours for the use of the library for parsing and verification of JSON data according to RFC8259 have been identified, no warning indicators are implemented.
 - How confident can we be that the list of indicators is comprehensive?
-  - **Answer**: 
+  - **Answer**:  
 - Could there be whole categories of warning indicators still missing?
-  - **Answer**: 
+  - **Answer**:  Yes, there could. Within S-CORE, however, any warning indicator that is not natively implemented within the original nlohmann/json should be implemented in the wrapper defining the interface between the library and the project using it.
 - How has the list of advance warning indicators varied over time?
   - **Answer**: 
 - How confident are we that the indicators are leading/predictive?

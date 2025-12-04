@@ -8,7 +8,7 @@ normative: false
 Although it is practically impossible to specify all of the necessary behaviours
 and required properties for complex software, we must clearly specify the most
 important of these (e.g. where harm could result if given criteria are not met),
-and verify that these are correctly provided by nlohmann/json.
+and verify that these are correctly provided by the nlohmann/json library.
 
 **Guidance**
 
@@ -48,12 +48,12 @@ sufficient.
 **Evidence**
 
 - List of Expectations
-  - **Answer**: 
+  - **Answer**: The Expectations are provided via JLEX-01 and JLEX-02.
 - Argument of sufficiency for break-down of expected behaviour for all 
   Expectations
-  - **Answer**: 
+  - **Answer**: # TODO: Not sure how to argument here. There is now way to prove that.
 - Validation and verification of expected behaviour
-  - **Answer**: 
+  - **Answer**: The validation and verification of expected behaviour is done via the evidence provided for all the statements below JLEX-01 and JLEX-02 in the trustable graph. 
 
 
 **Confidence scoring**
@@ -65,26 +65,26 @@ and that the resulting system and tests are validated by appropriate strategies.
 **Checklist**
 
 - How has the list of Expectations varied over time?
-  - **Answer**: 
+  - **Answer**: The list of Expectations is taken from [here](https://eclipse-score.github.io/score/main/modules/baselibs/json/docs/requirements/index.html). The development can be retraced using git.
 - How confident can we be that this list is comprehensive?
-  - **Answer**: 
+  - **Answer**: The list of Expectations has been collected amongst the stakeholders in S-CORE, so we are very confident that the list is comprehensive.
 - Could some participants have incentives to manipulate information?
-  - **Answer**: 
+  - **Answer**: We cannot imagine any incentive to manipulate information.
 - Could there be whole categories of Expectations still undiscovered?
-  - **Answer**: 
+  - **Answer**: It is currently unlikely that there are whole categories of Expectations still undiscovered.
 - Can we identify Expectations that have been understood but not specified?
-  - **Answer**: 
+  - **Answer**: There are currently no Expectations that have been understood but not specified.
 - Can we identify some new Expectations, right now?
-  - **Answer**: 
+  - **Answer**: Currently we cannot identify any new Expectations.
 - How confident can we be that this list covers all critical requirements?
-  - **Answer**: 
-- How comprehensive is the list of tests?
-  - **Answer**: 
+  - **Answer**: We are very confident that this list covers all critical requirements.
+- How comprehensive is the list of tests? 
+  - **Answer**: Currently, the branch coverage is 93.865% and the line coverage is 99.186%, cf. JLS-27. Therefore, we deem the list of tests to be very comprehensive.
 - Is every Expectation covered by at least one implemented test?
-  - **Answer**: 
+  - **Answer**: Yes, both of the Expectations are covered by at least one implemented test.
 - Are there any Expectations where we believe more coverage would help?
-  - **Answer**: 
+  - **Answer**: No, the coverage is already on a high level and no further gains are expected by further increasing the coverage.
 - How do dependencies affect Expectations, and are their properties verifiable?
-  - **Answer**: 
+  - **Answer**: The nlohmann/json library does not have external dependencies, so that there are none that could possibly affect the Expectations.
 - Are input analysis findings from components, tools, and data considered in relation to Expectations?
-  - **Answer**: 
+  - **Answer**: Not that we know of.
