@@ -44,7 +44,7 @@ to TT-RESULTS analysis.
   - explanation and justification
     - **Answer**: The only elements which are not reproducible are 8 CMake integration tests. The list of these, together with explanation and justification, is provided in TSF/docs/non_reproducible_tests.md.
   - details of what is not reproducible
-    - **Answer**: TODO fill
+    - **Answer**: The only elements which are not reproducible are 8 CMake integration tests. The list of these, together with explanation and justification, is provided in TSF/docs/non_reproducible_tests.md.
 - evidence of configuration management for build instructions and infrastructure
   - **Answer**: Provided by JLS-10 and JLS-19.
 - evidence of repeatable builds
