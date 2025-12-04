@@ -8,6 +8,9 @@ references:
   - type: website
     url: "https://github.com/nlohmann/json/issues/2324"
     description: "Issue in the nlohmann/json repository addressing tests that were non-reproducible."
+  - type: verbose_file
+    path: "./TSF/docs/non_reproducible_tests.md"
+    description: "Overview and description of 8 non-reproducible CMake integration tests."
 evidence:
   type: https_response_time
   configuration:
