@@ -69,7 +69,7 @@ that may indicate problems in development, test, or production.
 - How well does the production data correlate with our test data?
   - **Answer**: Due to the general nature of the library, there are no production data.
 - Are we publishing our data analysis?
-  - **Answer**: Analyses of test environments and reported misbehaviours are published in the TSF documentation (via list_of_test_environments.md and nlohmann_misbehaviors_comments.md), but there is currently no published analysis of production monitoring data.
+  - **Answer**: Analyses of test environments and reported misbehaviours are published in the TSF documentation (via list_of_test_environments.md and nlohmann_misbehaviours_comments.md), but there is currently no published analysis of production monitoring data.
 - Are we comparing and analysing production data vs test?
   - **Answer**: There is no production data.
 - Are our results getting better, or worse?
