@@ -32,7 +32,7 @@ A strategy to generate appropriate data addresses quantity, quality, and selecti
 **Evidence**
 
 - Test results from per-change tests
-  - **Answer**: Provided in JLS-01.
+  - **Answer**: CI runs the tests on each change (JLS-01), and their results are stored in the persistent test results database (JLS-18, JLS-45).
 - Test results from scheduled tests as time series
   - **Answer**: Provided in JLS-22.
 
@@ -50,7 +50,7 @@ results for all expected tests (both pass / fail and performance).
 - How confident are we that all test results are being captured?
   - **Answer**: 
 - Can we look at any individual test result, and establish what it relates to?
-  - **Answer**: 
+  - **Answer**: For CI runs, yes. Each stored test result is linked to a specific CI workflow run (repo, run_id, run_attempt) and timestamp in workflow_info, so we can relate it back to the corresponding GitHub workflow execution, code revision and CI configuration (see JLS-18).
 - Can we trace from any test result to the expectation it relates to?
   - **Answer**: 
 - Can we identify precisely which environment (software and hardware) were used?
@@ -58,13 +58,13 @@ results for all expected tests (both pass / fail and performance).
 - How many pass/fail results would be expected, based on the scheduled tests?
   - **Answer**: 
 - Do we have all of the expected results?
-  - **Answer**: 
+  - **Answer**: Yes, for the selected workflows we typically have results for each run potential gaps arise when CI runs are skipped or cancelled, or due to storge limitation 
 - Do we have time-series data for all of those results?
-  - **Answer**: 
+  - **Answer**: Stored test results are timestamped and can be queried as a time series (JLS-18, JLS-45), but due to storage limits we only keep a truncated history rather than a complete time series over the whole project lifetime.
 - If there are any gaps, do we understand why?
-  - **Answer**: 
+  - **Answer**: Yes, gaps arise by design from the memory sensitive storage strategy (only initial snapshots and relevant changes are kept, see TSF/scripts/README.md and JLS-45), from the fixed size limits on the persistent database, and from the fact that we do not collect runtime monitoring data for deployed instances yet (see AOU-09, AOU-18 and AOU-19).
 - Are the test validation strategies credible and appropriate?
-  - **Answer**: 
+  - **Answer**: Yes, the upstream nlohmann/json test suite is extensive and is complemented by additional TSF-related tests. These tests are executed on each change and on a daily schedule via CI (JLS-01, JLS-22), and their results are stored and analysed through TA-DATA and TA-ANALYSIS.
 - What proportion of the implemented tests are validated?
   - **Answer**: 
 - Have the tests been verified using known good and bad data?
