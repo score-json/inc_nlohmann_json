@@ -653,7 +653,7 @@ The contribution to the score of a parent item by a suspiciously linked child is
 </thead>
 <tbody>
 <tr class="row-even"><td><p><a class="reference internal" href="JLS.html#jls-01"><span class="std std-ref">JLS-01</span></a></p></td>
-<td><p>The CI pipeline in nlohmann/json executes the unit and integration test suites on each pull request (opened, reopened, synchronized).</p></td>
+<td><p>The CI pipeline in the upstream nlohmann/json repository executes the unit and integration test suites on each pull request (opened, reopened, synchronized).</p></td>
 <td><p>0.00</p></td>
 <td><p>⨯ Item Reviewed<br>✔ All Children Linked</p></td>
 </tr>
@@ -728,12 +728,12 @@ The contribution to the score of a parent item by a suspiciously linked child is
 <td><p>⨯ Item Reviewed<br>✔ All Children Linked</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="JLS.html#jls-17"><span class="std std-ref">JLS-17</span></a></p></td>
-<td><p>A github workflow calculates the fraction of expectations covered by tests in eclipse-score/inc_nlohmann_json (TODO).</p></td>
+<td><p>Failure rates of CI tests are analysed for both the upstream nlohmann/json and the eclipse-score/inc_nlohmann_json repositories, and any high failure rates are reasonably justified.</p></td>
 <td><p>0.00</p></td>
 <td><p>⨯ Item Reviewed<br>✔ All Children Linked</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="JLS.html#jls-18"><span class="std std-ref">JLS-18</span></a></p></td>
-<td><p>Results from tests are accurately captured.</p></td>
+<td><p>Results from automated tests for eclipse-score/inc_nlohmann_json are automatically collected from CI-generated JUnit reports into a persistent test results database together with metadata about the executed tests and workflows.</p></td>
 <td><p>0.00</p></td>
 <td><p>⨯ Item Reviewed<br>✔ All Children Linked</p></td>
 </tr>
@@ -748,7 +748,7 @@ The contribution to the score of a parent item by a suspiciously linked child is
 <td><p>⨯ Item Reviewed<br>✔ All Children Linked</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="JLS.html#jls-22"><span class="std std-ref">JLS-22</span></a></p></td>
-<td><p>A github workflow of eclipse-score/inc_nlohmann_json executes the unit tests daily and saves the results as time-series data.</p></td>
+<td><p>A scheduled GitHub workflow in eclipse-score/inc_nlohmann_json triggers the nlohmann/json unit and integration test at least once per day and records their outcomes as time-stamped entries in the persistent test results database.</p></td>
 <td><p>0.00</p></td>
 <td><p>⨯ Item Reviewed<br>✔ All Children Linked</p></td>
 </tr>
@@ -857,67 +857,72 @@ The contribution to the score of a parent item by a suspiciously linked child is
 <td><p>0.00</p></td>
 <td><p>⨯ Item Reviewed<br>✔ All Children Linked</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="JLS.html#jls-47"><span class="std std-ref">JLS-47</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="JLS.html#jls-45"><span class="std std-ref">JLS-45</span></a></p></td>
+<td><p>The storage location, retention limits, and intended use of captured test result data for eclipse-score/inc_nlohmann_json are documented so that the scope and reproducibility of the available test data can be understood.</p></td>
+<td><p>0.00</p></td>
+<td><p>⨯ Item Reviewed<br>✔ All Children Linked</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="JLS.html#jls-47"><span class="std std-ref">JLS-47</span></a></p></td>
 <td><p>The nlohmann/json library only consists of source code in the form of a single header file, and has no binary artifacts.</p></td>
 <td><p>0.00</p></td>
 <td><p>⨯ Item Reviewed<br>✔ All Children Linked</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="JLS.html#jls-48"><span class="std std-ref">JLS-48</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="JLS.html#jls-48"><span class="std std-ref">JLS-48</span></a></p></td>
 <td><p>The nlohmann/json project transparently lists any third party tools used in building, testing and documenting the project.</p></td>
 <td><p>0.00</p></td>
 <td><p>⨯ Item Reviewed<br>✔ All Children Linked</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="JLS.html#jls-49"><span class="std std-ref">JLS-49</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="JLS.html#jls-49"><span class="std std-ref">JLS-49</span></a></p></td>
 <td><p>The eclipse-score/inc_nlohmann_json project mirrors the external nlohmann/json_test_data repository, containing test data used by the unit tests in nlohmann/json, such that the test suite can be executed without internet connectivity.</p></td>
 <td><p>0.00</p></td>
 <td><p>⨯ Item Reviewed<br>✔ All Children Linked</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="JLS.html#jls-50"><span class="std std-ref">JLS-50</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="JLS.html#jls-50"><span class="std std-ref">JLS-50</span></a></p></td>
 <td><p>All third party tools used in nlohmann/json for building, testing and documenting the project are assessed within eclipse-score/inc_nlohmann_json.</p></td>
 <td><p>0.00</p></td>
 <td><p>⨯ Item Reviewed<br>✔ All Children Linked</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="JLS.html#jls-51"><span class="std std-ref">JLS-51</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="JLS.html#jls-51"><span class="std std-ref">JLS-51</span></a></p></td>
 <td><p>All source code of the nlohmann/json library is mirrored within eclipse-score/inc_nlohmann_json.</p></td>
 <td><p>0.00</p></td>
 <td><p>⨯ Item Reviewed<br>✔ All Children Linked</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="JLS.html#jls-52"><span class="std std-ref">JLS-52</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="JLS.html#jls-52"><span class="std std-ref">JLS-52</span></a></p></td>
 <td><p>Releases of the nlohmann/json library contain a comprehensive set of attestations.</p></td>
 <td><p>0.00</p></td>
 <td><p>⨯ Item Reviewed<br>⨯ All Children Linked</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="JLS.html#jls-53"><span class="std std-ref">JLS-53</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="JLS.html#jls-53"><span class="std std-ref">JLS-53</span></a></p></td>
 <td><p>Given the same version of the repository, configuration, and documented environment, the build process shall produce identical single-include header files.</p></td>
 <td><p>0.00</p></td>
 <td><p>⨯ Item Reviewed<br>✔ All Children Linked</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="JLS.html#jls-61"><span class="std std-ref">JLS-61</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="JLS.html#jls-61"><span class="std std-ref">JLS-61</span></a></p></td>
 <td><p>Any Github Actions used in the testing process are pinned to specific commit SHAs to ensure consistent action behavior across runs.</p></td>
 <td><p>0.00</p></td>
 <td><p>⨯ Item Reviewed<br>✔ All Children Linked</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="JLS.html#jls-62"><span class="std std-ref">JLS-62</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="JLS.html#jls-62"><span class="std std-ref">JLS-62</span></a></p></td>
 <td><p>All tests except the ones which are excluded when using the flag “ctest -LE not_reproducible” are reproducible.</p></td>
 <td><p>0.00</p></td>
 <td><p>⨯ Item Reviewed<br>✔ All Children Linked</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="JLS.html#jls-63"><span class="std std-ref">JLS-63</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="JLS.html#jls-63"><span class="std std-ref">JLS-63</span></a></p></td>
 <td><p>Releases of the nlohmann/json library contain commit sign-offs.</p></td>
 <td><p>0.00</p></td>
 <td><p>⨯ Item Reviewed<br>✔ All Children Linked</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="JLS.html#jls-64"><span class="std std-ref">JLS-64</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="JLS.html#jls-64"><span class="std std-ref">JLS-64</span></a></p></td>
 <td><p>Releases of the nlohmann/json library contain Github pull request approvals.</p></td>
 <td><p>0.00</p></td>
 <td><p>⨯ Item Reviewed<br>✔ All Children Linked</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="JLS.html#jls-65"><span class="std std-ref">JLS-65</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="JLS.html#jls-65"><span class="std std-ref">JLS-65</span></a></p></td>
 <td><p>Releases of the nlohmann/json library contain continuous-integration test reports such as coverage reports, fuzzing reports &amp; OpenSSF scorecard reports.</p></td>
 <td><p>0.00</p></td>
 <td><p>⨯ Item Reviewed<br>✔ All Children Linked</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="JLS.html#jls-66"><span class="std std-ref">JLS-66</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="JLS.html#jls-66"><span class="std std-ref">JLS-66</span></a></p></td>
 <td><p>The mirror of nlohmann/json is configured via infrastructure under direct control, and rejects history rewrites.</p></td>
 <td><p>0.00</p></td>
 <td><p>⨯ Item Reviewed<br>✔ All Children Linked</p></td>
@@ -1617,9 +1622,9 @@ The contribution to the score of a parent item by a suspiciously linked child is
 <td><p>⨯ Item Reviewed<br>⨯ All Children Linked</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="TA.html#ta-validation"><span class="std std-ref">TA-VALIDATION</span></a></p></td>
-<td><p>All specified tests are executed repeatedly, under defined conditions in controlled environments, according to specified objectives. (To revisit)</p></td>
+<td><p>All specified tests are executed repeatedly, under defined conditions in controlled environments, according to specified objectives.</p></td>
 <td><p>0.00</p></td>
-<td><p>⨯ Item Reviewed<br>⨯ All Children Linked</p></td>
+<td><p>✔ Item Reviewed<br>⨯ All Children Linked</p></td>
 </tr>
 </tbody>
 </table>
@@ -1897,9 +1902,9 @@ The contribution to the score of a parent item by a suspiciously linked child is
 <p><em>Generated for: Software</em></p>
 <ul class="simple">
 <li><p><em>Repository root: /home/runner/work/inc_nlohmann_json/inc_nlohmann_json</em></p></li>
-<li><p><em>Commit SHA: 748b55a45195563925a98daadab9cc2b5cf27bb9</em></p></li>
-<li><p><em>Commit date/time: 2025-12-05 10:27:57 UTC</em></p></li>
-<li><p><em>Commit tag: 748b55a</em></p></li>
+<li><p><em>Commit SHA: df946d2d12d3dc8b47fc8d6d889b7a6b91fbbd0a</em></p></li>
+<li><p><em>Commit date/time: 2025-12-08 18:23:43 UTC</em></p></li>
+<li><p><em>Commit tag: df946d2</em></p></li>
 </ul>
 </section>
 </section>

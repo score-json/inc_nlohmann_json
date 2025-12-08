@@ -1,0 +1,728 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Failure rate analysis for nlohmann/json Ubuntu CI &#8212; S-CORE NLOHMANN JSON LIBRARY FORK  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=4ae1632d" />
+    <link rel="stylesheet" type="text/css" href="_static/css/score.css?v=940e959b" />
+    <link rel="stylesheet" type="text/css" href="_static/css/score_needs.css?v=e97392eb" />
+    <link rel="stylesheet" type="text/css" href="_static/css/score_design.css?v=d9fd870c" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-needs/common_css/need_style.css?v=92936fa5" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-needs/modern.css?v=803738c0" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="_static/jquery.js?v=5d32c60e"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script src="_static/sphinx-data-viewer/jsonview.bundle.js?v=18cd53c5"></script>
+    <script src="_static/sphinx-data-viewer/jsonview_loader.js?v=f7ff7e7d"></script>
+    <script src="_static/sphinx-needs/libs/html/datatables.min.js?v=8a4aee21"></script>
+    <script src="_static/sphinx-needs/libs/html/datatables_loader.js?v=a2cae175"></script>
+    <script src="_static/sphinx-needs/libs/html/sphinx_needs_collapse.js?v=dca66431"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ci_failure_rate_analysis';</script>
+    <script>
+        DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://score-json.github.io/inc_nlohmann_json/versions.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '';
+        DOCUMENTATION_OPTIONS.show_version_warning_banner =
+            false;
+        </script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="3.12.0" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Eclipse S-CORE</p>
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="introduction/index.html">
+    Introduction
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="concept.html">
+    Concept
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="report.html">
+    Report
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://projects.eclipse.org/projects/automotive.score">
+    Eclipse S-CORE Home-Page
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/eclipse-score" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+</ul></div>
+      
+        <div class="navbar-item">
+<div class="version-switcher__container dropdown pst-js-only">
+  <button id="pst-version-switcher-button-2"
+    type="button"
+    class="version-switcher__button btn btn-sm dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-haspopup="listbox"
+    aria-controls="pst-version-switcher-list-2"
+    aria-label="Version switcher list"
+  >
+    Choose version  <!-- this text may get changed later by javascript -->
+    <span class="caret"></span>
+  </button>
+  <div id="pst-version-switcher-list-2"
+    class="version-switcher__menu dropdown-menu list-group-flush py-0"
+    role="listbox" aria-labelledby="pst-version-switcher-button-2">
+    <!-- dropdown will be populated by javascript on page load -->
+  </div>
+</div></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar hide-on-wide">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="introduction/index.html">
+    Introduction
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="concept.html">
+    Concept
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="report.html">
+    Report
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://projects.eclipse.org/projects/automotive.score">
+    Eclipse S-CORE Home-Page
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/eclipse-score" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+</ul></div>
+        
+          <div class="navbar-item">
+<div class="version-switcher__container dropdown pst-js-only">
+  <button id="pst-version-switcher-button-3"
+    type="button"
+    class="version-switcher__button btn btn-sm dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-haspopup="listbox"
+    aria-controls="pst-version-switcher-list-3"
+    aria-label="Version switcher list"
+  >
+    Choose version  <!-- this text may get changed later by javascript -->
+    <span class="caret"></span>
+  </button>
+  <div id="pst-version-switcher-list-3"
+    class="version-switcher__menu dropdown-menu list-group-flush py-0"
+    role="listbox" aria-labelledby="pst-version-switcher-button-3">
+    <!-- dropdown will be populated by javascript on page load -->
+  </div>
+</div></div>
+        
+      </div>
+    
+  </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Failure rate analysis for nlohmann/json Ubuntu CI</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="failure-rate-analysis-for-nlohmann-json-ubuntu-ci">
+<h1>Failure rate analysis for nlohmann/json Ubuntu CI<a class="headerlink" href="#failure-rate-analysis-for-nlohmann-json-ubuntu-ci" title="Link to this heading">#</a></h1>
+<section id="scope-and-data-source">
+<h2>Scope and data source<a class="headerlink" href="#scope-and-data-source" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Repository:</strong> <code class="docutils literal notranslate"><span class="pre">nlohmann/json</span></code></p></li>
+<li><p><strong>Workflow:</strong> <code class="docutils literal notranslate"><span class="pre">.github/workflows/ubuntu.yml</span></code></p></li>
+<li><p><strong>Date range:</strong> 2025-01-11 – 2025-04-11  (3 months before the release date of the version v3.12.0)</p></li>
+<li><p><strong>Filter:</strong> <code class="docutils literal notranslate"><span class="pre">workflow_file_name:</span> <span class="pre">ubuntu.yml</span></code></p></li>
+</ul>
+<p>GitHub’s “failure rate” counts all non-successful job runs, including cancelled
+jobs (e.g. quickly closed PRs) and infrastructure/tooling problems, not only
+true regressions in the JSON library.</p>
+</section>
+<section id="jobs-with-the-highest-reported-failure-rates">
+<h2>Jobs with the highest reported failure rates<a class="headerlink" href="#jobs-with-the-highest-reported-failure-rates" title="Link to this heading">#</a></h2>
+<p>From the Jobs table (sorted by Failure rate):</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Job (short name)</p></th>
+<th class="head text-right"><p>Failure rate</p></th>
+<th class="head text-right"><p>Avg. run time</p></th>
+<th class="head text-right"><p>Job runs</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">ci_test_coverage_clang</span></code></p></td>
+<td class="text-right"><p><strong>50 %</strong></p></td>
+<td class="text-right"><p>5m 33s</p></td>
+<td class="text-right"><p>6</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">ci_static_analysis_clang</span> <span class="pre">(ci_clang_tidy)</span></code></p></td>
+<td class="text-right"><p><strong>14 %</strong></p></td>
+<td class="text-right"><p>15m 36s</p></td>
+<td class="text-right"><p>247</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">ci_test_coverage</span></code></p></td>
+<td class="text-right"><p><strong>13 %</strong></p></td>
+<td class="text-right"><p>9m 19s</p></td>
+<td class="text-right"><p>248</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">ci_test_clang</span></code></p></td>
+<td class="text-right"><p><strong>12 %</strong></p></td>
+<td class="text-right"><p>6m 12s</p></td>
+<td class="text-right"><p>25</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">ci_test_documentation</span></code></p></td>
+<td class="text-right"><p>4 %</p></td>
+<td class="text-right"><p>59s</p></td>
+<td class="text-right"><p>232</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">ci_static_analysis_clang</span> <span class="pre">(ci_test_clang)</span></code></p></td>
+<td class="text-right"><p>4 %</p></td>
+<td class="text-right"><p>6m 41s</p></td>
+<td class="text-right"><p>214</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">ci_test_gcc</span></code></p></td>
+<td class="text-right"><p>4 %</p></td>
+<td class="text-right"><p>6m 27s</p></td>
+<td class="text-right"><p>245</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">ci_cmake_options</span></code></p></td>
+<td class="text-right"><p>3 %</p></td>
+<td class="text-right"><p>6m 01s</p></td>
+<td class="text-right"><p>248</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">ci_test_standards_clang</span></code></p></td>
+<td class="text-right"><p>3 %</p></td>
+<td class="text-right"><p>2m 50s</p></td>
+<td class="text-right"><p>222</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">ci_test_compiler_gcc</span></code></p></td>
+<td class="text-right"><p>3 %</p></td>
+<td class="text-right"><p>3m 28s</p></td>
+<td class="text-right"><p>227</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The remaining jobs are at or below ~3 %, many at ≈0 %.
+The remaining data can be found on the GitHub <a class="reference external" href="https://github.com/nlohmann/json/actions/metrics/performance?dateRangeType=DATE_RANGE_TYPE_CUSTOM&amp;amp;sort=failureRate&amp;amp;tab=jobs&amp;amp;filters=workflow_file_name%3Aubuntu.yml&amp;amp;range=1736553600000-1744329600000">insights page</a>.</p>
+</section>
+<section id="interpretation-of-the-higher-failure-rates">
+<h2>Interpretation of the higher failure rates<a class="headerlink" href="#interpretation-of-the-higher-failure-rates" title="Link to this heading">#</a></h2>
+<section id="ci-test-coverage-clang">
+<h3><code class="docutils literal notranslate"><span class="pre">ci_test_coverage_clang</span></code><a class="headerlink" href="#ci-test-coverage-clang" title="Link to this heading">#</a></h3>
+<p>This job was a short-lived Clang coverage experiment. In the selected time window it only ran 6 times, several of them as part of the “Fix coverage job” pull request where the coverage script was intentionally broken and iteratively fixed. The failures in these runs are due to coverage tooling / CI configuration issues, not failing unit tests or misbehaviour in the JSON library.</p>
+</section>
+<section id="ci-static-analysis-clang-ci-clang-tidy">
+<h3><code class="docutils literal notranslate"><span class="pre">ci_static_analysis_clang</span> <span class="pre">(ci_clang_tidy)</span></code><a class="headerlink" href="#ci-static-analysis-clang-ci-clang-tidy" title="Link to this heading">#</a></h3>
+<p>In the analyzed period, most failed <code class="docutils literal notranslate"><span class="pre">ci_static_analysis_clang</span> <span class="pre">(ci_clang_tidy)</span></code> runs come from a few PRs that deliberately changed static analysis or CI tooling, plus real bug fix. In particular, PR <a class="reference external" href="https://github.com/nlohmann/json/pull/4654">#4654</a> “Fix ~basic_json causing std::terminate”, PR <a class="reference external" href="https://github.com/nlohmann/json/pull/4663">#4663</a> “Add clang-tidy plugin to convert implicit conversions to explicit ones”, and the change referenced as <a class="reference external" href="https://github.com/nlohmann/json/pull/4701">#4701</a> “Suppress clang-analyzer-webkit.NoUncountedMemberChecker” all show multiple failed Ubuntu workflow runs while their clang-tidy / analyzer configuration was being tuned. Because this job treats every clang-tidy or analyzer diagnostic as a hard error, each new or stricter check initially makes the job fail until the warnings are fixed or suppressed. The resulting ~14 % failure rate is therefore explained by intentional tightening and maintenance of the static-analysis pipeline (plus normal PR iteration), rather than by unexplained or unaddressed misbehaviour in the library itself.</p>
+</section>
+<section id="ci-test-coverage">
+<h3><code class="docutils literal notranslate"><span class="pre">ci_test_coverage</span></code><a class="headerlink" href="#ci-test-coverage" title="Link to this heading">#</a></h3>
+<p>The failure rate of <code class="docutils literal notranslate"><span class="pre">ci_test_coverage</span></code> in this period is explained by intentional CI maintenance rather than unstable tests. A significant portion of failures comes from work on PR <a class="reference external" href="https://github.com/nlohmann/json/pull/4595">#4595</a>, where the coverage workflow itself was updated and repeatedly executed on the <code class="docutils literal notranslate"><span class="pre">fix-coverage</span></code> branch and several intermediate runs failed until the configuration of <code class="docutils literal notranslate"><span class="pre">gcov</span></code>, <code class="docutils literal notranslate"><span class="pre">lcov</span></code>, and the Coveralls uploader was corrected. Additional failures stem from PR <a class="reference external" href="https://github.com/nlohmann/json/pull/4709">#4709</a>, which upgraded the minimum CMake version and introduced new CMake and OpenSSL configurations in CI. During this transition, some <code class="docutils literal notranslate"><span class="pre">ubuntu.yml</span></code> workflow runs, including the coverage job, failed until the revised toolchain setup was stabilized. All changes were merged only after <code class="docutils literal notranslate"><span class="pre">ci_test_coverage</span></code> succeeded, and the underlying unit tests remained consistently green throughout, meaning the elevated failure rate reflects CI/tooling evolution rather than regressions in the JSON library.</p>
+</section>
+<section id="ci-test-clang">
+<h3><code class="docutils literal notranslate"><span class="pre">ci_test_clang</span></code><a class="headerlink" href="#ci-test-clang" title="Link to this heading">#</a></h3>
+<p>Historically, <code class="docutils literal notranslate"><span class="pre">ci_test_clang</span></code> existed as its own standalone job in the Ubuntu workflow. With PR <a class="reference external" href="https://github.com/nlohmann/json/pull/4560">#4560</a> (“Clean up and document project files”), the Ubuntu workflow was reorganized and <code class="docutils literal notranslate"><span class="pre">ci_test_clang</span></code> was moved into the matrix of the <code class="docutils literal notranslate"><span class="pre">ci_static_analysis_clang</span></code> job (i.e. <code class="docutils literal notranslate"><span class="pre">matrix.target:</span> <span class="pre">[ci_test_clang,</span> <span class="pre">ci_clang_tidy,</span> <span class="pre">…]</span></code> in <code class="docutils literal notranslate"><span class="pre">.github/workflows/ubuntu.yml</span></code>). GitHub Actions always uses the workflow file from the commit on which a PR is based, so PRs that branch off <strong>before</strong> <a class="reference external" href="https://github.com/nlohmann/json/pull/4560">#4560</a> and are never rebased still run the <em>old</em> workflow, while newer PRs run the <em>new</em> workflow where <code class="docutils literal notranslate"><span class="pre">ci_test_clang</span></code> only appears as a matrix target of <code class="docutils literal notranslate"><span class="pre">ci_static_analysis_clang</span></code>. This is why <code class="docutils literal notranslate"><span class="pre">ci_test_clang</span></code> shows up in different ways in the metrics, even though it ultimately refers to the same underlying CMake target.</p>
+<p>In this period, <code class="docutils literal notranslate"><span class="pre">ci_test_clang</span></code> ran 25 times and failed 3 times (12%). All failures occurred on PR branches while Clang related code or CI configuration was being adjusted and were resolved before the respective changes were merged. In addition, because <code class="docutils literal notranslate"><span class="pre">ci_test_clang</span></code> was later removed as a standalone Ubuntu job and replaced, the statistics for this job are based on a relatively small number of historical runs. A few legitimate work-in-progress failures therefore translate into a comparatively high percentage, without indicating persistent instability of the Clang test setup.</p>
+</section>
+</section>
+<section id="conclusion">
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Link to this heading">#</a></h2>
+<p>For the selected three-month window before the v3.12.0 release, the Ubuntu CI for <code class="docutils literal notranslate"><span class="pre">nlohmann/json</span></code> shows a small set of jobs with noticeably higher failure rates, but in all cases these can be traced back to intentional CI/tooling work or strict analysis settings, not to undetected misbehaviour of the library itself. All of these high failure rates occurred on PR branches, were visible to developers, and were resolved before merging, while the majority of other jobs (including <code class="docutils literal notranslate"><span class="pre">ci_test_gcc</span></code>, <code class="docutils literal notranslate"><span class="pre">ci_test_standards_*</span></code> and most compiler-matrix entries) remain at or near 0 %. Taken together, this indicates a stable CI system that reacts as intended to real issues and configuration changes, with no evidence of systematic, unexplained spikes in test failures for the Ubuntu workflow.</p>
+</section>
+</section>
+<section id="failure-rate-analysis-for-eclipse-score-inc-nlohmann-json-parent-workflow-ubuntu-ci">
+<h1>Failure rate analysis for eclipse-score/inc_nlohmann_json Parent-Workflow/Ubuntu CI<a class="headerlink" href="#failure-rate-analysis-for-eclipse-score-inc-nlohmann-json-parent-workflow-ubuntu-ci" title="Link to this heading">#</a></h1>
+<section id="id1">
+<h2>Scope and data source<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Repository:</strong> <code class="docutils literal notranslate"><span class="pre">eclipse-score/inc_nlohmann_json</span></code></p></li>
+<li><p><strong>Workflow:</strong> <code class="docutils literal notranslate"><span class="pre">Parent</span> <span class="pre">Workflow</span></code> (top-level CI workflow)</p></li>
+<li><p><strong>Date range:</strong> last 90 days from 08.12.2025</p></li>
+<li><p><strong>Filter:</strong> <code class="docutils literal notranslate"><span class="pre">workflow_file_name:</span> <span class="pre">parent-workflow.yml</span></code></p></li>
+</ul>
+<p>GitHub’s “failure rate” counts all non-successful job runs, including cancelled
+jobs (e.g. quickly closed PRs) and infrastructure/tooling problems, not only
+true regressions in the JSON library.</p>
+</section>
+<section id="id2">
+<h2>Jobs with the highest reported failure rates<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<p>From the Jobs table (sorted by Failure rate):</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Job (short name)</p></th>
+<th class="head text-right"><p>Failure rate</p></th>
+<th class="head text-right"><p>Avg. run time</p></th>
+<th class="head text-right"><p>Job runs</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">Run</span> <span class="pre">Ubuntu</span> <span class="pre">Workflow</span> <span class="pre">/</span> <span class="pre">publish_test_data_success</span></code></p></td>
+<td class="text-right"><p><strong>5%</strong></p></td>
+<td class="text-right"><p>≈ 25 s</p></td>
+<td class="text-right"><p>38</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">Run</span> <span class="pre">Labeler</span> <span class="pre">Workflow</span> <span class="pre">/</span> <span class="pre">clone_missing_labels</span></code></p></td>
+<td class="text-right"><p><strong>3%</strong></p></td>
+<td class="text-right"><p>≈ 6 s</p></td>
+<td class="text-right"><p>38</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>All other Parent-Workflow jobs in the last 90 days report a failure rate of
+<strong>0 %</strong> over 38 runs each. The remaining data can be found on the GitHub <a class="reference external" href="https://github.com/eclipse-score/inc_nlohmann_json/actions/metrics/performance?dateRangeType=DATE_RANGE_TYPE_LAST_90_DAYS&amp;amp;sort=failureRate&amp;amp;tab=jobs&amp;amp;filters=workflow_file_name%3Aparent-workflow.yml">insights page</a>.</p>
+</section>
+<section id="id3">
+<h2>Interpretation of the higher failure rates<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<p>The job <code class="docutils literal notranslate"><span class="pre">publish_test_data_success</span></code> is the final step of the Ubuntu child
+workflow that publishes the persistent test-result database
+(<code class="docutils literal notranslate"><span class="pre">TSF/MemoryEfficientTestResultData.db</span></code>) back to the <code class="docutils literal notranslate"><span class="pre">save_historical_data</span></code>
+branch. The observed 5.26 % failure rate corresponds to 2 failed runs out of
+38, and these failures are limited to this publishing step (e.g. git push /
+branch / permission issues) rather than to the execution of the tests
+themselves.</p>
+<p>The job <code class="docutils literal notranslate"><span class="pre">clone_missing_labels</span></code> belongs to the separate “Labeler Workflow” and
+synchronizes GitHub issue/PR labels for this repository with the organisation
+defaults. Its 2.63 % failure rate corresponds to 1 failed run out of 38,
+and is related to repository/label management rather than to building or
+testing the JSON library.</p>
+</section>
+<section id="id4">
+<h2>Conclusion<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
+<p>Taken together, a period of there months show that all test-related
+jobs in the Parent Workflow have 0 % failures, while the few non-zero
+failure rates are confined to meta-jobs that handle publishing of historical
+test data and label synchronization. This indicates a stable CI setup for
+<code class="docutils literal notranslate"><span class="pre">inc_nlohmann_json</span></code>, with the only reported failures occurring in
+infrastructure-side integration steps rather than in the core test pipeline.</p>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Failure rate analysis for nlohmann/json Ubuntu CI</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scope-and-data-source">Scope and data source</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jobs-with-the-highest-reported-failure-rates">Jobs with the highest reported failure rates</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretation-of-the-higher-failure-rates">Interpretation of the higher failure rates</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ci-test-coverage-clang"><code class="docutils literal notranslate"><span class="pre">ci_test_coverage_clang</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ci-static-analysis-clang-ci-clang-tidy"><code class="docutils literal notranslate"><span class="pre">ci_static_analysis_clang</span> <span class="pre">(ci_clang_tidy)</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ci-test-coverage"><code class="docutils literal notranslate"><span class="pre">ci_test_coverage</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ci-test-clang"><code class="docutils literal notranslate"><span class="pre">ci_test_clang</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#failure-rate-analysis-for-eclipse-score-inc-nlohmann-json-parent-workflow-ubuntu-ci">Failure rate analysis for eclipse-score/inc_nlohmann_json Parent-Workflow/Ubuntu CI</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Scope and data source</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Jobs with the highest reported failure rates</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Interpretation of the higher failure rates</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Conclusion</a></li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+
+  
+  <div class="tocsection editthispage">
+    <a href="https://github.com/score-json/inc_nlohmann_json/edit/main/docs/ci_failure_rate_analysis.md">
+      <i class="fa-solid fa-pencil"></i>
+      
+      
+        
+          Edit on GitHub
+        
+      
+    </a>
+  </div>
+</div>
+
+  <div class="sidebar-secondary-item">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/ci_failure_rate_analysis.md.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

@@ -1,13 +1,13 @@
 
 ### JLS-01 | Reviewed: ⨯ | Score: 0.0 
-The CI pipeline in nlohmann/json executes the unit and integration test suites on each pull request (opened, reopened, synchronized).
+The CI pipeline in the upstream nlohmann/json repository executes the unit and integration test suites on each pull request (opened, reopened, synchronized).
 
 
 **Supported Requests:**
 
 | Item  | Summary  | Score  | Status  |
 | --- | --- | --- | --- |
-| [TA-VALIDATION](TA.md#ta-validation)  | All specified tests are executed repeatedly, under defined conditions in controlled environments, according to specified objectives. (To revisit) | 0.00 | ⨯ Item Reviewed<br>⨯ Link Reviewed |
+| [TA-VALIDATION](TA.md#ta-validation)  | All specified tests are executed repeatedly, under defined conditions in controlled environments, according to specified objectives. | 0.00 | ✔ Item Reviewed<br>⨯ Link Reviewed |
 
 **Supporting Items:**
 
@@ -48,7 +48,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |
 |2025-12-04 15:06:30|0.00 |
 |2025-12-05 10:27:57|0.00 |
-|2025-12-05 11:14:37.495996|0.00 |
+|2025-12-08 18:23:43|0.00 |
+|2025-12-08 19:11:31.180299|0.00 |
 
 
 
@@ -125,7 +126,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |
 |2025-12-04 15:06:30|0.00 |
 |2025-12-05 10:27:57|0.00 |
-|2025-12-05 11:14:37.495996|0.00 |
+|2025-12-08 18:23:43|0.00 |
+|2025-12-08 19:11:31.180299|0.00 |
 
 
 
@@ -174,7 +176,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |
 |2025-12-04 15:06:30|0.00 |
 |2025-12-05 10:27:57|0.00 |
-|2025-12-05 11:14:37.495996|0.00 |
+|2025-12-08 18:23:43|0.00 |
+|2025-12-08 19:11:31.180299|0.00 |
 
 
 
@@ -281,7 +284,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |
 |2025-12-04 15:06:30|0.00 |
 |2025-12-05 10:27:57|0.00 |
-|2025-12-05 11:14:37.495996|0.00 |
+|2025-12-08 18:23:43|0.00 |
+|2025-12-08 19:11:31.180299|0.00 |
 
 
 
@@ -385,7 +389,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |
 |2025-12-04 15:06:30|0.00 |
 |2025-12-05 10:27:57|0.00 |
-|2025-12-05 11:14:37.495996|0.00 |
+|2025-12-08 18:23:43|0.00 |
+|2025-12-08 19:11:31.180299|0.00 |
 
 
 
@@ -440,7 +445,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |
 |2025-12-04 15:06:30|0.00 |
 |2025-12-05 10:27:57|0.00 |
-|2025-12-05 11:14:37.495996|0.00 |
+|2025-12-08 18:23:43|0.00 |
+|2025-12-08 19:11:31.180299|0.00 |
 
 
 
@@ -495,7 +501,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |
 |2025-12-04 15:06:30|0.00 |
 |2025-12-05 10:27:57|0.00 |
-|2025-12-05 11:14:37.495996|0.00 |
+|2025-12-08 18:23:43|0.00 |
+|2025-12-08 19:11:31.180299|0.00 |
 
 
 
@@ -564,7 +571,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |
 |2025-12-04 15:06:30|0.00 |
 |2025-12-05 10:27:57|0.00 |
-|2025-12-05 11:14:37.495996|0.00 |
+|2025-12-08 18:23:43|0.00 |
+|2025-12-08 19:11:31.180299|0.00 |
 
 
 
@@ -619,7 +627,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |
 |2025-12-04 15:06:30|0.00 |
 |2025-12-05 10:27:57|0.00 |
-|2025-12-05 11:14:37.495996|0.00 |
+|2025-12-08 18:23:43|0.00 |
+|2025-12-08 19:11:31.180299|0.00 |
 
 
 
@@ -675,7 +684,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |
 |2025-12-04 15:06:30|0.00 |
 |2025-12-05 10:27:57|0.00 |
-|2025-12-05 11:14:37.495996|0.00 |
+|2025-12-08 18:23:43|0.00 |
+|2025-12-08 19:11:31.180299|0.00 |
 
 
 
@@ -730,7 +740,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |
 |2025-12-04 15:06:30|0.00 |
 |2025-12-05 10:27:57|0.00 |
-|2025-12-05 11:14:37.495996|0.00 |
+|2025-12-08 18:23:43|0.00 |
+|2025-12-08 19:11:31.180299|0.00 |
 
 
 
@@ -785,7 +796,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |
 |2025-12-04 15:06:30|0.00 |
 |2025-12-05 10:27:57|0.00 |
-|2025-12-05 11:14:37.495996|0.00 |
+|2025-12-08 18:23:43|0.00 |
+|2025-12-08 19:11:31.180299|0.00 |
 
 
 
@@ -854,7 +866,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |
 |2025-12-04 15:06:30|0.00 |
 |2025-12-05 10:27:57|0.00 |
-|2025-12-05 11:14:37.495996|0.00 |
+|2025-12-08 18:23:43|0.00 |
+|2025-12-08 19:11:31.180299|0.00 |
 
 
 
@@ -910,7 +923,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |
 |2025-12-04 15:06:30|0.00 |
 |2025-12-05 10:27:57|0.00 |
-|2025-12-05 11:14:37.495996|0.00 |
+|2025-12-08 18:23:43|0.00 |
+|2025-12-08 19:11:31.180299|0.00 |
 
 
 
@@ -8503,14 +8517,15 @@ _None_
 |2025-12-04 13:58:56|0.00 |
 |2025-12-04 15:06:30|0.00 |
 |2025-12-05 10:27:57|0.00 |
-|2025-12-05 11:14:37.495996|0.00 |
+|2025-12-08 18:23:43|0.00 |
+|2025-12-08 19:11:31.180299|0.00 |
 
 
 
 ---
 
 ### JLS-17 | Reviewed: ⨯ | Score: 0.0 
-A github workflow calculates the fraction of expectations covered by tests in eclipse-score/inc_nlohmann_json (TODO).
+Failure rates of CI tests are analysed for both the upstream nlohmann/json and the eclipse-score/inc_nlohmann_json repositories, and any high failure rates are reasonably justified.
 
 
 **Supported Requests:**
@@ -8527,7 +8542,130 @@ _None_
 
 **References:**
 
-_None_
+- `TSF/docs/ci_failure_rate_analysis.md`
+
+
+````md
+# Failure rate analysis for nlohmann/json Ubuntu CI
+
+## Scope and data source
+
+- **Repository:** `nlohmann/json`
+- **Workflow:** `.github/workflows/ubuntu.yml`
+- **Date range:** 2025-01-11 – 2025-04-11  (3 months before the release date of the version v3.12.0)
+- **Filter:** `workflow_file_name: ubuntu.yml`
+
+GitHub’s “failure rate” counts all non-successful job runs, including cancelled
+jobs (e.g. quickly closed PRs) and infrastructure/tooling problems, not only
+true regressions in the JSON library.
+
+## Jobs with the highest reported failure rates
+
+From the Jobs table (sorted by Failure rate):
+
+| Job (short name)                           | Failure rate | Avg. run time | Job runs |
+|:-------------------------------------------|-------------:|--------------:|---------:|
+| `ci_test_coverage_clang`                   | **50 %**     | 5m 33s        |        6 |
+| `ci_static_analysis_clang (ci_clang_tidy)` | **14 %**     | 15m 36s       |      247 |
+| `ci_test_coverage`                         | **13 %**     | 9m 19s        |      248 |
+| `ci_test_clang`                            | **12 %**     | 6m 12s        |       25 |
+| `ci_test_documentation`                    | 4 %          | 59s           |      232 |
+| `ci_static_analysis_clang (ci_test_clang)` | 4 %          | 6m 41s        |      214 |
+| `ci_test_gcc`                              | 4 %          | 6m 27s        |      245 |
+| `ci_cmake_options`                         | 3 %          | 6m 01s        |      248 |
+| `ci_test_standards_clang`                  | 3 %          | 2m 50s        |      222 |
+| `ci_test_compiler_gcc`                     | 3 %          | 3m 28s        |      227 |
+
+
+
+The remaining jobs are at or below ~3 %, many at ≈0 %.
+The remaining data can be found on the GitHub [insights page](https://github.com/nlohmann/json/actions/metrics/performance?dateRangeType=DATE_RANGE_TYPE_CUSTOM&sort=failureRate&tab=jobs&filters=workflow_file_name%3Aubuntu.yml&range=1736553600000-1744329600000).
+
+## Interpretation of the higher failure rates
+
+### `ci_test_coverage_clang`
+
+This job was a short-lived Clang coverage experiment. In the selected time window it only ran 6 times, several of them as part of the "Fix coverage job" pull request where the coverage script was intentionally broken and iteratively fixed. The failures in these runs are due to coverage tooling / CI configuration issues, not failing unit tests or misbehaviour in the JSON library.
+
+### `ci_static_analysis_clang (ci_clang_tidy)`
+
+In the analyzed period, most failed `ci_static_analysis_clang (ci_clang_tidy)` runs come from a few PRs that deliberately changed static analysis or CI tooling, plus real bug fix. In particular, PR [#4654](https://github.com/nlohmann/json/pull/4654) "Fix ~basic_json causing std::terminate", PR [#4663](https://github.com/nlohmann/json/pull/4663) "Add clang-tidy plugin to convert implicit conversions to explicit ones", and the change referenced as [#4701](https://github.com/nlohmann/json/pull/4701) "Suppress clang-analyzer-webkit.NoUncountedMemberChecker" all show multiple failed Ubuntu workflow runs while their clang-tidy / analyzer configuration was being tuned. Because this job treats every clang-tidy or analyzer diagnostic as a hard error, each new or stricter check initially makes the job fail until the warnings are fixed or suppressed. The resulting ~14 % failure rate is therefore explained by intentional tightening and maintenance of the static-analysis pipeline (plus normal PR iteration), rather than by unexplained or unaddressed misbehaviour in the library itself.
+
+### `ci_test_coverage` 
+
+The failure rate of `ci_test_coverage` in this period is explained by intentional CI maintenance rather than unstable tests. A significant portion of failures comes from work on PR [#4595](https://github.com/nlohmann/json/pull/4595), where the coverage workflow itself was updated and repeatedly executed on the `fix-coverage` branch and several intermediate runs failed until the configuration of `gcov`, `lcov`, and the Coveralls uploader was corrected. Additional failures stem from PR [#4709](https://github.com/nlohmann/json/pull/4709), which upgraded the minimum CMake version and introduced new CMake and OpenSSL configurations in CI. During this transition, some `ubuntu.yml` workflow runs, including the coverage job, failed until the revised toolchain setup was stabilized. All changes were merged only after `ci_test_coverage` succeeded, and the underlying unit tests remained consistently green throughout, meaning the elevated failure rate reflects CI/tooling evolution rather than regressions in the JSON library.
+
+
+### `ci_test_clang`
+
+Historically, `ci_test_clang` existed as its own standalone job in the Ubuntu workflow. With PR [#4560](https://github.com/nlohmann/json/pull/4560) (“Clean up and document project files”), the Ubuntu workflow was reorganized and `ci_test_clang` was moved into the matrix of the `ci_static_analysis_clang` job (i.e. `matrix.target: [ci_test_clang, ci_clang_tidy, …]` in `.github/workflows/ubuntu.yml`). GitHub Actions always uses the workflow file from the commit on which a PR is based, so PRs that branch off **before** [#4560](https://github.com/nlohmann/json/pull/4560) and are never rebased still run the *old* workflow, while newer PRs run the *new* workflow where `ci_test_clang` only appears as a matrix target of `ci_static_analysis_clang`. This is why `ci_test_clang` shows up in different ways in the metrics, even though it ultimately refers to the same underlying CMake target.
+
+In this period, `ci_test_clang` ran 25 times and failed 3 times (12%). All failures occurred on PR branches while Clang related code or CI configuration was being adjusted and were resolved before the respective changes were merged. In addition, because `ci_test_clang` was later removed as a standalone Ubuntu job and replaced, the statistics for this job are based on a relatively small number of historical runs. A few legitimate work-in-progress failures therefore translate into a comparatively high percentage, without indicating persistent instability of the Clang test setup.
+
+
+## Conclusion
+
+For the selected three-month window before the v3.12.0 release, the Ubuntu CI for `nlohmann/json` shows a small set of jobs with noticeably higher failure rates, but in all cases these can be traced back to intentional CI/tooling work or strict analysis settings, not to undetected misbehaviour of the library itself. All of these high failure rates occurred on PR branches, were visible to developers, and were resolved before merging, while the majority of other jobs (including `ci_test_gcc`, `ci_test_standards_*` and most compiler-matrix entries) remain at or near 0 %. Taken together, this indicates a stable CI system that reacts as intended to real issues and configuration changes, with no evidence of systematic, unexplained spikes in test failures for the Ubuntu workflow.
+
+
+# Failure rate analysis for eclipse-score/inc_nlohmann_json Parent-Workflow/Ubuntu CI
+
+## Scope and data source
+
+- **Repository:** `eclipse-score/inc_nlohmann_json`
+- **Workflow:** `Parent Workflow` (top-level CI workflow)
+- **Date range:** last 90 days from 08.12.2025
+- **Filter:** `workflow_file_name: parent-workflow.yml`
+
+
+GitHub’s “failure rate” counts all non-successful job runs, including cancelled
+jobs (e.g. quickly closed PRs) and infrastructure/tooling problems, not only
+true regressions in the JSON library.
+
+## Jobs with the highest reported failure rates
+
+From the Jobs table (sorted by Failure rate):
+
+| Job (short name)                                      | Failure rate | Avg. run time | Job runs |
+|:------------------------------------------------------|-------------:|--------------:|---------:|
+| `Run Ubuntu Workflow / publish_test_data_success`     | **5%**       | ≈ 25 s        |      38  |
+| `Run Labeler Workflow / clone_missing_labels`         | **3%**       | ≈ 6 s         |      38  |
+
+All other Parent-Workflow jobs in the last 90 days report a failure rate of
+**0 %** over 38 runs each. The remaining data can be found on the GitHub [insights page](https://github.com/eclipse-score/inc_nlohmann_json/actions/metrics/performance?dateRangeType=DATE_RANGE_TYPE_LAST_90_DAYS&sort=failureRate&tab=jobs&filters=workflow_file_name%3Aparent-workflow.yml).
+
+## Interpretation of the higher failure rates
+
+The job `publish_test_data_success` is the final step of the Ubuntu child
+workflow that publishes the persistent test-result database
+(`TSF/MemoryEfficientTestResultData.db`) back to the `save_historical_data`
+branch. The observed 5.26 % failure rate corresponds to 2 failed runs out of
+38, and these failures are limited to this publishing step (e.g. git push /
+branch / permission issues) rather than to the execution of the tests
+themselves.
+
+The job `clone_missing_labels` belongs to the separate “Labeler Workflow” and
+synchronizes GitHub issue/PR labels for this repository with the organisation
+defaults. Its 2.63 % failure rate corresponds to 1 failed run out of 38,
+and is related to repository/label management rather than to building or
+testing the JSON library.
+
+## Conclusion
+
+Taken together, a period of there months show that all test-related
+jobs in the Parent Workflow have 0 % failures, while the few non-zero
+failure rates are confined to meta-jobs that handle publishing of historical
+test data and label synchronization. This indicates a stable CI setup for
+`inc_nlohmann_json`, with the only reported failures occurring in
+infrastructure-side integration steps rather than in the core test pipeline.
+
+
+````
+- Description: Summary of the CI test failure rates analysis for the upstream nlohmann/json and the eclipse-score/inc_nlohmann_json repositories, including scope, selected time windows, methodology, and interpretation of the results.
+
+
+
+
 
 
 
@@ -8552,14 +8690,15 @@ _None_
 |2025-12-04 13:58:56|0.00 |
 |2025-12-04 15:06:30|0.00 |
 |2025-12-05 10:27:57|0.00 |
-|2025-12-05 11:14:37.495996|0.00 |
+|2025-12-08 18:23:43|0.00 |
+|2025-12-08 19:11:31.180299|0.00 |
 
 
 
 ---
 
 ### JLS-18 | Reviewed: ⨯ | Score: 0.0 
-Results from tests are accurately captured.
+Results from automated tests for eclipse-score/inc_nlohmann_json are automatically collected from CI-generated JUnit reports into a persistent test results database together with metadata about the executed tests and workflows.
 
 
 **Supported Requests:**
@@ -8860,9 +8999,6 @@ if __name__ == "__main__":
     connector.close()
 
 ````
-- Description: This script extracts the test-results from the junit-files generated by ctest and writes these into a data-base.
-
-
 
 
 - `.github/workflows/ubuntu.yml`
@@ -9508,9 +9644,6 @@ jobs:
           path: ubuntu/
 
 ````
-- Description: This workflow runs the tests and generates test-reports as junit-files, which are given to the script capture_test_data.py.
-
-
 
 
 
@@ -9537,7 +9670,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |
 |2025-12-04 15:06:30|0.00 |
 |2025-12-05 10:27:57|0.00 |
-|2025-12-05 11:14:37.495996|0.00 |
+|2025-12-08 18:23:43|0.00 |
+|2025-12-08 19:11:31.180299|0.00 |
 
 
 
@@ -9614,7 +9748,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |
 |2025-12-04 15:06:30|0.00 |
 |2025-12-05 10:27:57|0.00 |
-|2025-12-05 11:14:37.495996|0.00 |
+|2025-12-08 18:23:43|0.00 |
+|2025-12-08 19:11:31.180299|0.00 |
 
 
 
@@ -10038,21 +10173,22 @@ _None_
 |2025-12-04 13:58:56|0.00 |
 |2025-12-04 15:06:30|0.00 |
 |2025-12-05 10:27:57|0.00 |
-|2025-12-05 11:14:37.495996|0.00 |
+|2025-12-08 18:23:43|0.00 |
+|2025-12-08 19:11:31.180299|0.00 |
 
 
 
 ---
 
 ### JLS-22 | Reviewed: ⨯ | Score: 0.0 
-A github workflow of eclipse-score/inc_nlohmann_json executes the unit tests daily and saves the results as time-series data.
+A scheduled GitHub workflow in eclipse-score/inc_nlohmann_json triggers the nlohmann/json unit and integration test at least once per day and records their outcomes as time-stamped entries in the persistent test results database.
 
 
 **Supported Requests:**
 
 | Item  | Summary  | Score  | Status  |
 | --- | --- | --- | --- |
-| [TA-VALIDATION](TA.md#ta-validation)  | All specified tests are executed repeatedly, under defined conditions in controlled environments, according to specified objectives. (To revisit) | 0.00 | ⨯ Item Reviewed<br>⨯ Link Reviewed |
+| [TA-VALIDATION](TA.md#ta-validation)  | All specified tests are executed repeatedly, under defined conditions in controlled environments, according to specified objectives. | 0.00 | ✔ Item Reviewed<br>⨯ Link Reviewed |
 
 **Supporting Items:**
 
@@ -10233,7 +10369,7 @@ jobs:
       artifact_id: "ubuntu-${{ github.sha }}"
 
 ````
-- Description: github workflow running daily and triggering the workflow ubuntu
+- Description: Parent GitHub workflow that is scheduled to run daily and triggers the ubuntu workflow.
 
 
 
@@ -10881,12 +11017,12 @@ jobs:
           path: ubuntu/
 
 ````
-- Description: workflow, in which unit tests are executed with a myriad of test environments and test results are captured.
+- Description: Ubuntu CI workflow that executes the nlohmann/json unit and integration tests in a controlled CI environment.
 
 
 
 
-- `TSF/scripts/capture_test_data.py`
+- `TSF/scripts/capture_test_data_memory_sensitive.py`
 
 
 ````py
@@ -10978,6 +11114,40 @@ def get_all_xml_files(directory: str = '.') -&gt; list[str]:
             result.append(file)
     return result
 
+def get_ctest_target(log_name: str) -&gt; str:
+    # extracts name of ctest target from junit log
+    # log_name has the form "path/to/log/file/target_junit.xml", and target is expected
+    log = log_name.split('/')[-1]
+    return log.removesuffix("_junit.xml")
+
+def find_most_recent_results(target: str, name: str, compiler: str, cpp_standard: str, database: sqlite3.Connection) -&gt; list[int]:
+    cursor = database.cursor()
+    cursor.execute("""
+                    WITH combination AS (
+                        SELECT workflow_info.repo, workflow_info.run_id, workflow_info.run_attempt, workflow_info.time
+                        FROM test_results INNER JOIN workflow_info ON
+                        workflow_info.repo = test_results.repo 
+                        AND workflow_info.run_id = test_results.run_id 
+                        AND workflow_info.run_attempt = test_results.run_attempt
+                        WHERE test_results.ctest_target = ? AND test_results.name = ? AND test_results.compiler = ? AND test_results.cpp_standard = ?
+                    )
+                    SELECT repo, run_id, run_attempt FROM combination
+                    ORDER BY time DESC, run_id DESC, run_attempt DESC
+                    LIMIT 1;
+                    """,(target,name,compiler,cpp_standard))
+    result = cursor.fetchone()
+    if result is None:
+        # if no recent run is found, data need to be stored
+        return [] 
+    repo, run_id, run_attempt = result
+    cursor.execute("""
+                    SELECT passed_cases, failed_cases, skipped_cases, passed_assertions, failed_assertions 
+                    FROM test_results WHERE
+                    ctest_target = ? AND name = ? AND compiler = ? AND cpp_standard = ? AND repo = ? AND run_id = ? AND run_attempt = ?
+                    """, (target,name,compiler,cpp_standard,repo,run_id,run_attempt))
+    result = cursor.fetchone()
+    return [] if result is None else list(result)
+
 ##########################
 # Below starts the script.
 ##########################
@@ -10998,13 +11168,15 @@ if __name__ == "__main__":
         environment = setup_environment_variables()
     except RuntimeError as e:
         raise RuntimeError("Critical error: Can not uniquely identify environment data! Aborting recording of data.")
+    
+    # Step 1: store metadata of workflow run persistently
 
     # initiate connection to database
-    connector = sqlite3.connect("TSF/TestResultData.db")
+    connector = sqlite3.connect("TSF/MemoryEfficientTestResultData.db")
     connector.execute("PRAGMA foreign_keys = ON")
-    cursor = connector.cursor()
 
     # load expected tables
+    # table workflow_info contains metadata of workflow and is updated every time
     command = (
         "CREATE TABLE IF NOT EXISTS workflow_info(",
         "repo TEXT, ",                              # repository
@@ -11015,10 +11187,11 @@ if __name__ == "__main__":
         "time INT, ",                               # the time that is associated to this workflow run
         "PRIMARY KEY(repo, run_id, run_attempt))"
     )
-    cursor.execute(''.join(command))
+    connector.execute(''.join(command))
+    # table test_results contains detailed results for each individual test
     command = (
         "CREATE TABLE IF NOT EXISTS test_results(",
-        "timestamp INT, "                           # when the test-run was started
+        "ctest_target TEXT, ",                      # name of the ctest target located in ci.cmake
         "name TEXT, ",                              # name of the test
         "execution_time REAL, ",                    # execution time in seconds
         "compiler TEXT, ",                          # compiler information
@@ -11031,31 +11204,17 @@ if __name__ == "__main__":
         "repo TEXT, ",                              # repository
         "run_id INT, ",                             # ID of workflow run
         "run_attempt INT, ",                        # Attempt-number of workflow run
-        "FOREIGN KEY(repo, run_id, run_attempt) REFERENCES workflow_info)"
+        "FOREIGN KEY(repo, run_id, run_attempt) REFERENCES workflow_info);"
         )
-    cursor.execute(''.join(command))
+    connector.execute(''.join(command))
+    cursor = connector.cursor()
 
-    # Due to storage space constraints, only most recent 100 test-results are stored.
-    # Heuristic calculations have demonstrated that this should ensure that
-    # the TestResultData.db is below 100MiB, which is github's hard file size limit.
-
-    cursor.execute("SELECT COUNT(*) FROM workflow_info")
-    saved_test_data = int(cursor.fetchone()[0])
-    while saved_test_data&gt;=100:
-        # delete oldest saved data
-        cursor.execute("SELECT MIN(time) FROM workflow_info")
-        oldest_time = int(cursor.fetchone()[0])
-        cursor.execute("SELECT repo, run_id, run_attempt FROM workflow_info WHERE \"time\" = ?", (oldest_time,))
-        results = cursor.fetchall()
-        # Delete all data associated to all the oldest workflow runs 
-        for result in results:
-            # it is expected that there is only one result
-            cursor.execute("DELETE FROM test_results WHERE repo = \"?\" AND run_id = ? AND run_attempt = ?", (result[0],result[1],result[2]))
-            cursor.execute("DELETE FROM workflow_info WHERE repo = \"?\" AND run_id = ? AND run_attempt = ?", (result[0],result[1],result[2]))
-            connector.commit()
-        # don't forget to update!
-        cursor.execute("SELECT COUNT(*) FROM workflow_info")
-        saved_test_data = int(cursor.fetchone()[0])
+    # Count number of rows as heuristic size-checker.
+    # In case that the update-check fails, and every result is stored, allow for approximately 26 complete results to be stored
+    cursor.execute("SELECT MAX(COALESCE((SELECT MAX(rowid) FROM workflow_info),0),COALESCE((SELECT MAX(rowid) FROM test_results),0));")
+    if cursor.fetchone()[0] &gt; 1e5:
+        connector.close()
+        raise RuntimeError("The persistent data storage is too large! Please move persistent data to external storage.")
 
     # fill in metadata
     # OBSERVE: This script expects the status of the github workflow as argument
@@ -11063,57 +11222,21 @@ if __name__ == "__main__":
     run_id = environment.get('GITHUB_RUN_ID')
     run_attempt = environment.get('GITHUB_RUN_ATTEMPT')
     time = int(datetime.now(timezone.utc).timestamp())
-    command = f"INSERT INTO workflow_info VALUES(?,?,?,?,?)"
+    command = "INSERT INTO workflow_info VALUES(?,?,?,?,?)"
     cursor.execute(command,(repo, run_id, run_attempt, status, time))
     # Don't forget to save!
     connector.commit()
-
-    # Load my artifacts
-    failed_data = []
-    junit_logs = get_all_xml_files("./my_artifacts/")
-
-    #extract data
-    for junit_log in junit_logs:
-        tree = ET.parse(junit_log)
-        file_root = tree.getroot()
-        testsuite = next(file_root.iter('testsuite'), None)
-        if testsuite is None:
-            print(f"Error: Could not find testsuite data in {junit_log}.")
-            failed_data.append(junit_log)
-            continue
-        for testcase in (case for case in file_root.iter('testcase') if is_unit_test(case)):
-            metadata = get_metadata(testcase)
-            command = (
-                "INSERT INTO test_results VALUES(",
-                f"{int(datetime.fromisoformat(testsuite.get('timestamp')).timestamp())}, ",
-                f"'{metadata.get('name')}', ",
-                f"{metadata.get('execution time')}, ",
-                f"'{testsuite.get('name')}', ",
-                f"'{metadata.get('standard')}', ",
-                f"{metadata.get('passed test cases')}, ",
-                f"{metadata.get('failed test cases')}, ",
-                f"{metadata.get('skipped test cases')}, ",
-                f"{metadata.get('passed assertions')}, ",
-                f"{metadata.get('failed assertions')}, ",
-                f"'{repo}', ",
-                f"{run_id}, ",
-                f"{run_attempt}"
-                ")"
-            )
-            command = ''.join(command)
-            cursor.execute(command)
-            connector.commit()
-
-    # storage space on the github is limited.
-
-    # finally, most recent test data are stored separately
-
+    
+    # Step 2: generate report of most recent test run and update persistent storage if necessary
+    
     # initialise database connection
-    conn = sqlite3.connect("TestResults.db")
+    conn = sqlite3.connect("MemoryEfficientTestResults.db")
     cur = conn.cursor()
     # add the expected table
+    # the table TestResults.test_results differs from TestResultData.test_results in that the metadata of the commit are not saved.
     command = (
         "CREATE TABLE IF NOT EXISTS test_results(",
+        "ctest_target TEXT, ",                      # name of the ctest target located in ci.cmake
         "name TEXT, ",                              # name of the test
         "execution_time REAL, ",                    # execution time in seconds
         "compiler TEXT, ",                          # compiler information
@@ -11125,26 +11248,53 @@ if __name__ == "__main__":
         "failed_assertions INT",                    # number of failed assertions
         ")"
         )
-    cur.execute(''.join(command))
-    # copy most recent data from persistent data storage
-    cur.execute("ATTACH DATABASE 'TSF/TestResultData.db' AS source")
-    command = """
-            INSERT INTO test_results (
-                name, execution_time, compiler, cpp_standard,
-                passed_cases, failed_cases, skipped_cases,
-                passed_assertions, failed_assertions
-            )
-            SELECT
-                name, execution_time, compiler, cpp_standard,
-                passed_cases, failed_cases, skipped_cases,
-                passed_assertions, failed_assertions
-            FROM source.test_results
-            WHERE repo = ? AND run_id = ? AND run_attempt = ?
-    """
-    cur.execute(command, (repo, run_id, run_attempt))
-    conn.commit()
-    # detach persistent database
-    cur.execute("DETACH DATABASE source")
+    conn.execute(''.join(command))
+
+    # Load my artifacts
+    junit_logs = get_all_xml_files("./my_artifacts/")
+
+    #extract data
+    for junit_log in junit_logs:
+        tree = ET.parse(junit_log)
+        file_root = tree.getroot()
+        testsuite = next(file_root.iter('testsuite'), None)
+        if testsuite is None:
+            print(f"Error: Could not find testsuite data in {junit_log}.")
+            continue
+        for testcase in (case for case in file_root.iter('testcase') if is_unit_test(case)):
+            metadata = get_metadata(testcase)
+            target = get_ctest_target(junit_log)
+            compiler = testsuite.get('name')
+            more_compiler_info = [case for case in file_root.iter('testcase') if case.get("name") == "cmake_target_include_directories_configure"]
+            if len(more_compiler_info) != 0:
+                compiler_information = more_compiler_info[0]
+                information = list(compiler_information.find("system-out").itertext())[0].split('\n')[0]
+                compiler = information.replace("-- The CXX compiler identification is ","")
+            name = metadata.get('name')
+            cpp_standard = metadata.get('standard')
+            data = (
+                        target,
+                        name,
+                        metadata.get('execution time'), 
+                        compiler, 
+                        cpp_standard, 
+                        metadata.get('passed test cases'), 
+                        metadata.get('failed test cases'), 
+                        metadata.get('skipped test cases'), 
+                        metadata.get('passed assertions'), 
+                        metadata.get('failed assertions')
+                    )
+            command ="INSERT INTO test_results VALUES(?,?,?,?,?,?,?,?,?,?);"
+            cur.execute(command, data)
+            conn.commit()
+            most_recently_stored_results = find_most_recent_results(target,name,compiler,cpp_standard,connector)
+            current_results = [metadata.get('passed test cases'),metadata.get('failed test cases'),metadata.get('skipped test cases'),metadata.get('passed assertions'),metadata.get('failed assertions')]
+            if (len(most_recently_stored_results) != 5) or any(most_recently_stored_results[i]!=current_results[i] for i in range(0,5)):
+                data = data + (repo, run_id, run_attempt)
+                command ="INSERT INTO test_results VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?);"
+                cursor.execute(command,data)
+
+                
     # terminate connection to temporary database
     # don't forget to commit the changes
     conn.commit()
@@ -11156,16 +11306,6 @@ if __name__ == "__main__":
     connector.close()
 
 ````
-- Description: script, which collects the data produced by ctest in a database
-
-
-
-
-- `website: https://github.com/eclipse-score/inc_nlohmann_json/blob/save_historical_data/TSF/MemoryEfficientTestResultData.db`
-
-
-`https://github.com/eclipse-score/inc_nlohmann_json/blob/save_historical_data/TSF/MemoryEfficientTestResultData.db`
-	- the database containing the test results
 
 
 
@@ -11192,7 +11332,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |
 |2025-12-04 15:06:30|0.00 |
 |2025-12-05 10:27:57|0.00 |
-|2025-12-05 11:14:37.495996|0.00 |
+|2025-12-08 18:23:43|0.00 |
+|2025-12-08 19:11:31.180299|0.00 |
 
 
 
@@ -11254,7 +11395,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |
 |2025-12-04 15:06:30|0.00 |
 |2025-12-05 10:27:57|0.00 |
-|2025-12-05 11:14:37.495996|0.00 |
+|2025-12-08 18:23:43|0.00 |
+|2025-12-08 19:11:31.180299|0.00 |
 
 
 
@@ -11311,7 +11453,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
 |2025-12-04 15:06:30|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
 |2025-12-05 10:27:57|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
-|2025-12-05 11:14:37.495996|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
+|2025-12-08 18:23:43|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
+|2025-12-08 19:11:31.180299|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
 
 
 
@@ -11373,7 +11516,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |
 |2025-12-04 15:06:30|0.00 |
 |2025-12-05 10:27:57|0.00 |
-|2025-12-05 11:14:37.495996|0.00 |
+|2025-12-08 18:23:43|0.00 |
+|2025-12-08 19:11:31.180299|0.00 |
 
 
 
@@ -11402,6 +11546,13 @@ _None_
 
 0 workflows failed on branch master of nlohmann/json
 
+- `website: https://github.com/nlohmann/json/actions?query=branch%3Amaster`
+
+
+`https://github.com/nlohmann/json/actions?query=branch%3Amaster`
+	- CI workflow history for the master branch of nlohmann/json.
+
+
 
 
 
@@ -11426,7 +11577,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |
 |2025-12-04 15:06:30|0.00 |
 |2025-12-05 10:27:57|0.00 |
-|2025-12-05 11:14:37.495996|0.00 |
+|2025-12-08 18:23:43|0.00 |
+|2025-12-08 19:11:31.180299|0.00 |
 
 
 
@@ -11475,7 +11627,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |
 |2025-12-04 15:06:30|0.00 |
 |2025-12-05 10:27:57|0.00 |
-|2025-12-05 11:14:37.495996|0.00 |
+|2025-12-08 18:23:43|0.00 |
+|2025-12-08 19:11:31.180299|0.00 |
 
 
 
@@ -11530,7 +11683,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |
 |2025-12-04 15:06:30|0.00 |
 |2025-12-05 10:27:57|0.00 |
-|2025-12-05 11:14:37.495996|0.00 |
+|2025-12-08 18:23:43|0.00 |
+|2025-12-08 19:11:31.180299|0.00 |
 
 
 
@@ -11592,7 +11746,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |
 |2025-12-04 15:06:30|0.00 |
 |2025-12-05 10:27:57|0.00 |
-|2025-12-05 11:14:37.495996|0.00 |
+|2025-12-08 18:23:43|0.00 |
+|2025-12-08 19:11:31.180299|0.00 |
 
 
 
@@ -11654,7 +11809,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |
 |2025-12-04 15:06:30|0.00 |
 |2025-12-05 10:27:57|0.00 |
-|2025-12-05 11:14:37.495996|0.00 |
+|2025-12-08 18:23:43|0.00 |
+|2025-12-08 19:11:31.180299|0.00 |
 
 
 
@@ -11709,7 +11865,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |
 |2025-12-04 15:06:30|0.00 |
 |2025-12-05 10:27:57|0.00 |
-|2025-12-05 11:14:37.495996|0.00 |
+|2025-12-08 18:23:43|0.00 |
+|2025-12-08 19:11:31.180299|0.00 |
 
 
 
@@ -11764,7 +11921,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |
 |2025-12-04 15:06:30|0.00 |
 |2025-12-05 10:27:57|0.00 |
-|2025-12-05 11:14:37.495996|0.00 |
+|2025-12-08 18:23:43|0.00 |
+|2025-12-08 19:11:31.180299|0.00 |
 
 
 
@@ -11819,7 +11977,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |
 |2025-12-04 15:06:30|0.00 |
 |2025-12-05 10:27:57|0.00 |
-|2025-12-05 11:14:37.495996|0.00 |
+|2025-12-08 18:23:43|0.00 |
+|2025-12-08 19:11:31.180299|0.00 |
 
 
 
@@ -12076,7 +12235,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |
 |2025-12-04 15:06:30|0.00 |
 |2025-12-05 10:27:57|0.00 |
-|2025-12-05 11:14:37.495996|0.00 |
+|2025-12-08 18:23:43|0.00 |
+|2025-12-08 19:11:31.180299|0.00 |
 
 
 
@@ -12138,7 +12298,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |
 |2025-12-04 15:06:30|0.00 |
 |2025-12-05 10:27:57|0.00 |
-|2025-12-05 11:14:37.495996|0.00 |
+|2025-12-08 18:23:43|0.00 |
+|2025-12-08 19:11:31.180299|0.00 |
 
 
 
@@ -12434,7 +12595,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |
 |2025-12-04 15:06:30|0.00 |
 |2025-12-05 10:27:57|0.00 |
-|2025-12-05 11:14:37.495996|0.00 |
+|2025-12-08 18:23:43|0.00 |
+|2025-12-08 19:11:31.180299|0.00 |
 
 
 
@@ -12491,7 +12653,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |
 |2025-12-04 15:06:30|0.00 |
 |2025-12-05 10:27:57|0.00 |
-|2025-12-05 11:14:37.495996|0.00 |
+|2025-12-08 18:23:43|0.00 |
+|2025-12-08 19:11:31.180299|0.00 |
 
 
 
@@ -12546,7 +12709,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |
 |2025-12-04 15:06:30|0.00 |
 |2025-12-05 10:27:57|0.00 |
-|2025-12-05 11:14:37.495996|0.00 |
+|2025-12-08 18:23:43|0.00 |
+|2025-12-08 19:11:31.180299|0.00 |
 
 
 
@@ -12603,7 +12767,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |
 |2025-12-04 15:06:30|0.00 |
 |2025-12-05 10:27:57|0.00 |
-|2025-12-05 11:14:37.495996|0.00 |
+|2025-12-08 18:23:43|0.00 |
+|2025-12-08 19:11:31.180299|0.00 |
 
 
 
@@ -12653,7 +12818,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |
 |2025-12-04 15:06:30|0.00 |
 |2025-12-05 10:27:57|0.00 |
-|2025-12-05 11:14:37.495996|0.00 |
+|2025-12-08 18:23:43|0.00 |
+|2025-12-08 19:11:31.180299|0.00 |
 
 
 
@@ -12717,7 +12883,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |
 |2025-12-04 15:06:30|0.00 |
 |2025-12-05 10:27:57|0.00 |
-|2025-12-05 11:14:37.495996|0.00 |
+|2025-12-08 18:23:43|0.00 |
+|2025-12-08 19:11:31.180299|0.00 |
 
 
 
@@ -12774,7 +12941,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |
 |2025-12-04 15:06:30|0.00 |
 |2025-12-05 10:27:57|0.00 |
-|2025-12-05 11:14:37.495996|0.00 |
+|2025-12-08 18:23:43|0.00 |
+|2025-12-08 19:11:31.180299|0.00 |
 
 
 
@@ -12831,7 +12999,414 @@ _None_
 |2025-12-04 13:58:56|0.00 |
 |2025-12-04 15:06:30|0.00 |
 |2025-12-05 10:27:57|0.00 |
-|2025-12-05 11:14:37.495996|0.00 |
+|2025-12-08 18:23:43|0.00 |
+|2025-12-08 19:11:31.180299|0.00 |
+
+
+
+---
+
+### JLS-45 | Reviewed: ⨯ | Score: 0.0 
+The storage location, retention limits, and intended use of captured test result data for eclipse-score/inc_nlohmann_json are documented so that the scope and reproducibility of the available test data can be understood.
+
+
+**Supported Requests:**
+
+| Item  | Summary  | Score  | Status  |
+| --- | --- | --- | --- |
+| [TA-DATA](TA.md#ta-data)  | Data in eclipse-score/inc_nlohmann_json is collected from tests, and from monitoring of deployed software, according to specified objectives. | 0.00 | ⨯ Item Reviewed<br>⨯ Link Reviewed |
+
+**Supporting Items:**
+
+_None_
+
+
+
+**References:**
+
+- `TSF/scripts/README.md`
+
+
+````md
+# Scripts used for the documentation
+
+The following scripts are used in the automatic compilation of the trustable report.
+
+## capture_test_data.py
+
+The python-script [capture_test_data.py](capture_test_data.py) is intended to run at the end of the [ubuntu-workflow](../../.github/workflows/ubuntu.yml). It collects and combines the test-results that were collected in the individual jobs, appends the persistent test data storage and generates a database containing the results of the most recent tests only. Since storage space on the github is limited, the storage of test data is limited to two weeks only. It must be noted that this implementation is only intended as a temporary proof of concept!
+
+## capture_test_data_memory_sensitive.py
+
+The python script [capture_test_data_memory_sensitive.py](capture_test_data_memory_sensitive.py) is an alternative to [capture_test_data.py](capture_test_data.py), which is more memory sensitive. 
+Instead of capturing the full test-data, a first snapshot of the data is captured, which is then updated whenever a relevant change is detected.
+
+The characterisation of "relevant change" follows the following heuristic argumentation: 
+
+* The execution time of each test is of lesser interest, therefore it is not continuously updated.
+* A test is uniquely identified by the columns ctest_target, name and cpp_standard.
+
+Moreover, a size-check is performed on the persistent storage, using the following heuristic assumptions 
+
+* It is expected, that an update of a test-result only happens, when a test fails, which leads automatically to the failure of the pipeline, which should trigger a manual review by the maintainer, or failed before.
+* It is expected, that tests fail rarely, and in particular on average less than 10 different test-cases per workflow-run fail.
+* It is expected, that less than 1,000 workflow runs, where a record of the test-result is triggered, happen per year, since these are only triggered once daily and on each push to main.
+* It is expected, that a ten-year-record of test-results is sufficient for documentation purposes.
+
+In view of these assumptions, we limit the storage to approximately 100,000 test-results and 100,000 workflow-metadata, which guarantees *en passant* that github's file size limit of 100MB is respected.
+In the worst case that every recorded test result is detected as a relevant change, this restraint collects test-results from 27 workflows in total.
+Whenever either limit of 100,000 test-results and 100,000 workflow-metadata in the persistent data storage is violated, the script returns the error "The persistent data storage is too large! Please move persistent data to external storage.", thereby failing the workflow, which advises the maintainer to take up action.
+
+## clean_trudag_report.py
+
+The python-script [clean_trudag_report.py](clean_trudag_report.py) runs at the end of generate_report.sh.
+By default, the report generated by trudag has the format that is expected by MkDocs.
+This format, however, is not properly rendered by sphinx, so that an adaption of the output is necessary.
+This adaption happens within this script.
+
+## generate_report.sh
+
+The shell-script [generate_report.sh](generate_report.sh) is used to generate the trustable report and the graphs of which the documentation consists.
+In particular, it first cleans up potentially left-over obsolete reports, then generates the report and the full view of the trustable graph using trudag.
+Thereafter, plot_partial_graphs.py is called, before finally clean_trudag_report.py is executed.
+
+## plot_partial_graphs.py
+
+The python-script [plot_partial_graphs.py](plot_partial_graphs.py) is used to generate a myriad of partial graphs with links amongst them.
+These are then used to augment the full graph, which is, due to its size, quite hard to display, in the documentation.
+By the means of the links of the items, a more or less \"navigable\" version of the trustable graph is created, which displays a handful of items at a time, only.
+
+# Helper-scripts for offline development
+
+## fetch_json.cpp
+
+The C++ script [fetch_json.cpp](fetch_json.cpp) is used to extract lists of paths to json testsuites from unit-testsuites.cpp, which are then used in testsuite-references. This script is purely used during the manual compilation of the references.
+
+## generate_documentation.sh
+
+The shell-script [generate_documentation.sh](generate_documentation.sh) generates a locally hosted version of the documentation, which is used for testing purposes.
+
+## generate_list_of_tests.py
+
+The python script [generate_list_of_tests.py](generate_list_of_tests.py) is used to generate the [list_of_test_environments.md](../docs/list_of_test_environments.md) listing the expected test-cases with their execution environments.
+The file [list_of_test_environments.md](../docs/list_of_test_environments.md) is then persistently stored within the documentation.
+Additionally, this script is utilised within the validator ``check_list_of_tests`` to generate a list of test environments from the most recent test results and to compare this list with the persistently stored one.
+In case that new tests are added, tests are removed or test environments change, it is therefore necessary to have an accurate list_of_test_environments.md, which is highly recommended to be generated using this script.
+To run the script, the database `MemoryEfficientTestResults.db` must be downloaded from the artifact of the most recent successful ubuntu workflow, and placed in the folder `artifacts` in the root of the repository.
+Moreover, it must be ensured that this script is run from within the root of the repository, only. 
+
+## generate_subgraph_plots.sh
+
+The shell-script [generate_subgraph_plots.sh](generate_subgraph_plots.sh) is used to generate subgraphs of the trustable graph using trudag plot with the --pick option. 
+Since the options of adding custom hyperlinks to the individual nodes of the generated subgraphs are not quite as flexible as desired for the \"navigable\" version of the trustable graph, we opted to use the custom script plot_partial_graphs.py.
+
+````
+- Description: Explanation of how test-result data is stored, how long it is retained, which size limits apply, and which maintenance actions are required for the persistent storage.
+
+
+
+
+- `TSF/scripts/capture_test_data_memory_sensitive.py`
+
+
+````py
+import sys
+import sqlite3
+import os
+import xml.etree.ElementTree as ET
+import re
+from datetime import datetime, timezone
+
+def setup_environment_variables() -&gt; dict[str, str]:
+    # Retrieves and validates the necessary environment variables for GitHub workflows.
+    # Raises a RuntimeError if any required variables are missing.
+    required_vars = ["GITHUB_RUN_ID", "GITHUB_REPOSITORY", "GITHUB_RUN_ATTEMPT"]
+    environment = {var: os.getenv(var) for var in required_vars}
+    
+    missing_vars = [var for var, value in environment.items() if not value]
+    if missing_vars:
+        raise RuntimeError(f"Missing required environment variables: {', '.join(missing_vars)}")
+    
+    return environment
+
+def clean_test_case(testcase: str) -&gt; tuple[str,str]:
+    # This function expects a testcase of the form "testcase_name_cppxx".
+    # It returns the tuple ["testcase_name","gnu++xx"].
+    name, appendix = testcase.rsplit('_',1)
+    return [name, "gnu++"+appendix.replace('cpp','')]
+
+def read_result_table(input: list[str]) -&gt; dict:
+    """
+    This function expects console output &lt;system-out&gt; of doctest.
+    It is assumed that this has the following form
+        &lt;system-out&gt;[doctest] doctest version is "2.4.11"
+        [doctest] run with "--help" for options
+        ===============================================================================
+        [doctest] test cases:  1 |  1 passed | 0 failed | 0 skipped
+        [doctest] assertions: 45 | 45 passed | 0 failed |
+        [doctest] Status: SUCCESS!
+        &lt;/system-out&gt;
+    It extracts the number of passed/failed/skipped test cases, and passed/skipped assertions.
+    """
+    metadata = dict()
+    raw_data = input[0]
+    data = re.findall(r'(\d+)\s+(passed|failed|skipped)\b', raw_data)
+    if len(data) &lt; 5:
+        raise RuntimeError("Fatal Error: Received incomplete or wrong result table.")
+    metadata["passed test cases"] = int(data[0][0])
+    metadata["failed test cases"] = int(data[1][0])
+    metadata["skipped test cases"] = int(data[2][0])
+    metadata["passed assertions"] = int(data[3][0])
+    metadata["failed assertions"] = int(data[4][0])
+    return metadata
+
+
+def get_metadata(testcase: ET.Element) -&gt; dict:
+    # expects testcase extracted from a junit xml-file as input
+    # extracts the data interesting to us
+    # Assumption of Use: before execution, it is checked if is_unit_test(testcase)==True
+    metadata = dict()
+    # from name both name of the test and C++ standard can be extracted
+    unsplit_name = testcase.get("name", None)
+    if unsplit_name is None:
+        raise RuntimeError("Fatal error: Can not read name of test-case!")
+    name, standard = clean_test_case(unsplit_name)
+    metadata["name"] = name
+    metadata["standard"] = standard
+    metadata["execution time"] = float(testcase.get("time"))
+    # results are not as easily extracted but must be processed further
+    metadata = metadata | read_result_table(list(testcase.find("system-out").itertext()))
+    return metadata
+
+def is_unit_test(testcase: ET.Element) -&gt; bool:
+    # crude test if the element belongs to a unit-test
+    return "_cpp" in testcase.get('name')
+
+def get_all_xml_files(directory: str = '.') -&gt; list[str]:
+    # search the folder containing all the artifacts and list the paths of expected test-reports
+    result = []
+    try:
+        content = os.listdir(directory)
+    except FileNotFoundError as e:
+        print(e)
+        return result
+    for entry in content:
+        if os.path.isdir(directory+'/'+entry):
+            result = result + get_all_xml_files(directory+'/'+entry)
+        if entry.endswith('.xml'):
+            file = directory+'/'+entry if directory != '.' else entry
+            result.append(file)
+    return result
+
+def get_ctest_target(log_name: str) -&gt; str:
+    # extracts name of ctest target from junit log
+    # log_name has the form "path/to/log/file/target_junit.xml", and target is expected
+    log = log_name.split('/')[-1]
+    return log.removesuffix("_junit.xml")
+
+def find_most_recent_results(target: str, name: str, compiler: str, cpp_standard: str, database: sqlite3.Connection) -&gt; list[int]:
+    cursor = database.cursor()
+    cursor.execute("""
+                    WITH combination AS (
+                        SELECT workflow_info.repo, workflow_info.run_id, workflow_info.run_attempt, workflow_info.time
+                        FROM test_results INNER JOIN workflow_info ON
+                        workflow_info.repo = test_results.repo 
+                        AND workflow_info.run_id = test_results.run_id 
+                        AND workflow_info.run_attempt = test_results.run_attempt
+                        WHERE test_results.ctest_target = ? AND test_results.name = ? AND test_results.compiler = ? AND test_results.cpp_standard = ?
+                    )
+                    SELECT repo, run_id, run_attempt FROM combination
+                    ORDER BY time DESC, run_id DESC, run_attempt DESC
+                    LIMIT 1;
+                    """,(target,name,compiler,cpp_standard))
+    result = cursor.fetchone()
+    if result is None:
+        # if no recent run is found, data need to be stored
+        return [] 
+    repo, run_id, run_attempt = result
+    cursor.execute("""
+                    SELECT passed_cases, failed_cases, skipped_cases, passed_assertions, failed_assertions 
+                    FROM test_results WHERE
+                    ctest_target = ? AND name = ? AND compiler = ? AND cpp_standard = ? AND repo = ? AND run_id = ? AND run_attempt = ?
+                    """, (target,name,compiler,cpp_standard,repo,run_id,run_attempt))
+    result = cursor.fetchone()
+    return [] if result is None else list(result)
+
+##########################
+# Below starts the script.
+##########################
+
+if __name__ == "__main__":
+
+    # check if argument was delivered
+    if len(sys.argv) != 2:
+        raise RuntimeError("Expected status of workflow as argument. Aborting!")
+    # expected argument: status of workflow
+    # check if the argument has the expected form
+    status = sys.argv[1]
+    if status not in ["successful", "failed", "cancelled"]:
+        raise RuntimeError("The input does not match the expected format! Permissible are 'successful', 'failed' and 'cancelled'. Aborting!")
+
+    # get environment variables
+    try:
+        environment = setup_environment_variables()
+    except RuntimeError as e:
+        raise RuntimeError("Critical error: Can not uniquely identify environment data! Aborting recording of data.")
+    
+    # Step 1: store metadata of workflow run persistently
+
+    # initiate connection to database
+    connector = sqlite3.connect("TSF/MemoryEfficientTestResultData.db")
+    connector.execute("PRAGMA foreign_keys = ON")
+
+    # load expected tables
+    # table workflow_info contains metadata of workflow and is updated every time
+    command = (
+        "CREATE TABLE IF NOT EXISTS workflow_info(",
+        "repo TEXT, ",                              # repository
+        "run_id INT, ",                             # ID of workflow run
+        "run_attempt INT, ",                        # Attempt-number of workflow run
+        "status TEXT ",                             # Termination-status of workflow                                         
+        "CHECK(status IN ('successful', 'failed', 'cancelled')) DEFAULT 'failed', ",
+        "time INT, ",                               # the time that is associated to this workflow run
+        "PRIMARY KEY(repo, run_id, run_attempt))"
+    )
+    connector.execute(''.join(command))
+    # table test_results contains detailed results for each individual test
+    command = (
+        "CREATE TABLE IF NOT EXISTS test_results(",
+        "ctest_target TEXT, ",                      # name of the ctest target located in ci.cmake
+        "name TEXT, ",                              # name of the test
+        "execution_time REAL, ",                    # execution time in seconds
+        "compiler TEXT, ",                          # compiler information
+        "cpp_standard TEXT, ",                      # cpp-standard
+        "passed_cases INT, ",                       # number of passed test-cases
+        "failed_cases INT, ",                       # number of failed test-cases
+        "skipped_cases INT, ",                      # number of skipped test-cases
+        "passed_assertions INT, ",                  # number of passed assertions
+        "failed_assertions INT, ",                  # number of failed assertions
+        "repo TEXT, ",                              # repository
+        "run_id INT, ",                             # ID of workflow run
+        "run_attempt INT, ",                        # Attempt-number of workflow run
+        "FOREIGN KEY(repo, run_id, run_attempt) REFERENCES workflow_info);"
+        )
+    connector.execute(''.join(command))
+    cursor = connector.cursor()
+
+    # Count number of rows as heuristic size-checker.
+    # In case that the update-check fails, and every result is stored, allow for approximately 26 complete results to be stored
+    cursor.execute("SELECT MAX(COALESCE((SELECT MAX(rowid) FROM workflow_info),0),COALESCE((SELECT MAX(rowid) FROM test_results),0));")
+    if cursor.fetchone()[0] &gt; 1e5:
+        connector.close()
+        raise RuntimeError("The persistent data storage is too large! Please move persistent data to external storage.")
+
+    # fill in metadata
+    # OBSERVE: This script expects the status of the github workflow as argument
+    repo = environment.get('GITHUB_REPOSITORY')
+    run_id = environment.get('GITHUB_RUN_ID')
+    run_attempt = environment.get('GITHUB_RUN_ATTEMPT')
+    time = int(datetime.now(timezone.utc).timestamp())
+    command = "INSERT INTO workflow_info VALUES(?,?,?,?,?)"
+    cursor.execute(command,(repo, run_id, run_attempt, status, time))
+    # Don't forget to save!
+    connector.commit()
+    
+    # Step 2: generate report of most recent test run and update persistent storage if necessary
+    
+    # initialise database connection
+    conn = sqlite3.connect("MemoryEfficientTestResults.db")
+    cur = conn.cursor()
+    # add the expected table
+    # the table TestResults.test_results differs from TestResultData.test_results in that the metadata of the commit are not saved.
+    command = (
+        "CREATE TABLE IF NOT EXISTS test_results(",
+        "ctest_target TEXT, ",                      # name of the ctest target located in ci.cmake
+        "name TEXT, ",                              # name of the test
+        "execution_time REAL, ",                    # execution time in seconds
+        "compiler TEXT, ",                          # compiler information
+        "cpp_standard TEXT, ",                      # cpp-standard
+        "passed_cases INT, ",                       # number of passed test-cases
+        "failed_cases INT, ",                       # number of failed test-cases
+        "skipped_cases INT, ",                      # number of skipped test-cases
+        "passed_assertions INT, ",                  # number of passed assertions
+        "failed_assertions INT",                    # number of failed assertions
+        ")"
+        )
+    conn.execute(''.join(command))
+
+    # Load my artifacts
+    junit_logs = get_all_xml_files("./my_artifacts/")
+
+    #extract data
+    for junit_log in junit_logs:
+        tree = ET.parse(junit_log)
+        file_root = tree.getroot()
+        testsuite = next(file_root.iter('testsuite'), None)
+        if testsuite is None:
+            print(f"Error: Could not find testsuite data in {junit_log}.")
+            continue
+        for testcase in (case for case in file_root.iter('testcase') if is_unit_test(case)):
+            metadata = get_metadata(testcase)
+            target = get_ctest_target(junit_log)
+            compiler = testsuite.get('name')
+            more_compiler_info = [case for case in file_root.iter('testcase') if case.get("name") == "cmake_target_include_directories_configure"]
+            if len(more_compiler_info) != 0:
+                compiler_information = more_compiler_info[0]
+                information = list(compiler_information.find("system-out").itertext())[0].split('\n')[0]
+                compiler = information.replace("-- The CXX compiler identification is ","")
+            name = metadata.get('name')
+            cpp_standard = metadata.get('standard')
+            data = (
+                        target,
+                        name,
+                        metadata.get('execution time'), 
+                        compiler, 
+                        cpp_standard, 
+                        metadata.get('passed test cases'), 
+                        metadata.get('failed test cases'), 
+                        metadata.get('skipped test cases'), 
+                        metadata.get('passed assertions'), 
+                        metadata.get('failed assertions')
+                    )
+            command ="INSERT INTO test_results VALUES(?,?,?,?,?,?,?,?,?,?);"
+            cur.execute(command, data)
+            conn.commit()
+            most_recently_stored_results = find_most_recent_results(target,name,compiler,cpp_standard,connector)
+            current_results = [metadata.get('passed test cases'),metadata.get('failed test cases'),metadata.get('skipped test cases'),metadata.get('passed assertions'),metadata.get('failed assertions')]
+            if (len(most_recently_stored_results) != 5) or any(most_recently_stored_results[i]!=current_results[i] for i in range(0,5)):
+                data = data + (repo, run_id, run_attempt)
+                command ="INSERT INTO test_results VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?);"
+                cursor.execute(command,data)
+
+                
+    # terminate connection to temporary database
+    # don't forget to commit the changes
+    conn.commit()
+    conn.close()
+
+    # terminate connection to persistent database
+    # don't forget to commit the changes again, for good measure
+    connector.commit()
+    connector.close()
+
+````
+
+
+
+
+
+**Fallacies:**
+
+_None_
+
+**Graph:**
+
+![No Image](figs/JLS-45.svg)
+
+|date-time|JLS-45|
+|-|-|
+|2025-12-08 18:23:43|0.00 |
+|2025-12-08 19:11:31.180299|0.00 |
 
 
 
@@ -12876,7 +13451,8 @@ _None_
 |date-time|JLS-47|
 |-|-|
 |2025-12-05 10:27:57|0.00 |
-|2025-12-05 11:14:37.495996|0.00 |
+|2025-12-08 18:23:43|0.00 |
+|2025-12-08 19:11:31.180299|0.00 |
 
 
 
@@ -12921,7 +13497,8 @@ _None_
 |date-time|JLS-48|
 |-|-|
 |2025-12-05 10:27:57|0.00 |
-|2025-12-05 11:14:37.495996|0.00 |
+|2025-12-08 18:23:43|0.00 |
+|2025-12-08 19:11:31.180299|0.00 |
 
 
 
@@ -13049,7 +13626,8 @@ _None_
 |date-time|JLS-49|
 |-|-|
 |2025-12-05 10:27:57|0.00 |
-|2025-12-05 11:14:37.495996|0.00 |
+|2025-12-08 18:23:43|0.00 |
+|2025-12-08 19:11:31.180299|0.00 |
 
 
 
@@ -13427,7 +14005,8 @@ _None_
 |date-time|JLS-50|
 |-|-|
 |2025-12-05 10:27:57|0.00 |
-|2025-12-05 11:14:37.495996|0.00 |
+|2025-12-08 18:23:43|0.00 |
+|2025-12-08 19:11:31.180299|0.00 |
 
 
 
@@ -13497,7 +14076,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |
 |2025-12-04 15:06:30|0.00 |
 |2025-12-05 10:27:57|0.00 |
-|2025-12-05 11:14:37.495996|0.00 |
+|2025-12-08 18:23:43|0.00 |
+|2025-12-08 19:11:31.180299|0.00 |
 
 
 
@@ -13543,7 +14123,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |0.00 |0.00 |0.00 |
 |2025-12-04 15:06:30|0.00 |0.00 |0.00 |0.00 |
 |2025-12-05 10:27:57|0.00 |0.00 |0.00 |0.00 |
-|2025-12-05 11:14:37.495996|0.00 |0.00 |0.00 |0.00 |
+|2025-12-08 18:23:43|0.00 |0.00 |0.00 |0.00 |
+|2025-12-08 19:11:31.180299|0.00 |0.00 |0.00 |0.00 |
 
 
 
@@ -13585,7 +14166,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |0.00 |
 |2025-12-04 15:06:30|0.00 |0.00 |
 |2025-12-05 10:27:57|0.00 |0.00 |
-|2025-12-05 11:14:37.495996|0.00 |0.00 |
+|2025-12-08 18:23:43|0.00 |0.00 |
+|2025-12-08 19:11:31.180299|0.00 |0.00 |
 
 
 
@@ -13633,7 +14215,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |
 |2025-12-04 15:06:30|0.00 |
 |2025-12-05 10:27:57|0.00 |
-|2025-12-05 11:14:37.495996|0.00 |
+|2025-12-08 18:23:43|0.00 |
+|2025-12-08 19:11:31.180299|0.00 |
 
 
 
@@ -13819,7 +14402,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |
 |2025-12-04 15:06:30|0.00 |
 |2025-12-05 10:27:57|0.00 |
-|2025-12-05 11:14:37.495996|0.00 |
+|2025-12-08 18:23:43|0.00 |
+|2025-12-08 19:11:31.180299|0.00 |
 
 
 
@@ -13881,7 +14465,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |
 |2025-12-04 15:06:30|0.00 |
 |2025-12-05 10:27:57|0.00 |
-|2025-12-05 11:14:37.495996|0.00 |
+|2025-12-08 18:23:43|0.00 |
+|2025-12-08 19:11:31.180299|0.00 |
 
 
 
@@ -13936,7 +14521,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |
 |2025-12-04 15:06:30|0.00 |
 |2025-12-05 10:27:57|0.00 |
-|2025-12-05 11:14:37.495996|0.00 |
+|2025-12-08 18:23:43|0.00 |
+|2025-12-08 19:11:31.180299|0.00 |
 
 
 
@@ -13998,7 +14584,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |
 |2025-12-04 15:06:30|0.00 |
 |2025-12-05 10:27:57|0.00 |
-|2025-12-05 11:14:37.495996|0.00 |
+|2025-12-08 18:23:43|0.00 |
+|2025-12-08 19:11:31.180299|0.00 |
 
 
 
@@ -14043,5 +14630,6 @@ _None_
 |date-time|JLS-66|
 |-|-|
 |2025-12-05 10:27:57|0.00 |
-|2025-12-05 11:14:37.495996|0.00 |
+|2025-12-08 18:23:43|0.00 |
+|2025-12-08 19:11:31.180299|0.00 |
 

@@ -13,7 +13,7 @@ Collected data from tests and monitoring of deployed software in eclipse-score/i
 
 | Item  | Summary  | Score  | Status  |
 | --- | --- | --- | --- |
-| [JLS-17](JLS.md#jls-17)  | A github workflow calculates the fraction of expectations covered by tests in eclipse-score/inc_nlohmann_json (TODO). | 0.00 | ⨯ Item Reviewed<br>⨯ Link Reviewed |
+| [JLS-17](JLS.md#jls-17)  | Failure rates of CI tests are analysed for both the upstream nlohmann/json and the eclipse-score/inc_nlohmann_json repositories, and any high failure rates are reasonably justified. | 0.00 | ⨯ Item Reviewed<br>⨯ Link Reviewed |
 | [JLS-26](JLS.md#jls-26)  | Any failed CI pipeline executions in the master branch of the nlohmann/json repository are analyzed and fixed. | 0.00 | ⨯ Item Reviewed<br>⨯ Link Reviewed |
 
 
@@ -45,7 +45,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |0.00 |0.00 |
 |2025-12-04 15:06:30|0.00 |0.00 |0.00 |
 |2025-12-05 10:27:57|0.00 |0.00 |0.00 |
-|2025-12-05 11:14:37.495996|0.00 |0.00 |0.00 |
+|2025-12-08 18:23:43|0.00 |0.00 |0.00 |
+|2025-12-08 19:11:31.180299|0.00 |0.00 |0.00 |
 
 
 
@@ -91,13 +92,13 @@ by confirming that test results remain unchanged when no changes are intended.
 **Evidence**
 
 - Analysis of test data, including thresholds in relation to appropriate statistical properties.
-  - **Answer**: 
+  - **Answer**: The analysis of test data is captured by JLS-17, but no explicit quantitative thresholds are defined.
 - Analysis of failures
-  - **Answer**: 
+  - **Answer**: Provided by JLS-26 and JLS-17.
 - Analysis of spikes and trends
-  - **Answer**: 
+  - **Answer**: CI test failure rates for the upstream `nlohmann/json` repository and `eclipse-score/inc_nlohmann_json` are analysed using the time-series based GitHub Actions metrics views. This analysis is performed manually (see JLS-17). There is currently no fully automated, continuous analysis of failures.
 - Validation of analysis methods used
-  - **Answer**: 
+  - **Answer**: There is no separate formal validation of the analysis methods.
 
 **Confidence scoring**
 
@@ -107,37 +108,37 @@ that may indicate problems in development, test, or production.
 **CHECKLIST**
 
 - What fraction of Expectations are covered by the test data?
-  - **Answer**: 
+  - **Answer**: The two expectations are JLEX-01 and JLEX-02. Every statement supporting either of these expectations is ultimately supported by a test, except for WFJ-06. WFJ-06 specifies that `basic_json::accept` must accept exactly JSON values for all possible inputs. Since there are infinitely many possible inputs, this cannot be tested exhaustively. Indirect tests are provided by the rejection of ill-formed json data.
 - What fraction of Misbehaviours are covered by the monitored indicator data?
-  - **Answer**: 
+  - **Answer**: Currently none, because there is no implemented monitoring of deployed instances yet. This is a future integrator responsibility (see AOU-09, AOU-18 and AOU-19).
 - How confident are we that the indicator data are accurate and timely?
-  - **Answer**: 
+  - **Answer**: No indicator data is collected (see the previous question).
 - How reliable is the monitoring process?
-  - **Answer**: 
+  - **Answer**: See the previous question.
 - How well does the production data correlate with our test data?
-  - **Answer**: 
+  - **Answer**: There are no production data.
 - Are we publishing our data analysis?
-  - **Answer**: 
+  - **Answer**: Analyses of CI tests failure rates are published in the TSF documentation on GitHub (via ci_failure_rate_analysis.md), but there is currently no published analysis of production monitoring data.
 - Are we comparing and analysing production data vs test?
-  - **Answer**: 
+  - **Answer**: There is no production data.
 - Are our results getting better, or worse?
-  - **Answer**: 
+  - **Answer**: There are no explicit quantitative trends that indicate whether results are improving or degrading over time.
 - Are we addressing spikes/regressions?
-  - **Answer**: 
+  - **Answer**: There is currently no monitored indicator data, so spikes in indicator trends are not tracked. However, any failing tests in CI are investigated and fixed, and fuzz-testing results in the original nlohmann/json repository are analysed and addressed.
 - Do we have sensible/appropriate target failure rates?
-  - **Answer**: 
+  - **Answer**: No explicit numeric failure-rate targets are defined. The implicit target is that the CI test suite passes and known misbehaviours remain within an acceptable, manually monitored range.
 - Do we need to check the targets?
-  - **Answer**: 
+  - **Answer**: For unit and integration tests, there are no explicit failure rate targets. The implicit target is that the CI test suite passes on all supported environments, which is continuously checked by the CI workflows (see JLS-26). Since the fuzz testing runs and is investigated in the original nlohmann/json repository, there is no need to check the target.
 - Are we achieving the targets?
-  - **Answer**: 
+  - **Answer**: For the unit and integration tests, yes. The degree of target achievement for the fuzz-testing is evaluated within the original nlohmann/json repository.
 - Are all underlying assumptions and target conditions for the analysis specified?
-  - **Answer**: 
+  - **Answer**: For all tests, the underlying assumption and target condition is that they should cover all expectations, and that no test is expected to fail. Any failed tests are analyzed and reasonably justified or fixed.
 - Have the underlying assumptions been verified using known good data?
-  - **Answer**: 
+  - **Answer**:  The input data from [nlohmann/json_test_data](https://github.com/nlohmann/json_test_data/tree/master) which is used for the tests contain both known good data and known bad data. As each expectation is mapped to a sub-set of tests, it is indeed verified that the underlying assumption is reasonably verified.
 - Has the Misbehaviour identification process been verified using known bad data?
-  - **Answer**: 
+  - **Answer**: Yes. The misbehaviour identification process has been exercised using known bad data from [nlohmann/json_test_data](https://github.com/nlohmann/json_test_data/tree/master)
 - Are results shown to be reproducible?
-  - **Answer**:
+  - **Answer**: A dedicated ci_reproducible_tests target exists to run a reproducible subset of tests, but not all tests are fully reproducible (see JLS-62).
 
 
 ---
@@ -190,7 +191,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |0.00 |0.00 |0.00 |0.00 |
 |2025-12-04 15:06:30|0.00 |0.00 |0.00 |0.00 |0.00 |
 |2025-12-05 10:27:57|0.00 |0.00 |0.00 |0.00 |0.00 |
-|2025-12-05 11:14:37.495996|0.00 |0.00 |0.00 |0.00 |0.00 |
+|2025-12-08 18:23:43|0.00 |0.00 |0.00 |0.00 |0.00 |
+|2025-12-08 19:11:31.180299|0.00 |0.00 |0.00 |0.00 |0.00 |
 
 
 
@@ -333,7 +335,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |0.00 |0.00 |0.00 |0.00 |
 |2025-12-04 15:06:30|0.00 |0.00 |0.00 |0.00 |0.00 |
 |2025-12-05 10:27:57|0.00 |0.00 |0.00 |0.00 |0.00 |
-|2025-12-05 11:14:37.495996|0.00 |0.00 |0.00 |0.00 |0.00 |
+|2025-12-08 18:23:43|0.00 |0.00 |0.00 |0.00 |0.00 |
+|2025-12-08 19:11:31.180299|0.00 |0.00 |0.00 |0.00 |0.00 |
 
 
 
@@ -457,7 +460,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
 |2025-12-04 15:06:30|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
 |2025-12-05 10:27:57|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
-|2025-12-05 11:14:37.495996|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
+|2025-12-08 18:23:43|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
+|2025-12-08 19:11:31.180299|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
 
 
 
@@ -568,7 +572,8 @@ Data in eclipse-score/inc_nlohmann_json is collected from tests, and from monito
 
 | Item  | Summary  | Score  | Status  |
 | --- | --- | --- | --- |
-| [JLS-18](JLS.md#jls-18)  | Results from tests are accurately captured. | 0.00 | ⨯ Item Reviewed<br>⨯ Link Reviewed |
+| [JLS-18](JLS.md#jls-18)  | Results from automated tests for eclipse-score/inc_nlohmann_json are automatically collected from CI-generated JUnit reports into a persistent test results database together with metadata about the executed tests and workflows. | 0.00 | ⨯ Item Reviewed<br>⨯ Link Reviewed |
+| [JLS-45](JLS.md#jls-45)  | The storage location, retention limits, and intended use of captured test result data for eclipse-score/inc_nlohmann_json are documented so that the scope and reproducibility of the available test data can be understood. | 0.00 | ⨯ Item Reviewed<br>⨯ Link Reviewed |
 
 
 
@@ -586,20 +591,21 @@ _None_
 
 ![No Image](figs/TA-DATA.svg)
 
-|date-time|TA-DATA|JLS-18|
-|-|-|-|
-|2025-11-19 13:45:36|0.00 |0.00 |
-|2025-11-20 10:55:40|0.00 |0.00 |
-|2025-11-24 08:25:25|0.00 |0.00 |
-|2025-11-24 15:01:45|0.00 |0.00 |
-|2025-11-25 14:22:48|0.00 |0.00 |
-|2025-11-26 12:04:09|0.00 |0.00 |
-|2025-12-02 16:04:44|0.00 |0.00 |
-|2025-12-04 08:03:28|0.00 |0.00 |
-|2025-12-04 13:58:56|0.00 |0.00 |
-|2025-12-04 15:06:30|0.00 |0.00 |
-|2025-12-05 10:27:57|0.00 |0.00 |
-|2025-12-05 11:14:37.495996|0.00 |0.00 |
+|date-time|TA-DATA|JLS-18|JLS-45|
+|-|-|-|-|
+|2025-11-19 13:45:36|0.00 |0.00 |N/A|
+|2025-11-20 10:55:40|0.00 |0.00 |N/A|
+|2025-11-24 08:25:25|0.00 |0.00 |N/A|
+|2025-11-24 15:01:45|0.00 |0.00 |N/A|
+|2025-11-25 14:22:48|0.00 |0.00 |N/A|
+|2025-11-26 12:04:09|0.00 |0.00 |N/A|
+|2025-12-02 16:04:44|0.00 |0.00 |N/A|
+|2025-12-04 08:03:28|0.00 |0.00 |N/A|
+|2025-12-04 13:58:56|0.00 |0.00 |N/A|
+|2025-12-04 15:06:30|0.00 |0.00 |N/A|
+|2025-12-05 10:27:57|0.00 |0.00 |N/A|
+|2025-12-08 18:23:43|0.00 |0.00 |0.00 |
+|2025-12-08 19:11:31.180299|0.00 |0.00 |0.00 |
 
 
 
@@ -627,15 +633,15 @@ Appropriate storage strategies safeguard availability across the product lifecyc
 **Evidence**
 
 - Time-stamped and traceable result records for each test execution, linked to associated system under test version and specification references.
-  - **Answer**: 
+  - **Answer**: Provided by JLS-18 and JLS-45.
 - List of monitored indicators, linked to associated specification version references.
-  - **Answer**: 
+  - **Answer**: Runtime monitoring indicators for deployed instances are not yet implemented and are expected to be defined by the integrator (see AOU-09, AOU-18 and AOU-19).
 - Time-stamped and traceable test-derived data for each indicator, linked to associated system under test version and indicator specifications references.
-  - **Answer**: 
+  - **Answer**: Indicator-level data is not yet collected and should be done by the integrator (see AOU-09).
 - List of monitored deployments, linked to associated version and configuration references.
-  - **Answer**: 
+  - **Answer**: Not available. Monitoring of deployed instances should be specified by the integrator (see AOU-09, AOU-18 and AOU-19).
 - Time-stamped and traceable production data for each indicator, linked to associated deployment metadata and specification references.
-  - **Answer**: 
+  - **Answer**: Not available. Should be done by the integrator (see AOU-09, AOU-18 and AOU-19).
 
 **Confidence scoring**
 
@@ -646,25 +652,25 @@ monitored deployments.
 **Checklist**
 
 - Is all test data stored with long-term accessibility?
-  - **Answer**: 
+  - **Answer**: No. Test results are collected into a persistent database as part of the CI workflows, which is done as a proof of concept. Due to GitHub storage constraints, the storage of this database is currently limited.
 - Is all monitoring data stored with long-term accessibility?
-  - **Answer**: 
+  - **Answer**: No. Dedicated monitoring data from deployed software is not collected yet. But it is expected to be implemented by the integrator (see AOU-09, AOU-18 and AOU-19).
 - Are extensible data models implemented?
-  - **Answer**: 
+  - **Answer**: Test-result data is stored in a SQLite database with separate tables for workflow runs and individual test results (see JLS-18). This schema can be extended with additional fields or tables if needed.
 - Is sensitive data handled correctly (broadcasted, stored, discarded, or anonymised) with appropriate encryption and redundancy?
-  - **Answer**: 
+  - **Answer**: This is not explicitly applicable. The captured test data does not include personal or sensitive data.
 - Are proper backup mechanisms in place?
-  - **Answer**: 
+  - **Answer**: No explicit project-level backup mechanism is defined for the test results database beyond GitHub’s own infrastructure.
 - Are storage and backup limits tested?
-  - **Answer**: 
+  - **Answer**: The `capture_test_data_memory_sensitive.py` script enforces size limits for the persistent database and fails the workflow if they are exceeded. There is no backup mechanism.
 - Are all data changes traceable?
-  - **Answer**: 
+  - **Answer**:  Yes, for test data. Updates to `TSF/MemoryEfficientTestResultData.db` are performed by CI workflows and committed to the `save_historical_data` branch, so Git history records each change.
 - Are concurrent changes correctly managed and resolved?
-  - **Answer**: 
+  - **Answer**: Largely yes for test data. The ubuntu workflow uses a concurrency group that cancels in-progress runs for the same reference, so typically only one job updates the persistent database at a time and remaining conflicts would surface as failed pushes and require manual resolution.
 - Is data accessible only to intended parties?
-  - **Answer**: 
+  - **Answer**: Since the library is open source, there are no unintended parties.
 - Are any subsets of our data being published?
-  - **Answer**:
+  - **Answer**: Yes, as a proof of concept, CI test result data is committed to the `save_historical_data` branch in the SQLite database `TSF/MemoryEfficientTestResultData.db`, which is publicly accessible via this GitHub repository.
 
 
 ---
@@ -720,7 +726,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
 |2025-12-04 15:06:30|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
 |2025-12-05 10:27:57|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
-|2025-12-05 11:14:37.495996|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
+|2025-12-08 18:23:43|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
+|2025-12-08 19:11:31.180299|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
 
 
 
@@ -874,7 +881,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |
 |2025-12-04 15:06:30|0.00 |
 |2025-12-05 10:27:57|0.00 |
-|2025-12-05 11:14:37.495996|0.00 |
+|2025-12-08 18:23:43|0.00 |
+|2025-12-08 19:11:31.180299|0.00 |
 
 
 
@@ -1035,7 +1043,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |0.00 |N/A|0.00 |N/A|N/A|N/A|
 |2025-12-04 15:06:30|0.00 |0.00 |N/A|0.00 |N/A|N/A|N/A|
 |2025-12-05 10:27:57|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
-|2025-12-05 11:14:37.495996|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
+|2025-12-08 18:23:43|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
+|2025-12-08 19:11:31.180299|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
 
 
 
@@ -1207,7 +1216,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |0.00 |0.00 |0.00 |0.00 |
 |2025-12-04 15:06:30|0.00 |0.00 |0.00 |0.00 |0.00 |
 |2025-12-05 10:27:57|0.00 |0.00 |0.00 |0.00 |0.00 |
-|2025-12-05 11:14:37.495996|0.00 |0.00 |0.00 |0.00 |0.00 |
+|2025-12-08 18:23:43|0.00 |0.00 |0.00 |0.00 |0.00 |
+|2025-12-08 19:11:31.180299|0.00 |0.00 |0.00 |0.00 |0.00 |
 
 
 
@@ -1340,7 +1350,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
 |2025-12-04 15:06:30|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
 |2025-12-05 10:27:57|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
-|2025-12-05 11:14:37.495996|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
+|2025-12-08 18:23:43|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
+|2025-12-08 19:11:31.180299|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
 
 
 
@@ -1467,7 +1478,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |0.00 |0.00 |0.00 |0.00 |
 |2025-12-04 15:06:30|0.00 |0.00 |0.00 |0.00 |0.00 |
 |2025-12-05 10:27:57|0.00 |0.00 |0.00 |0.00 |0.00 |
-|2025-12-05 11:14:37.495996|0.00 |0.00 |0.00 |0.00 |0.00 |
+|2025-12-08 18:23:43|0.00 |0.00 |0.00 |0.00 |0.00 |
+|2025-12-08 19:11:31.180299|0.00 |0.00 |0.00 |0.00 |0.00 |
 
 
 
@@ -1661,7 +1673,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |0.00 |0.00 |0.00 |0.00 |N/A|
 |2025-12-04 15:06:30|0.00 |0.00 |0.00 |0.00 |0.00 |N/A|
 |2025-12-05 10:27:57|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
-|2025-12-05 11:14:37.495996|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
+|2025-12-08 18:23:43|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
+|2025-12-08 19:11:31.180299|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
 
 
 
@@ -1796,7 +1809,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |0.00 |N/A|0.00 |0.00 |N/A|
 |2025-12-04 15:06:30|0.00 |0.00 |N/A|0.00 |0.00 |N/A|
 |2025-12-05 10:27:57|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
-|2025-12-05 11:14:37.495996|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
+|2025-12-08 18:23:43|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
+|2025-12-08 19:11:31.180299|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
 
 
 
@@ -1918,7 +1932,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |0.00 |0.00 |0.00 |0.00 |
 |2025-12-04 15:06:30|0.00 |0.00 |0.00 |0.00 |0.00 |
 |2025-12-05 10:27:57|0.00 |0.00 |0.00 |0.00 |0.00 |
-|2025-12-05 11:14:37.495996|0.00 |0.00 |0.00 |0.00 |0.00 |
+|2025-12-08 18:23:43|0.00 |0.00 |0.00 |0.00 |0.00 |
+|2025-12-08 19:11:31.180299|0.00 |0.00 |0.00 |0.00 |0.00 |
 
 
 
@@ -2028,7 +2043,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
 |2025-12-04 15:06:30|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
 |2025-12-05 10:27:57|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
-|2025-12-05 11:14:37.495996|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
+|2025-12-08 18:23:43|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
+|2025-12-08 19:11:31.180299|0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |0.00 |
 
 
 
@@ -2100,8 +2116,8 @@ dependencies.
 
 ---
 
-### TA-VALIDATION | Reviewed: ⨯ | Score: 0.0 
-All specified tests are executed repeatedly, under defined conditions in controlled environments, according to specified objectives. (To revisit)
+### TA-VALIDATION | Reviewed: ✔ | Score: 0.0 
+All specified tests are executed repeatedly, under defined conditions in controlled environments, according to specified objectives.
 
 
 **Supported Requests:**
@@ -2114,8 +2130,8 @@ All specified tests are executed repeatedly, under defined conditions in control
 
 | Item  | Summary  | Score  | Status  |
 | --- | --- | --- | --- |
-| [JLS-01](JLS.md#jls-01)  | The CI pipeline in nlohmann/json executes the unit and integration test suites on each pull request (opened, reopened, synchronized). | 0.00 | ⨯ Item Reviewed<br>⨯ Link Reviewed |
-| [JLS-22](JLS.md#jls-22)  | A github workflow of eclipse-score/inc_nlohmann_json executes the unit tests daily and saves the results as time-series data. | 0.00 | ⨯ Item Reviewed<br>⨯ Link Reviewed |
+| [JLS-01](JLS.md#jls-01)  | The CI pipeline in the upstream nlohmann/json repository executes the unit and integration test suites on each pull request (opened, reopened, synchronized). | 0.00 | ⨯ Item Reviewed<br>⨯ Link Reviewed |
+| [JLS-22](JLS.md#jls-22)  | A scheduled GitHub workflow in eclipse-score/inc_nlohmann_json triggers the nlohmann/json unit and integration test at least once per day and records their outcomes as time-stamped entries in the persistent test results database. | 0.00 | ⨯ Item Reviewed<br>⨯ Link Reviewed |
 
 
 
@@ -2146,7 +2162,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |0.00 |0.00 |
 |2025-12-04 15:06:30|0.00 |0.00 |0.00 |
 |2025-12-05 10:27:57|0.00 |0.00 |0.00 |
-|2025-12-05 11:14:37.495996|0.00 |0.00 |0.00 |
+|2025-12-08 18:23:43|0.00 |0.00 |0.00 |
+|2025-12-08 19:11:31.180299|0.00 |0.00 |0.00 |
 
 
 
@@ -2181,9 +2198,9 @@ A strategy to generate appropriate data addresses quantity, quality, and selecti
 **Evidence**
 
 - Test results from per-change tests
-  - **Answer**: 
+  - **Answer**: CI runs the tests on each change (JLS-01), and their results are stored in the persistent test results database (JLS-18, JLS-45).
 - Test results from scheduled tests as time series
-  - **Answer**: 
+  - **Answer**: Provided in JLS-22.
 
 **Confidence scoring**
 
@@ -2193,28 +2210,28 @@ results for all expected tests (both pass / fail and performance).
 **Checklist**
 
 - Is the selection of tests correct?
-  - **Answer**: 
+  - **Answer**: The upstream nlohmann/json test suite plus the additional TSF-related tests cover the expected behaviours captured in the Expectations (JLEX-01, JLEX-02).
 - Are the tests executed enough times?
-  - **Answer**: 
+  - **Answer**: Yes, tests run on each pull request and push via the CI workflows (JLS-01) and additionally on a daily schedule in inc_nlohmann_json (JLS-22).
 - How confident are we that all test results are being captured?
-  - **Answer**: 
+  - **Answer**: For the CI workflows that write to the persistent test-results database we are reasonably confident, since capture is automated by the TSF scripts (JLS-18, JLS-45).
 - Can we look at any individual test result, and establish what it relates to?
-  - **Answer**: 
+  - **Answer**: For CI runs, yes. Each stored test result is linked to a specific CI workflow run (repo, run_id, run_attempt) and timestamp in workflow_info, so we can relate it back to the corresponding GitHub workflow execution, code revision and CI configuration (see JLS-18).
 - Can we trace from any test result to the expectation it relates to?
-  - **Answer**: 
+  - **Answer**: Each stored test result includes the test name (e.g. `test-unicode1`), which maps to a concrete test source file. These test files are referenced in TSF statements (e.g. `NPF-01.1`) that are linked to their parent Expectations (e.g. `NPF-01`). This allows us to trace from an individual test result to the corresponding Expectation.
 - Can we identify precisely which environment (software and hardware) were used?
-  - **Answer**: 
+  - **Answer**: For CI runs we can identify the software environment (OS image, compiler, and configuration) via the stored metadata and `list_of_test_environments.md` (JLS-17, JLS-18). The exact GitHub-hosted hardware is only roughly known and is not considered critical for this library.
 - How many pass/fail results would be expected, based on the scheduled tests?
-  - **Answer**: 
+  - **Answer**: All scheduled unit and integration tests are expected to pass (zero failures).
 - Do we have all of the expected results?
-  - **Answer**: 
+  - **Answer**: Yes, for the selected workflows we typically have results for each run, potential gaps arise when CI runs are skipped or cancelled, or due to storge limitation. 
 - Do we have time-series data for all of those results?
-  - **Answer**: 
+  - **Answer**: Stored test results are timestamped and can be queried as a time series (JLS-18, JLS-45), but due to storage limits we only keep a truncated history rather than a complete time series over the whole project lifetime.
 - If there are any gaps, do we understand why?
-  - **Answer**: 
+  - **Answer**: Yes, gaps arise by design from the memory sensitive storage strategy (only initial snapshots and relevant changes are kept, see TSF/scripts/README.md and JLS-45), from the fixed size limits on the persistent database, and from the fact that we do not collect runtime monitoring data for deployed instances yet (see AOU-09, AOU-18 and AOU-19).
 - Are the test validation strategies credible and appropriate?
-  - **Answer**: 
+  - **Answer**: Yes, the upstream nlohmann/json test suite is extensive and is complemented by additional TSF-related tests. These tests are executed on each change and on a daily schedule via CI (JLS-01, JLS-22), and their results are stored and analysed through TA-DATA and TA-ANALYSIS.
 - What proportion of the implemented tests are validated?
-  - **Answer**: 
+  - **Answer**: For the CI workflows, all implemented automated unit and integration tests are executed and their results are captured in the persistent database.
 - Have the tests been verified using known good and bad data?
-  - **Answer**:
+  - **Answer**: Yes, the upstream test suite of nlohmann/json uses dedicated JSON test data (including JSON parsing test suite: https://github.com/nlohmann/json_test_data/tree/master/json_tests and the big list of naughty strings in `json_test_data`: https://github.com/nlohmann/json_test_data/tree/master/big-list-of-naughty-strings) and the parsers are fuzz-tested 24/7 via Google OSS-Fuzz, exercising many known-good and intentionally malformed inputs.

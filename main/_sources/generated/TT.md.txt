@@ -45,7 +45,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |0.00 |0.00 |
 |2025-12-04 15:06:30|0.00 |0.00 |0.00 |
 |2025-12-05 10:27:57|0.00 |0.00 |0.00 |
-|2025-12-05 11:14:37.495996|0.00 |0.00 |0.00 |
+|2025-12-08 18:23:43|0.00 |0.00 |0.00 |
+|2025-12-08 19:11:31.180299|0.00 |0.00 |0.00 |
 
 
 
@@ -97,7 +98,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |0.00 |0.00 |
 |2025-12-04 15:06:30|0.00 |0.00 |0.00 |
 |2025-12-05 10:27:57|0.00 |0.00 |0.00 |
-|2025-12-05 11:14:37.495996|0.00 |0.00 |0.00 |
+|2025-12-08 18:23:43|0.00 |0.00 |0.00 |
+|2025-12-08 19:11:31.180299|0.00 |0.00 |0.00 |
 
 
 
@@ -150,7 +152,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |0.00 |0.00 |0.00 |
 |2025-12-04 15:06:30|0.00 |0.00 |0.00 |0.00 |
 |2025-12-05 10:27:57|0.00 |0.00 |0.00 |0.00 |
-|2025-12-05 11:14:37.495996|0.00 |0.00 |0.00 |0.00 |
+|2025-12-08 18:23:43|0.00 |0.00 |0.00 |0.00 |
+|2025-12-08 19:11:31.180299|0.00 |0.00 |0.00 |0.00 |
 
 
 
@@ -204,7 +207,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |0.00 |0.00 |0.00 |0.00 |
 |2025-12-04 15:06:30|0.00 |0.00 |0.00 |0.00 |0.00 |
 |2025-12-05 10:27:57|0.00 |0.00 |0.00 |0.00 |0.00 |
-|2025-12-05 11:14:37.495996|0.00 |0.00 |0.00 |0.00 |0.00 |
+|2025-12-08 18:23:43|0.00 |0.00 |0.00 |0.00 |0.00 |
+|2025-12-08 19:11:31.180299|0.00 |0.00 |0.00 |0.00 |0.00 |
 
 
 
@@ -256,7 +260,8 @@ _None_
 |2025-12-04 13:58:56|0.00 |0.00 |0.00 |
 |2025-12-04 15:06:30|0.00 |0.00 |0.00 |
 |2025-12-05 10:27:57|0.00 |0.00 |0.00 |
-|2025-12-05 11:14:37.495996|0.00 |0.00 |0.00 |
+|2025-12-08 18:23:43|0.00 |0.00 |0.00 |
+|2025-12-08 19:11:31.180299|0.00 |0.00 |0.00 |
 
 
 
@@ -278,7 +283,7 @@ Evidence is provided within eclipse-score/inc_nlohmann_json to demonstrate that 
 | --- | --- | --- | --- |
 | [TA-DATA](TA.md#ta-data)  | Data in eclipse-score/inc_nlohmann_json is collected from tests, and from monitoring of deployed software, according to specified objectives. | 0.00 | ⨯ Item Reviewed<br>⨯ Link Reviewed |
 | [TA-ANALYSIS](TA.md#ta-analysis)  | Collected data from tests and monitoring of deployed software in eclipse-score/inc_nlohmann_json is analysed according to specified objectives. | 0.00 | ⨯ Item Reviewed<br>⨯ Link Reviewed |
-| [TA-VALIDATION](TA.md#ta-validation)  | All specified tests are executed repeatedly, under defined conditions in controlled environments, according to specified objectives. (To revisit) | 0.00 | ⨯ Item Reviewed<br>⨯ Link Reviewed |
+| [TA-VALIDATION](TA.md#ta-validation)  | All specified tests are executed repeatedly, under defined conditions in controlled environments, according to specified objectives. | 0.00 | ✔ Item Reviewed<br>⨯ Link Reviewed |
 
 
 
@@ -309,5 +314,6 @@ _None_
 |2025-12-04 13:58:56|0.00 |0.00 |0.00 |0.00 |
 |2025-12-04 15:06:30|0.00 |0.00 |0.00 |0.00 |
 |2025-12-05 10:27:57|0.00 |0.00 |0.00 |0.00 |
-|2025-12-05 11:14:37.495996|0.00 |0.00 |0.00 |0.00 |
+|2025-12-08 18:23:43|0.00 |0.00 |0.00 |0.00 |
+|2025-12-08 19:11:31.180299|0.00 |0.00 |0.00 |0.00 |
 
