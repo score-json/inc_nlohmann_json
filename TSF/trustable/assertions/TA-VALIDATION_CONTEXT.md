@@ -44,7 +44,7 @@ results for all expected tests (both pass / fail and performance).
 **Checklist**
 
 - Is the selection of tests correct?
-  - **Answer**: The upstream nlohmann/json test suite plus the additional TSF-related tests cover the behaviours captured in the Expectations (JLEX-01, JLEX-02). However, they cannot cover all conceivable misbehaviours.
+  - **Answer**: The upstream nlohmann/json test suite plus the additional TSF-related tests cover the expected behaviours captured in the Expectations (JLEX-01, JLEX-02).
 - Are the tests executed enough times?
   - **Answer**: Yes, tests run on each pull request and push via the CI workflows (JLS-01) and additionally on a daily schedule in inc_nlohmann_json (JLS-22).
 - How confident are we that all test results are being captured?
@@ -58,7 +58,7 @@ results for all expected tests (both pass / fail and performance).
 - How many pass/fail results would be expected, based on the scheduled tests?
   - **Answer**: All scheduled unit and integration tests are expected to pass (zero failures).
 - Do we have all of the expected results?
-  - **Answer**: Yes, for the selected workflows we typically have results for each run potential gaps arise when CI runs are skipped or cancelled, or due to storge limitation. 
+  - **Answer**: Yes, for the selected workflows we typically have results for each run, potential gaps arise when CI runs are skipped or cancelled, or due to storge limitation. 
 - Do we have time-series data for all of those results?
   - **Answer**: Stored test results are timestamped and can be queried as a time series (JLS-18, JLS-45), but due to storage limits we only keep a truncated history rather than a complete time series over the whole project lifetime.
 - If there are any gaps, do we understand why?
@@ -66,6 +66,6 @@ results for all expected tests (both pass / fail and performance).
 - Are the test validation strategies credible and appropriate?
   - **Answer**: Yes, the upstream nlohmann/json test suite is extensive and is complemented by additional TSF-related tests. These tests are executed on each change and on a daily schedule via CI (JLS-01, JLS-22), and their results are stored and analysed through TA-DATA and TA-ANALYSIS.
 - What proportion of the implemented tests are validated?
-  - **Answer**: 
+  - **Answer**: For the CI workflows, all implemented automated unit and integration tests are executed and their results are captured in the persistent database.
 - Have the tests been verified using known good and bad data?
   - **Answer**: Yes, the upstream test suite of nlohmann/json uses dedicated JSON test data (including JSON parsing test suite: https://github.com/nlohmann/json_test_data/tree/master/json_tests and the big list of naughty strings in `json_test_data`: https://github.com/nlohmann/json_test_data/tree/master/big-list-of-naughty-strings) and the parsers are fuzz-tested 24/7 via Google OSS-Fuzz, exercising many known-good and intentionally malformed inputs.
