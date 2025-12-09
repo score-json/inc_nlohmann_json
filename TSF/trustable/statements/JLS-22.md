@@ -14,6 +14,9 @@ references:
     - type: website
       url: "https://github.com/eclipse-score/inc_nlohmann_json/blob/save_historical_data/TSF/MemoryEfficientTestResultData.db"
       description: "The database containing the test results."
+    - type: file
+      path: "./TSF/scripts/capture_test_data_memory_sensitive.py"
+      description: "Captures results from each workflow run and appends them to the persistent test results database."
 evidence:
     type: https_response_time
     configuration:
@@ -24,4 +27,4 @@ score:
     Jonas-Kirchhoff: 1.0
 ---
 
-A Github workflow of eclipse-score/inc_nlohmann_json executes the unit tests daily and saves the results as time-series data.
+A scheduled GitHub workflow in eclipse-score/inc_nlohmann_json triggers the nlohmann/json unit and integration test at least once per day and records their outcomes as time-stamped entries in the persistent test results database.
