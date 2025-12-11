@@ -1,0 +1,53 @@
+name: PR Count Gate
+
+on:
+  workflow_call:
+
+jobs:
+  pr_count_gate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: read
+    steps:
+      - name: Count open pull requests
+        id: pr-count
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const { owner, repo } = context.repo;
+            const per_page = 100;
+            let page = 1;
+            let total = 0;
+
+            while (true) {
+              const { data } = await github.pulls.list({
+                owner,
+                repo,
+                state: 'open',
+                per_page,
+                page,
+              });
+              if (data.length === 0) break;
+              total += data.length;
+              if (data.length < per_page) break;
+              page++;
+            }
+
+            core.info(`Open pull requests: ${total}`);
+            core.setOutput('open_prs', total.toString());
+
+      - name: Enforce open-PR threshold
+        run: |
+          THRESHOLD=15
+          COUNT=${{ steps.pr-count.outputs.open_prs }}
+
+          echo "Open PRs: $COUNT (threshold: $THRESHOLD)"
+
+          if [ "$COUNT" -gt "$THRESHOLD" ]; then
+            echo "Too many open pull requests – failing job."
+            exit 1
+          fi
+
+          echo "PR count within threshold."

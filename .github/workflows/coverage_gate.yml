@@ -30,19 +30,20 @@ jobs:
       - name: Enforce coverage threshold
         run: |
           THRESHOLD=99
-          COVERAGE_LINE=$(grep -oE "Lines:[^%]*[0-9]+\.[0-9]+%" -m 1 coverage_html/index.html || true)
-          echo "Found line: $COVERAGE_LINE"
 
-          if [ -z "$COVERAGE_LINE" ]; then
-            echo "Could not find coverage summary in index.html"
+          echo "=== First few floating numbers in index.html ==="
+          grep -oE "[0-9]+\.[0-9]+" coverage_html/index.html | head -n10 || true
+
+          LINE_COV=$(grep -oE "[0-9]+\.[0-9]+" coverage_html/index.html | head -n1 || true)
+          echo "Raw extracted coverage: '${LINE_COV}'"
+
+          if [ -z "$LINE_COV" ]; then
+            echo "Could not find any numeric coverage value in index.html"
             exit 1
           fi
 
-          # Prozentzahl extrahieren
-          LINE_COV=$(echo "$COVERAGE_LINE" | grep -oE "[0-9]+\.[0-9]+")
           echo "Line coverage extracted: ${LINE_COV}% (threshold: ${THRESHOLD}%)"
 
-          # Ganzzahl vergleichen
           if [ "${LINE_COV%.*}" -lt "$THRESHOLD" ]; then
             echo "Coverage below threshold, failing job."
             exit 1
