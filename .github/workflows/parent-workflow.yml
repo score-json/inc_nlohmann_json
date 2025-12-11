@@ -64,9 +64,11 @@ jobs:
       artifact_id: "ubuntu-${{ github.sha }}"
 
   coverage_gate:
-      name: Run Coverage Gate Workflow
-      needs: [ubuntu]
-      uses: ./.github/workflows/coverage_gate.yml
+    name: Run Coverage Gate Workflow
+    needs: [ubuntu]
+    uses: ./.github/workflows/coverage_gate.yml
+    with:
+      artifact_id: "coverage_gate-${{ github.sha }}"
 
   dependency_review:
     name: Run dependency_review Workflow
