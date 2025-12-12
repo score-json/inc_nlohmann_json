@@ -59,17 +59,17 @@ set of AWIs is incorrect, or the tolerance is too lax.
 - Risk analyses
   - **Answer**: 
 - List of advance warning indicators
-  - **Answer**: 
+  - **Answer**: The only tow introduced AWIs are provided in JLS-54 and JLS-55.
 - List of Expectations for monitoring mechanisms
   - **Answer**: 
 - List of implemented monitoring mechanisms
-  - **Answer**: 
+  - **Answer**: There are no monitoring mechanisms 
 - List of identified misbehaviours without advance warning indicators
   - **Answer**: 
 - List of advance warning indicators without implemented monitoring mechanisms
   - **Answer**: 
 - Advance warning signal data as time series (see TA-DATA)
-  - **Answer**: 
+  - **Answer**: The only AWIs in JLS-54 and JLS-55 are implemented as part of the CI and therefore saved as time series (see JLS-18 and JLS-45).
 
 **Confidence scoring**
 
@@ -80,27 +80,27 @@ monitoring mechanisms have been implemented to collect the required data.
 **Checklist**
 
 - How appropriate/thorough are the analyses that led to the indicators?
-  - **Answer**: Since no misbehaviours for the use of the library for parsing and verification of JSON data according to RFC8259 have been identified, no warning indicators are implemented.
+  - **Answer**: For eclipse-score/inc_nlohmann_json, the library itself is a statically integrated, header-only component without stream processing loops. No runtime misbehaviours specific to this repository have been identified, and therefore no runtime AWIs are implemented for the library itself. The two AWIs that do exist (coverage threshold and PR-count limit) are based on the assumption that CI test results and review load correlate with potential misbehaviours in the library and its evolution, and are therefore focused on test and process quality rather than runtime behaviour.
 - How confident can we be that the list of indicators is comprehensive?
-  - **Answer**:  For the scope of `eclipse-score/inc_nlohmann_json` as a static library, we are reasonably confident that CI-based indicators on test failures and coverage are sufficient.
+  - **Answer**:  For the scope of `eclipse-score/inc_nlohmann_json` as a static library, we are reasonably confident that CI-based indicators on test coverage and the count of open PRs are sufficient.
 - Could there be whole categories of warning indicators still missing?
-  - **Answer**:  
+  - **Answer**: Yes, there could. In particular, runtime performance or stability indicators in systems that use the library are not covered here. Any missing warning indicators are expected to be implemented by the integrator (see AOU-09).
 - How has the list of advance warning indicators varied over time?
-  - **Answer**: The current AWIs (coverage threshold and test-failure rate on protected branches) were introduced as CI-based quality gates. No additional AWIs have been added or removed so far
+  - **Answer**: The current AWIs (coverage threshold and pr count threshold on protected branches) were introduced as CI-based quality gates. No additional AWIs have been added or removed so far.
 - How confident are we that the indicators are leading/predictive?
-  - **Answer**: The indicators are leading in the sense that they prevent changes that reduce coverage or increase test failures from entering protected branches and being used as a basis for integration and release. 
+  - **Answer**: The indicators are leading in the sense that they prevent changes which reduce test coverage, or are made in an overloaded PR situation, from entering protected branches and being used as a basis for integration and release.
 - Are there misbehaviours that have no advance warning indicators?
-  - **Answer**: 
+  - **Answer**: Potential runtime misbehaviours in consuming systems are not covered by AWIs in this repository.
 - Can we collect data for all indicators?
-  - **Answer**: Both indicators (JLS-54 and JLS-55) are derived from CI runs, and the required data (coverage and test results) is collected automatically for each CI execution.
+  - **Answer**: Both indicators (JLS-54 and JLS-55) are derived from CI runs, and the required data (coverage and pr count) is collected automatically for each CI execution.
 - Are the monitoring mechanisms used included in our Trustable scope?
-  - **Answer**: There is no monitoring mechanisms.
+  - **Answer**: There is no runtime monitoring mechanisms.
 - Are there gaps or trends in the data?
-  - **Answer**: 
+  - **Answer**: There is no trend analysis preformed on AWIs. However, there is trend analysis done as a proof of concept to the failure rate of CI test (see JLS-17). Potential gaps could arrise during the integration of the library.
 - If there are gaps or trends, are they analysed and addressed?
-  - **Answer**: 
+  - **Answer**: There is no trends identified (see the question above). Any gaps should be closed by the integrator.
 - Is the data actually predictive/useful?
-  - **Answer**: Yes, the CI data is useful to prevent regressions in the tested behaviour of the library from entering protected branches. 
+  - **Answer**: Yes, the CI data from the AWIs is useful to prevent regressions in the tested behaviour of the library and possible issues introduced due to a large number of open PRs from entering protected branches. 
 - Are indicators from code, component, tool, or data inspections taken into
 consideration? 
-  - **Answer**: 
+  - **Answer**: Yes, all types of indicator are taken into consideration.
