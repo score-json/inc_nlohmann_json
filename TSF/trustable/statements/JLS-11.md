@@ -12,7 +12,7 @@ evidence:
         list_of_known_misbehaviours: "./TSF/docs/nlohmann_misbehaviours_comments.md"
     type: https_response_time
     configuration:
-        target_seconds: 2.0
+        target_seconds: 2
         urls: 
           - "https://github.com/eclipse-score/inc_nlohmann_json/blob/save_historical_data/TSF/misbehaviours.md"
 score:
