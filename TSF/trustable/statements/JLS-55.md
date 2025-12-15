@@ -4,7 +4,7 @@ normative: true
 references: 
     - type: verbose_file
       path: "./.github/workflows/coverage_gate.yml"
-      description: "GitHub Actions workflow enforcing a limit on open PRs"
+      description: "GitHub Actions workflow enforcing a limit on open PRs."
     - type: verbose_file
       path: "./.github/workflows/parent-workflow.yml"
       description: "Parent CI workflow that calls the pr_count_gate workflow"
