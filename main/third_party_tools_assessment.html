@@ -596,6 +596,27 @@ Such issues are usually noticed quickly when running builds on multiple systems.
 </li>
 </ul>
 </section>
+<section id="clang-tidy">
+<h3>clang-tidy<a class="headerlink" href="#clang-tidy" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Role</strong>: Clang-Tidy is used as static analysis tool to detect bug patterns, unsafe constructs, and style/performance issues in the code base. In nlohmann/json it is explicitly part of the project’s “Static analysis” quality assurance activities, and it is configured via a repository-wide <a class="reference external" href="https://github.com/nlohmann/json/blob/develop/.clang-tidy">.clang-tidy</a> configuration file.</p></li>
+<li><p><strong>Potential Misbehaviours</strong>:</p>
+<ul>
+<li><p>False positives (reporting issues that are not real problems) or false negatives (missing real issues).</p></li>
+<li><p>Results can vary between Clang-Tidy versions and depending on compile flags / include paths.</p></li>
+</ul>
+</li>
+<li><p><strong>Severity</strong>: Medium - Clang-Tidy findings are advisory and incorrect or missing findings can reduce confidence and leave issues undiscovered, but the tool does not modify shipped artefacts by itself.</p></li>
+<li><p><strong>Detectability</strong>: Medium - False positives are usually spotted during review and false negatives are harder to detect and may only surface through other analyzers, tests, fuzzing, or user reports.</p></li>
+<li><p><strong>Mitigation</strong>:</p>
+<ul>
+<li><p>Clang-Tidy is not the only analysis gate, results are complemented by other static analyzers (e.g. cppcheck, Coverity, Clang Static Analyzer) and dynamic testing (unit tests, fuzzing, sanitizers).</p></li>
+<li><p>The .clang-tidy configuration is version-controlled and reviewed like normal code changes.</p></li>
+<li><p>CI uses a controlled toolchain environment (e.g. the project CI image), reducing version drift and improving reproducibility.</p></li>
+</ul>
+</li>
+</ul>
+</section>
 <section id="coverity-scan">
 <h3>Coverity Scan<a class="headerlink" href="#coverity-scan" title="Link to this heading">#</a></h3>
 <ul class="simple">
@@ -603,7 +624,12 @@ Such issues are usually noticed quickly when running builds on multiple systems.
 <li><p><strong>Potential Misbehaviours</strong>: Could miss bugs (false negatives) or report non-issues (false positives)</p></li>
 <li><p><strong>Severity</strong>: Medium - Missed bugs or misinterpreted reports can affect the quality of the library.</p></li>
 <li><p><strong>Detectability</strong>: High - Coverity Scan findings are compared with results from other static analyzers (such as cppcheck and Codacy), compiler warnings, and the behaviour observed in tests and fuzzing.</p></li>
-<li><p><strong>Mitigation</strong>: Multiple static analyzers (cppcheck, clang-tidy, Codacy), extensive testing.</p></li>
+<li><p><strong>Mitigation</strong>:</p>
+<ul>
+<li><p>Multiple static analyzers (cppcheck, clang-tidy, Codacy), extensive testing.</p></li>
+<li><p>Coverity Scan is used within S-CORE, where tool qualification evidence is maintained.</p></li>
+</ul>
+</li>
 </ul>
 </section>
 <section id="cppcheck">
@@ -704,7 +730,12 @@ Such issues are usually noticed quickly when running builds on multiple systems.
 <li><p><strong>Potential Misbehaviours</strong>: lcov can misinterpret or partially ignore <code class="docutils literal notranslate"><span class="pre">gcov</span></code> data, so that some lines are shown as covered or uncovered incorrectly and generate incomplete or inconsistent HTML reports.</p></li>
 <li><p><strong>Severity</strong>: Low - lcov only reads coverage data and creates reports; it does not affect any code or the functionality of the lirary.</p></li>
 <li><p><strong>Detectability</strong>: High - Inconsistencies can be detected by comparing lcov’s HTML output with the coverage data uploaded to Coveralls.</p></li>
-<li><p><strong>Mitigation</strong>: Mitigation through cross-validation with Coveralls and manual inspection of coverage data.</p></li>
+<li><p><strong>Mitigation</strong>:</p>
+<ul>
+<li><p>Mitigation through cross-validation with Coveralls and manual inspection of coverage data.</p></li>
+<li><p>lcov is used within S-CORE, where tool qualification evidence is maintained.</p></li>
+</ul>
+</li>
 </ul>
 </section>
 <section id="libfuzzer">
@@ -865,43 +896,47 @@ Such issues are usually noticed quickly when running builds on multiple systems.
 <td><p>Medium</p></td>
 <td><p>Medium</p></td>
 </tr>
-<tr class="row-odd"><td><p>AFL</p></td>
+<tr class="row-odd"><td><p>clang-tidy</p></td>
+<td><p>Medium</p></td>
+<td><p>Medium</p></td>
+</tr>
+<tr class="row-even"><td><p>AFL</p></td>
 <td><p>Medium</p></td>
 <td><p>Low</p></td>
 </tr>
-<tr class="row-even"><td><p>libFuzzer</p></td>
+<tr class="row-odd"><td><p>libFuzzer</p></td>
 <td><p>Medium</p></td>
 <td><p>Low</p></td>
 </tr>
-<tr class="row-odd"><td><p>OSS-Fuzz</p></td>
+<tr class="row-even"><td><p>OSS-Fuzz</p></td>
 <td><p>Medium</p></td>
 <td><p>Low</p></td>
 </tr>
-<tr class="row-even"><td><p>MkDocs</p></td>
+<tr class="row-odd"><td><p>MkDocs</p></td>
 <td><p>Low</p></td>
 <td><p>High</p></td>
 </tr>
-<tr class="row-odd"><td><p>Material for MkDocs</p></td>
+<tr class="row-even"><td><p>Material for MkDocs</p></td>
 <td><p>Low</p></td>
 <td><p>High</p></td>
 </tr>
-<tr class="row-even"><td><p>GitHub Changelog Generator</p></td>
+<tr class="row-odd"><td><p>GitHub Changelog Generator</p></td>
 <td><p>Low</p></td>
 <td><p>High</p></td>
 </tr>
-<tr class="row-odd"><td><p>Probot</p></td>
+<tr class="row-even"><td><p>Probot</p></td>
 <td><p>Low</p></td>
 <td><p>High</p></td>
 </tr>
-<tr class="row-even"><td><p>Google Benchmark</p></td>
+<tr class="row-odd"><td><p>Google Benchmark</p></td>
 <td><p>Low</p></td>
 <td><p>High</p></td>
 </tr>
-<tr class="row-odd"><td><p>lcov</p></td>
+<tr class="row-even"><td><p>lcov</p></td>
 <td><p>Low</p></td>
 <td><p>High</p></td>
 </tr>
-<tr class="row-even"><td><p>Codacy</p></td>
+<tr class="row-odd"><td><p>Codacy</p></td>
 <td><p>Low</p></td>
 <td><p>High</p></td>
 </tr>
@@ -950,6 +985,7 @@ Such issues are usually noticed quickly when running builds on multiple systems.
 <li><p><a class="reference external" href="https://coveralls.io/github/nlohmann/json">Coveralls page for nlohmann/json</a></p></li>
 <li><p><a class="reference external" href="https://app.codacy.com/gh/nlohmann/json">Codacy project for nlohmann/json</a></p></li>
 <li><p><a class="reference external" href="https://github.com/linux-test-project/lcov">lcov project documentation</a></p></li>
+<li><p><a class="reference external" href="https://clang.llvm.org/extra/clang-tidy/">clang-tidy</a></p></li>
 </ul>
 </section>
 <section id="tool-specific-external-documentation">
@@ -1007,6 +1043,7 @@ Such issues are usually noticed quickly when running builds on multiple systems.
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cmake">CMake</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#codacy">Codacy</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#coveralls">Coveralls</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clang-tidy">clang-tidy</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#coverity-scan">Coverity Scan</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cppcheck">cppcheck</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#doctest">doctest</a></li>

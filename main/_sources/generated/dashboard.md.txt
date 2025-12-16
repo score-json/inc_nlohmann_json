@@ -8,16 +8,16 @@ The distribution of scores for evidence nodes across the graph.
 
 |bin|count|
 |-|-|
-|0.0-0.1  |183|
+|0.0-0.1  |187|
 |0.1-0.2  |0|
 |0.2-0.3  |0|
-|0.3-0.4  |1|
+|0.3-0.4  |0|
 |0.4-0.5  |0|
 |0.5-0.6  |0|
 |0.6-0.7  |0|
-|0.7-0.8  |3|
+|0.7-0.8  |1|
 |0.8-0.9  |0|
-|0.9-1.0  |7|
+|0.9-1.0  |6|
 ## Expectations Score Distribution
 
 The distribution of scores for expectations nodes across the graph.
@@ -27,8 +27,8 @@ The distribution of scores for expectations nodes across the graph.
 
 |bin|count|
 |-|-|
-|0.0-0.1  |0|
-|0.1-0.2  |1|
+|0.0-0.1  |1|
+|0.1-0.2  |0|
 |0.2-0.3  |0|
 |0.3-0.4  |0|
 |0.4-0.5  |0|
@@ -46,16 +46,16 @@ The distribution of scores for all nodes across the graph.
 
 |bin|count|
 |-|-|
-|0.0-0.1  |235|
-|0.1-0.2  |2|
+|0.0-0.1  |240|
+|0.1-0.2  |1|
 |0.2-0.3  |1|
 |0.3-0.4  |2|
 |0.4-0.5  |0|
-|0.5-0.6  |0|
+|0.5-0.6  |1|
 |0.6-0.7  |1|
-|0.7-0.8  |4|
-|0.8-0.9  |1|
-|0.9-1.0  |7|
+|0.7-0.8  |1|
+|0.8-0.9  |0|
+|0.9-1.0  |6|
 ## Jonas-Kirchhoff SME Score Distribution
 
 ![No Image](figs/Jonas-Kirchhoff_hist.svg)
@@ -130,8 +130,8 @@ The distribution of scores for all nodes across the graph.
 | Category | Count |
 |----------|-------|
 |statements|273|
-|reviewed statements|20|
-|unreviewed statements|253|
+|reviewed statements|16|
+|unreviewed statements|257|
 |orphaned statements|0|
 |statements with evidence|46|
 |evidence|194|
