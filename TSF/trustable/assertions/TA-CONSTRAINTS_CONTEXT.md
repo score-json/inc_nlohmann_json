@@ -51,17 +51,15 @@ reporting bugs, issues, and requests.
 **Suggested evidence**
 
 - Installation manuals with worked examples
-  - **Answer**: 
+  - **Answer**: See JLS-70.
 - Configuration manuals with worked examples
-  - **Answer**: 
+  - **Answer**: See JLS-71.
 - Specification documentation with a clearly defined scope
-  - **Answer**: 
-- User guides detailing limitations in interfaces designed for expandability or
-  modularity
-  - **Answer**: 
-- Documented strategies used by external users to address constraints and
-  work with existing Statements
-  - **Answer**: 
+  - **Answer**: See JLS-72. TODO check what a specification documentation actually is and whether this is covered by JLS-72 (the design goals reference)
+- User guides detailing limitations in interfaces designed for expandability or modularity
+  - **Answer**: See JLS-73.
+- Documented strategies used by external users to address constraints and work with existing Statements
+  - **Answer**: See AOU-10 and AOU-11.
 
 **Confidence scoring**
 
@@ -72,21 +70,21 @@ contradictions and obvious pitfalls within the defined Statements.
 
 - Are the constraints grounded in realistic expectations, backed by real-world
   examples?
-  - **Answer**: 
+  - **Answer**: The constraints originate from S-CORE, the nlohmann/json library and the RFC-8259 standard. As these are all widely used, the constraints are grounded in realistic expectations.
 - Do they effectively guide downstream consumers in expanding upon existing
   Statements?
-  - **Answer**: 
+  - **Answer**: The existing set of AOUs provides effective guidance for consumers.
 - Do they provide clear guidance for upstreams on reusing components with
   well-defined claims?
   - **Answer**: 
 - Are any Statements explicitly designated as not reusable or adaptable?
-  - **Answer**: 
+  - **Answer**: No, all statements could theoretically be adapted or reused.
 - Are there worked examples from downstream or upstream users demonstrating
   these constraints in practice?
-  - **Answer**: 
+  - **Answer**: As the nlohmann/json library is widely used, its constraints (like the installation manual) are regularly read and applied and therefore demonstrated.
 - Have there been any documented misunderstandings from users, and are these
   visibly resolved?
-  - **Answer**: 
+  - **Answer**: Yes, several recurring misunderstandings are explicitly documented and addressed via upstream documentation and closed issues. For example, brace-initialization unexpectedly yielding arrays and differing across compilers is called out in the [FAQ](https://json.nlohmann.me/home/faq/) and referenced from issues  [here](https://github.com/nlohmann/json/issues/4898), and duplicate-key behavior is clarified in the release notes as unspecified by RFC 8259 (see [release notes](https://json.nlohmann.me/home/releases) and issue [#2667](https://github.com/nlohmann/json/discussions/2667)).
 - Do external users actively keep up with updates, and are they properly
   notified of any changes?
-  - **Answer**: 
+  - **Answer**: External users of the library are not necessarily automatically notified of an update, and are neither assumed nor required to keep up to date. If the external user forks the GitHub repository, however, then GitHub shows automatically whenever the upstream changes.
