@@ -11,6 +11,12 @@ GitHub’s “failure rate” counts all non-successful job runs, including canc
 jobs (e.g. quickly closed PRs) and infrastructure/tooling problems, not only
 true regressions in the JSON library.
 
+In this document we distinguish between (a) **test-result failures/regressions**
+(unit/integration tests failing) and (b) **CI/environment/infrastructure failures**
+(runner/tooling/network issues, publishing steps, label synchronization, etc.).
+Only (a) is used as evidence for behaviour-related analysis; (b) is handled
+separately as CI/infrastructure reliability.
+
 ## Jobs with the highest reported failure rates
 
 From the Jobs table (sorted by Failure rate):
@@ -74,6 +80,12 @@ GitHub’s “failure rate” counts all non-successful job runs, including canc
 jobs (e.g. quickly closed PRs) and infrastructure/tooling problems, not only
 true regressions in the JSON library.
 
+In this document we distinguish between (a) **test-result failures/regressions**
+(unit/integration tests failing) and (b) **CI/environment/infrastructure failures**
+(runner/tooling/network issues, publishing steps, label synchronization, etc.).
+Only (a) is used as evidence for behaviour-related analysis; (b) is handled
+separately as CI/infrastructure reliability.
+
 ## Jobs with the highest reported failure rates
 
 From the Jobs table (sorted by Failure rate):
@@ -110,4 +122,3 @@ failure rates are confined to meta-jobs that handle publishing of historical
 test data and label synchronization. This indicates a stable CI setup for
 `inc_nlohmann_json`, with the only reported failures occurring in
 infrastructure-side integration steps rather than in the core test pipeline.
-

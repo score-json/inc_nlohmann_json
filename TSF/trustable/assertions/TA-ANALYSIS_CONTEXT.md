@@ -43,7 +43,7 @@ by confirming that test results remain unchanged when no changes are intended.
 **Evidence**
 
 - Analysis of test data, including thresholds in relation to appropriate statistical properties.
-  - **Answer**: The analysis of test data is captured by JLS-17, but no explicit quantitative thresholds are defined.
+  - **Answer**: The analysis of test data includes CI failure-rate/trend analysis (JLS-17), quantitative CI thresholds such as the lcov coverage gate (see JLS-54), and checking that expectations are supported by tests via Trustable traceability (supporting statements under JLEX-01/02 reference CI tests and are validated by SME reviewers during scoring).
 - Analysis of failures
   - **Answer**: Provided by JLS-26 and JLS-17.
 - Analysis of spikes and trends
@@ -59,7 +59,7 @@ that may indicate problems in development, test, or production.
 **CHECKLIST**
 
 - What fraction of Expectations are covered by the test data?
-  - **Answer**: The two expectations are JLEX-01 and JLEX-02. Every statement supporting either of these expectations is ultimately supported by a test, except for WFJ-06. WFJ-06 specifies that `basic_json::accept` must accept exactly JSON values for all possible inputs. Since there are infinitely many possible inputs, this cannot be tested exhaustively. Indirect tests are provided by the rejection of ill-formed json data.
+  - **Answer**: The two expectations are JLEX-01 and JLEX-02. Every statement supporting either of these expectations is ultimately supported by a test, except for WFJ-06. WFJ-06 specifies that `basic_json::accept` must accept exactly JSON values for all possible inputs. Since there are infinitely many possible inputs, this cannot be tested exhaustively. Indirect tests are provided by the rejection of ill-formed json data. This traceability is established by requiring each supporting statement under JLEX-01/02 to reference the relevant CI test(s), and the suitability of the referenced tests as evidence is validated during SME review as part of the scoring process.
 - What fraction of Misbehaviours are covered by the monitored indicator data?
   - **Answer**: Currently none, because there is no implemented monitoring of deployed instances yet. This is a future integrator responsibility (see AOU-09, AOU-18 and AOU-19).
 - How confident are we that the indicator data are accurate and timely?
