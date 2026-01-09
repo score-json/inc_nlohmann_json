@@ -89,20 +89,20 @@ established and reusable solutions.
 **Suggested evidence**
 
 - List of identified Misbehaviours
-  - **Answer**: 
+  - **Answer**: See JLS-69.
 - List of Expectations for mitigations addressing identified Misbehaviours
-  - **Answer**: 
+  - **Answer**: Mitigation expectations are expressed implicitly through (a) documented Quality assurance (https://json.nlohmann.me/community/quality_assurance) requirements and (b) concrete mitigation mechanisms captured by existing Statements: JLS-02 (fuzzing), JLS-31 (static analysis), JLS-25 (review/security policy), JLS-24 (defined failure mode via exceptions), and WFJ-06 (input validation via accept()).
 - Risk analysis
-  - **Answer**: 
+  - **Answer**: No risk analysis has been performed.
 - Test analysis, including:
   - False negative tests
-    - **Answer**: 
+    - **Answer**: Fault induction via fuzzing (see JLS-02) provides a practical approach to triggering failures and edge cases that normal functional tests might miss.
   - Exception handling tests
-    - **Answer**: 
-  - Stress tests
-    - **Answer**: 
+    - **Answer**: No exception handling tests are currently performed.
+  - Stress tests.
+    - **Answer**: Stress tests target system-level behavior under load, while nlohmann/json is a stateless JSON library. There is no long-lived state, connection pool, thread pool, queue or similar.
   - Soak tests
-    - **Answer**: 
+    - **Answer**: Soak tests are used to investigate long-running behaviour, not single operations like a JSON library. Soak tests are therefore not needed for the nlohmann/json library.
 
 **Confidence scoring**
 
@@ -113,28 +113,26 @@ considered against the list of Expectations.
 **Checklist**
 
 - How has the list of misbehaviours varied over time?
-  - **Answer**: 
+  - **Answer**: The list of misbehaviours for nlohmann/json (https://github.com/nlohmann/json/issues) is collected using Github and its development is thereby understandable.
 - How confident can we be that this list is comprehensive?
-  - **Answer**: 
+  - **Answer**: Due to the collaborative nature of the open source community, we deem it quite unlikely, but not impossible, that there are any known misbehaviours which are not reported to the nlohmann/json repository.
 - How well do the misbehaviours map to the expectations?
-  - **Answer**: 
+  - **Answer**: The identified misbehaviours do not necessarily all have a direct impact on the defined expectations. A mapping of any misbehaviour to the expectations has to be done on a case-by-case basis.
 - Could some participants have incentives to manipulate information?
-  - **Answer**: 
+  - **Answer**:  We can not think of any incentive that any collaborateur could have to manipulate the information.
 - Could there be whole categories of misbehaviours still undiscovered?
-  - **Answer**: 
+  - **Answer**: Due to the wide use and long-standing development of the library it is quite unlikely that any major misbehaviors, in particular regarding the parsing and validating of JSON data in the sense of RFC-8259, is undiscovered. 
 - Can we identify misbehaviours that have been understood but not specified?
-  - **Answer**: 
+  - **Answer**: We currently do not identify any misbehaviours that have been understood but not specified.
 - Can we identify some new misbehaviours, right now?
-  - **Answer**: 
+  - **Answer**: No, currently no new misbehaviours can be identified.
 - Is every misbehaviour represented by at least one fault induction test?
-  - **Answer**: 
-- Are fault inductions used to demonstrate that tests which usually pass can
-  and do fail appropriately?
-  - **Answer**: 
+  - **Answer**: Since there are no misbehaviours that concern the use within S-CORE, no.
+- Are fault inductions used to demonstrate that tests which usually pass can and do fail appropriately?
+  - **Answer**: A specific type of fault inductions, fuzz tests, are used.
 - Are all the fault induction results actually collected?
-  - **Answer**: 
+  - **Answer**: The fuzz testing result are stored.
 - Are the results evaluated?
-  - **Answer**: 
-- Do input analysis findings on verifiable tool or component claims and features
-identify additional misbehaviours or support existing mitigations?
-  - **Answer**: 
+  - **Answer**: TODO
+- Do input analysis findings on verifiable tool or component claims and features identify additional misbehaviours or support existing mitigations?
+  - **Answer**: Currently, there is no analysis which identifies additional misbehaviours. The only such analysis is indirectly via the analysis of the fuzz testing, which currently does not identify additional misbehaviours.
